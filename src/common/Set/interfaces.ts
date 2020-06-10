@@ -21,6 +21,6 @@ export interface Section {
 }
 
 export interface ReminderInterface {
-    start_time: Date;
-    duration: number;
+  start_time: Date;
+  duration: number;
 }

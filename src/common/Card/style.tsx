@@ -1,7 +1,3 @@
-import React from "react";
-import { CardInterface } from "./interfaces";
-import { format_time } from "./helper";
-import { Reminder } from "./Reminder";
 import styled from "styled-components";
 
 export const StyledCard = styled.div`
@@ -64,23 +60,3 @@ export const Event_info_link = styled.a`
   color: #00109b;
   padding: 0em 0em 0.25em 0.25em;
 `;
-
-export const Card: React.FC<CardInterface> = ({ event }) => {
-  return (
-    <StyledCard>
-      <Event_img_container>
-        <Event_img src={event.img_url} alt="" />
-        <Reminder start_time={event.start_time} duration={event.duration} />
-      </Event_img_container>
-      <Event_info>
-        <Event_title>{event.title}</Event_title>
-        <Event_time>{format_time(event.start_time, event.duration)}</Event_time>
-        <Event_info_link_container>
-          <Event_info_link href={event.info_url || "#"}>
-            Learn more <i className="fas fa-arrow-right"></i>
-          </Event_info_link>
-        </Event_info_link_container>
-      </Event_info>
-    </StyledCard>
-  );
-};

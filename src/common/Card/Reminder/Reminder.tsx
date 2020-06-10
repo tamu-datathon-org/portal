@@ -1,19 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { ReminderInterface } from "./interfaces";
-import styled from "styled-components";
-
-export const StyledReminder = styled.div`
-  background: #ff7a7a;
-  color: white;
-  font-size: 0.7em;
-  font-weight: bold;
-  padding: 0.5em;
-  position: absolute;
-  top: 1em;
-  left: 1em;
-  border-radius: 8px;
-`;
+import { ReminderInterface } from "../../Set/interfaces";
+import * as UI from "./style";
 
 export const Reminder: React.FC<ReminderInterface> = ({
   start_time,
@@ -33,7 +21,7 @@ export const Reminder: React.FC<ReminderInterface> = ({
       message = duration + mins > 0 ? "Ongoing" : "Ended";
       //   clearInterval(checker);
     }
-    return <StyledReminder>{message}</StyledReminder>;
+    return <UI.StyledReminder>{message}</UI.StyledReminder>;
   } else {
     return <></>;
   }
