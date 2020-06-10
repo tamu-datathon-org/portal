@@ -1,5 +1,4 @@
 import React from "react";
-import shortid from "shortid";
 import { useState, useEffect } from "react";
 import { Card } from "../Card";
 import { Section } from "./interfaces";
@@ -40,7 +39,10 @@ export const Set: React.FC<Section> = ({ info }) => {
       </UI.Section_info>
       <UI.Cards_container>
         {event_list.map((card) => (
-          <Card key={shortid.generate()} event={card.event} />
+          <Card
+            key={card.event.title + card.event.start_time + card.event.duration}
+            event={card.event}
+          />
         ))}
       </UI.Cards_container>
       <UI.Show_btn_container>
