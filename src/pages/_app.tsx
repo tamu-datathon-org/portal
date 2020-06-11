@@ -1,7 +1,7 @@
 import React from "react";
 
 // custom SASS file
-import "../styles/index.scss"
+import "../styles/index.scss";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 
