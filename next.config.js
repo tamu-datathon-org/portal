@@ -1,8 +1,10 @@
 const path = require("path"); // eslint-disable-line @typescript-eslint/no-var-requires
+// for custom styles in SASS
+const withSass = require('@zeit/next-sass');
 
 const BASE_PATHNAME = "events";
 
-module.exports = {
+module.exports = withSass({
   sassOptions: {
     includePaths: [path.join(__dirname)],
   },
@@ -10,4 +12,4 @@ module.exports = {
   publicRuntimeConfig: {
     basePath: BASE_PATHNAME ? `/${BASE_PATHNAME}` : "",
   },
-};
+});

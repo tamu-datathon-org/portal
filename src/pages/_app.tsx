@@ -1,5 +1,7 @@
 import React from "react";
-import "bootstrap/scss/bootstrap.scss"; // we should replace this with our own SASS file
+
+// custom SASS file
+import "../styles/index.scss"
 import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 
