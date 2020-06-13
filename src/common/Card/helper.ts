@@ -19,7 +19,7 @@ const months = [
 export const format_time = (time: Date, duration: number): string => {
   // Input: Date object
   // Output: String in format HH:MM(AM/PM)
-  const start_time = (time: Date): string => {
+  const stringify = (time: Date): string => {
     let hours = time.getHours();
     let meridiem = hours > 11 ? "PM" : "AM";
     let minutes = time.getMinutes().toString();
@@ -29,18 +29,13 @@ export const format_time = (time: Date, duration: number): string => {
     return hours_str + ":" + minutes + meridiem;
   };
 
-  const end_time = (time: Date, duration: number): string => {
-    let end_time = new Date(time.getTime() + duration * 60000);
-    return start_time(end_time);
-  };
-
   return (
     months[time.getMonth()] +
     " " +
     time.getDate() +
     " " +
-    start_time(time) +
+    stringify(time) +
     " to " +
-    end_time(time, duration)
+    stringify(new Date(time.getTime() + duration * 60000))
   );
 };

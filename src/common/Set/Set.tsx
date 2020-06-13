@@ -9,6 +9,7 @@ export const Set: React.FC<Section> = ({ info }) => {
   const [show_more, set_show_more] = useState(false);
   const [btn_text, set_btn_text] = useState("Show More");
 
+  // updates the set component if when the show more status has been changed
   useEffect(() => {
     if (show_more) {
       set_event_list(info.event_list);
@@ -19,9 +20,10 @@ export const Set: React.FC<Section> = ({ info }) => {
     }
   }, [show_more]);
 
+  // if window size gets smaller than 1200px, show all events at once
   useEffect(() => {
     if (window.innerWidth < 1200) {
-      toggleEventsDisplay();
+      set_show_more(true);
     }
   }, []);
 
@@ -40,7 +42,7 @@ export const Set: React.FC<Section> = ({ info }) => {
       <UI.Cards_container>
         {event_list.map((card) => (
           <Card
-            key={card.event.title + card.event.start_time + card.event.duration}
+            key={Math.random().toString() + card.event.title + card.event.start_time + card.event.duration}
             event={card.event}
           />
         ))}

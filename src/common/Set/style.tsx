@@ -19,6 +19,10 @@ export const Cards_container = styled.div`
   @media (max-width: 1200px) {
     display: flex;
     overflow: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+      -webkit-appearance: none;
+    }
   }
 `;
 export const Show_btn_container = styled.div`
