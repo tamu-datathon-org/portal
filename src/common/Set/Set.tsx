@@ -5,12 +5,15 @@ import { Section } from "./interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
+/**
+ * Set component
+ */
 export const Set: React.FC<Section> = ({ info }) => {
   const [eventList, setEventList] = useState(info.eventList.slice(0, 4));
   const [showMore, setShowMore] = useState(false);
   const [btnText, setBtnText] = useState("Show More");
 
-  // updates the set component if when the show more status has been changed
+  /* Updates the set component if when the show more status has been changed */
   useEffect(() => {
     if (showMore) {
       setEventList(info.eventList);
@@ -21,13 +24,14 @@ export const Set: React.FC<Section> = ({ info }) => {
     }
   }, [showMore]);
 
-  // if window size gets smaller than 1200px, show all events at once
+  /* If window size gets smaller than 1200px, show all events at once */
   useEffect(() => {
     if (window.innerWidth < 1200) {
       setShowMore(true);
     }
   }, []);
 
+  /* Toggles whether the set is displayed fully or partially */
   const toggleEventsDisplay = () => {
     setShowMore(!showMore);
   };

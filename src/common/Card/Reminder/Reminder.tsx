@@ -4,13 +4,16 @@ import { ReminderInterface } from "../../Set/interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
+/**
+ * Reminder component
+ */
 export const Reminder: React.FC<ReminderInterface> = ({
   startTime,
   duration,
 }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
 
-  // updates reminder every 15 seconds
+  /* Updates the reminder every 15 seconds */
   useEffect(() => {
     const checker = setInterval(() => {
       setCurrentTime(new Date());
@@ -18,7 +21,7 @@ export const Reminder: React.FC<ReminderInterface> = ({
     return () => clearInterval(checker);
   }, []);
 
-  // display the reminder status if start time is less than 15 minutes away
+  /* Displays the reminder status if start time is less than 15 minutes away */
   if (startTime.getTime() - currentTime.getTime() < 15 * 60000) {
     const mins = Math.ceil(
       (startTime.getTime() - currentTime.getTime()) / 60000

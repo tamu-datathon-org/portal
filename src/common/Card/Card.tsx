@@ -5,6 +5,9 @@ import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
+/**
+ * Card component
+ */
 export const Card: React.FC<CardInterface> = ({ event }) => {
   return (
     <UI.StyledCard>

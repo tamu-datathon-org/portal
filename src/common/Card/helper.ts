@@ -14,11 +14,16 @@ const months = [
   "December",
 ];
 
-// Input: Date object, duration (minutes)
-// Output: Formatted string for start time and end time of an event
+/**
+ * Formats date to a string for the start and end time.
+ * @param time a date object
+ * @param duration a number in minutes
+ */
 export const formatTime = (time: Date, duration: number): string => {
-  // Input: Date object
-  // Output: String in format HH:MM(AM/PM)
+  /**
+   * returns string in HH:MM(AM/PM) format
+   * @param time a date object
+   */
   const stringify = (time: Date): string => {
     const hours: number = time.getHours();
     const meridiem: string = hours > 11 ? "PM" : "AM";
