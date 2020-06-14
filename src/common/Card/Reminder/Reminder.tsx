@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { ReminderInterface } from "../../Set/interfaces";
 import * as UI from "./style";
+import PropTypes from "prop-types";
 
 export const Reminder: React.FC<ReminderInterface> = ({
   start_time,
@@ -30,4 +31,8 @@ export const Reminder: React.FC<ReminderInterface> = ({
   } else {
     return <></>;
   }
+};
+
+Reminder.propTypes = {
+  start_time: PropTypes.any.isRequired,
 };

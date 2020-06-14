@@ -3,7 +3,7 @@ export interface Event {
   title: string;
   start_time: Date;
   duration: number;
-  info_url?: string;
+  info_url: string;
 }
 
 export interface CardInterface {

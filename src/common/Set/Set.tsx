@@ -3,9 +3,10 @@ import { useState, useEffect } from "react";
 import { Card } from "../Card";
 import { Section } from "./interfaces";
 import * as UI from "./style";
+import PropTypes from "prop-types";
 
 export const Set: React.FC<Section> = ({ info }) => {
-  const [event_list, set_event_list] = useState(info.event_list.slice(0, 4));
+  const [event_list, set_event_list] = useState(info["event_list"].slice(0, 4));
   const [show_more, set_show_more] = useState(false);
   const [btn_text, set_btn_text] = useState("Show More");
 
@@ -42,7 +43,12 @@ export const Set: React.FC<Section> = ({ info }) => {
       <UI.Cards_container>
         {event_list.map((card) => (
           <Card
-            key={Math.random().toString() + card.event.title + card.event.start_time + card.event.duration}
+            key={
+              Math.random().toString() +
+              card.event.title +
+              card.event.start_time +
+              card.event.duration
+            }
             event={card.event}
           />
         ))}
@@ -54,4 +60,8 @@ export const Set: React.FC<Section> = ({ info }) => {
       </UI.Show_btn_container>
     </>
   );
+};
+
+Set.propTypes = {
+  info: PropTypes.any.isRequired,
 };

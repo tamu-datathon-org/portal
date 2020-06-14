@@ -20,11 +20,11 @@ export const format_time = (time: Date, duration: number): string => {
   // Input: Date object
   // Output: String in format HH:MM(AM/PM)
   const stringify = (time: Date): string => {
-    let hours = time.getHours();
-    let meridiem = hours > 11 ? "PM" : "AM";
-    let minutes = time.getMinutes().toString();
+    const hours: number = time.getHours();
+    const meridiem: string = hours > 11 ? "PM" : "AM";
+    let minutes: string = time.getMinutes().toString();
     if (minutes.length < 2) minutes = "0" + minutes;
-    let hours_str = hours % 12 == 0 ? "12" : (hours % 12).toString();
+    const hours_str: string = hours % 12 == 0 ? "12" : (hours % 12).toString();
 
     return hours_str + ":" + minutes + meridiem;
   };

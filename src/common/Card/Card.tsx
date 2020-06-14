@@ -3,6 +3,7 @@ import { CardInterface } from "../Set/interfaces";
 import { format_time } from "./helper";
 import { Reminder } from "./Reminder";
 import * as UI from "./style";
+import PropTypes from "prop-types";
 
 export const Card: React.FC<CardInterface> = ({ event }) => {
   return (
@@ -24,4 +25,8 @@ export const Card: React.FC<CardInterface> = ({ event }) => {
       </UI.Event_info>
     </UI.StyledCard>
   );
+};
+
+Card.propTypes = {
+  event: PropTypes.any.isRequired,
 };
