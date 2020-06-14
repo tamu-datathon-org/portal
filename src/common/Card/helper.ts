@@ -16,7 +16,7 @@ const months = [
 
 // Input: Date object, duration (minutes)
 // Output: Formatted string for start time and end time of an event
-export const format_time = (time: Date, duration: number): string => {
+export const formatTime = (time: Date, duration: number): string => {
   // Input: Date object
   // Output: String in format HH:MM(AM/PM)
   const stringify = (time: Date): string => {
@@ -24,9 +24,9 @@ export const format_time = (time: Date, duration: number): string => {
     const meridiem: string = hours > 11 ? "PM" : "AM";
     let minutes: string = time.getMinutes().toString();
     if (minutes.length < 2) minutes = "0" + minutes;
-    const hours_str: string = hours % 12 == 0 ? "12" : (hours % 12).toString();
+    const hourStr: string = hours % 12 == 0 ? "12" : (hours % 12).toString();
 
-    return hours_str + ":" + minutes + meridiem;
+    return hourStr + ":" + minutes + meridiem;
   };
 
   return (

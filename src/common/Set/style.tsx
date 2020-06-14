@@ -1,18 +1,18 @@
 import styled from "styled-components";
 
-export const Section_info = styled.div`
+export const SectionInfo = styled.div`
   margin-bottom: 0.75em;
 `;
-export const Section_title = styled.div`
+export const SectionTitle = styled.div`
   font-family: "Roboto Mono", monospace;
   font-size: 1.5em;
   font-weight: bolder;
 `;
-export const Section_description = styled.div`
+export const SectionDescription = styled.div`
   font-family: "Roboto Mono", monospace;
   font-weight: 100;
 `;
-export const Cards_container = styled.div`
+export const CardsContainer = styled.div`
   display: grid;
   grid-gap: 0.5em;
   grid-template-columns: auto auto auto auto;
@@ -25,12 +25,12 @@ export const Cards_container = styled.div`
     }
   }
 `;
-export const Show_btn_container = styled.div`
+export const ShowBtnContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1em;
 `;
-export const Show_btn = styled.button`
+export const ShowBtn = styled.button`
   padding: 0.6em 1.2em;
   min-width: max-content;
   background-color: white;

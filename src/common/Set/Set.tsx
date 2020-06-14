@@ -6,58 +6,56 @@ import * as UI from "./style";
 import PropTypes from "prop-types";
 
 export const Set: React.FC<Section> = ({ info }) => {
-  const [event_list, set_event_list] = useState(info["event_list"].slice(0, 4));
-  const [show_more, set_show_more] = useState(false);
-  const [btn_text, set_btn_text] = useState("Show More");
+  const [eventList, setEventList] = useState(info.eventList.slice(0, 4));
+  const [showMore, setShowMore] = useState(false);
+  const [btnText, setBtnText] = useState("Show More");
 
   // updates the set component if when the show more status has been changed
   useEffect(() => {
-    if (show_more) {
-      set_event_list(info.event_list);
-      set_btn_text("Show Less");
+    if (showMore) {
+      setEventList(info.eventList);
+      setBtnText("Show Less");
     } else {
-      set_event_list(info.event_list.slice(0, 4));
-      set_btn_text("Show More");
+      setEventList(info.eventList.slice(0, 4));
+      setBtnText("Show More");
     }
-  }, [show_more]);
+  }, [showMore]);
 
   // if window size gets smaller than 1200px, show all events at once
   useEffect(() => {
     if (window.innerWidth < 1200) {
-      set_show_more(true);
+      setShowMore(true);
     }
   }, []);
 
   const toggleEventsDisplay = () => {
-    set_show_more(!show_more);
+    setShowMore(!showMore);
   };
 
   return (
     <>
-      <UI.Section_info>
-        <UI.Section_title>{info.section_title}</UI.Section_title>
-        <UI.Section_description>
-          {info.section_description}
-        </UI.Section_description>
-      </UI.Section_info>
-      <UI.Cards_container>
-        {event_list.map((card) => (
+      <UI.SectionInfo>
+        <UI.SectionTitle>{info.SectionTitle}</UI.SectionTitle>
+        <UI.SectionDescription>{info.sectionDescription}</UI.SectionDescription>
+      </UI.SectionInfo>
+      <UI.CardsContainer>
+        {eventList.map((card) => (
           <Card
             key={
               Math.random().toString() +
               card.event.title +
-              card.event.start_time +
+              card.event.startTime +
               card.event.duration
             }
             event={card.event}
           />
         ))}
-      </UI.Cards_container>
-      <UI.Show_btn_container>
+      </UI.CardsContainer>
+      <UI.ShowBtnContainer>
         <UI.Hr />
-        <UI.Show_btn onClick={toggleEventsDisplay}>{btn_text}</UI.Show_btn>
+        <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>
         <UI.Hr />
-      </UI.Show_btn_container>
+      </UI.ShowBtnContainer>
     </>
   );
 };

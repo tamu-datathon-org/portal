@@ -15,7 +15,7 @@ export const StyledCard = styled.div`
   }
 `;
 
-export const Event_img_container = styled.div`
+export const EventImgContainer = styled.div`
   position: relative;
   width: 100%;
   height: 145px;
@@ -23,33 +23,33 @@ export const Event_img_container = styled.div`
   overflow: hidden;
 `;
 
-export const Event_img = styled.img`
+export const EventImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
 `;
 
-export const Event_info = styled.div`
+export const EventInfo = styled.div`
   padding: 0.75em;
 `;
 
-export const Event_title = styled.div`
+export const EventTitle = styled.div`
   font-family: "Roboto Mono", monospace;
   font-weight: bold;
   font-size: 1.1em;
 `;
 
-export const Event_time = styled.div`
+export const EventTime = styled.div`
   font-family: "Work Sans", sans-serif;
   font-weight: 300;
 `;
 
-export const Event_info_link_container = styled.div`
+export const EventInfoLinkContainer = styled.div`
   text-align: right;
   margin-top: 0.75em;
 `;
 
-export const Event_info_link = styled.a`
+export const EventInfoLink = styled.a`
   font-family: "Work Sans", sans-serif;
   text-decoration: none;
   font-weight: 700;

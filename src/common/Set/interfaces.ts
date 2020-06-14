@@ -1,9 +1,9 @@
 export interface Event {
-  img_url: string;
+  imgUrl: string;
   title: string;
-  start_time: Date;
+  startTime: Date;
   duration: number;
-  info_url: string;
+  infoUrl: string;
 }
 
 export interface CardInterface {
@@ -11,9 +11,9 @@ export interface CardInterface {
 }
 
 export interface ActivitySection {
-  event_list: Array<CardInterface>;
-  section_title: string;
-  section_description: string;
+  eventList: Array<CardInterface>;
+  SectionTitle: string;
+  sectionDescription: string;
 }
 
 export interface Section {
@@ -21,6 +21,6 @@ export interface Section {
 }
 
 export interface ReminderInterface {
-  start_time: Date;
+  startTime: Date;
   duration: number;
 }
