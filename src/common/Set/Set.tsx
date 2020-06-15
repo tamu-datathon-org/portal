@@ -1,23 +1,24 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { Card } from "../Card";
-import { Section } from "./interfaces";
+import { SetProps } from "./interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
 /**
  * Set component
  */
-export const Set: React.FC<Section> = ({ info }) => {
-  let listSize: number;
-  if (info.isCollapsible) {
-    listSize = 4;
-  } else {
-    listSize = info.eventList.length;
-  }
-  const [eventList, setEventList] = useState(info.eventList.slice(0, listSize));
-  const [showMore, setShowMore] = useState(!info.isCollapsible);
-  const [btnText, setBtnText] = useState("Show More");
+export const Set: React.FC<SetProps> = ({ info }) => {
+  const [eventList, setEventList] = useState(
+    info.eventList.slice(
+      0,
+      !info.defaultShowMoreState ? 4 : info.eventList.length
+    )
+  );
+  const [showMore, setShowMore] = useState(info.defaultShowMoreState);
+  const [btnText, setBtnText] = useState(
+    !info.defaultShowMoreState ? "Show More" : "Show Less"
+  );
 
   /* Updates the set component if when the show more status has been changed */
   useEffect(() => {
@@ -42,63 +43,32 @@ export const Set: React.FC<Section> = ({ info }) => {
     setShowMore(!showMore);
   };
 
-  /**
-   * I don't think writing code inside jsx is possible so this is the only way to change whether the showMore btn is visible
-   * unless we create a new component for it (or someone can let me know of a better way to accomplish this)
-   */
-  if (info.isCollapsible) {
-    return (
-      <>
-        <UI.SectionInfo>
-          <h4>{info.sectionTitle}</h4>
-          <p>{info.sectionDescription}</p>
-        </UI.SectionInfo>
-        <UI.CardsContainer>
-          {eventList.map((card) => (
-            <Card
-              key={
-                Math.random().toString() +
-                card.event.title +
-                card.event.startTime +
-                card.event.duration
-              }
-              event={card.event}
-            />
-          ))}
-        </UI.CardsContainer>
-        <UI.ShowBtnContainer>
-          <UI.Hr />
-          <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>
-          <UI.Hr />
-        </UI.ShowBtnContainer>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <UI.SectionInfo>
-          <h4>{info.sectionTitle}</h4>
-          <p>{info.sectionDescription}</p>
-        </UI.SectionInfo>
-        <UI.CardsContainer>
-          {eventList.map((card) => (
-            <Card
-              key={
-                Math.random().toString() +
-                card.event.title +
-                card.event.startTime +
-                card.event.duration
-              }
-              event={card.event}
-            />
-          ))}
-        </UI.CardsContainer>
-        <UI.ShowBtnContainer>
-          <UI.HrFull />
-        </UI.ShowBtnContainer>
-      </>
-    );
-  }
+  return (
+    <>
+      <UI.SectionInfo>
+        <h4>{info.sectionTitle}</h4>
+        <p>{info.sectionDescription}</p>
+      </UI.SectionInfo>
+      <UI.CardsContainer>
+        {eventList.map((card) => (
+          <Card
+            key={
+              Math.random().toString() +
+              card.event.title +
+              card.event.startTime +
+              card.event.duration
+            }
+            event={card.event}
+          />
+        ))}
+      </UI.CardsContainer>
+      <UI.ShowBtnContainer>
+        <UI.Hr />
+        <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>
+        <UI.Hr />
+      </UI.ShowBtnContainer>
+    </>
+  );
 };
 
 Set.propTypes = {

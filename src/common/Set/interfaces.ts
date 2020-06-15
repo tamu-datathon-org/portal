@@ -1,31 +1,15 @@
-export interface Event {
-  imgUrl: string;
-  title: string;
-  startTime: Date;
-  duration: number;
-  infoUrl: string;
-}
-
-export interface CardInterface {
-  event: Event;
-}
+import { ActivityCardProps } from "../Card";
 
 export interface ActivitySection {
-  eventList: Array<CardInterface>;
+  eventList: Array<ActivityCardProps>;
   sectionTitle: string;
   sectionDescription: string;
-  isCollapsible: boolean;
+  defaultShowMoreState?: boolean;
 }
 
-export interface Section {
+export interface SetProps {
   info: ActivitySection;
 }
-
-export interface ReminderInterface {
-  startTime: Date;
-  duration: number;
-}
-
 export interface ShowMoreBtnInterface {
   visible: boolean;
   text: string;

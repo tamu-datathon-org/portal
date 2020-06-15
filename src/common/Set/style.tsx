@@ -21,10 +21,6 @@ export const CardsContainer = styled.div`
       width: 80vw;
       max-width: 350px;
     }
-    &::-webkit-scrollbar {
-      display: none;
-      -webkit-appearance: none;
-    }
   }
 `;
 export const ShowBtnContainer = styled.div`
@@ -52,21 +48,6 @@ export const Hr = styled.hr`
   margin: 1em 0em;
   width: 100%;
   @media (max-width: 1200px) {
-    border: 0px;
-    border-top: 1px solid #ccc;
-    margin: 1em 0em;
-    width: 100%;
-  }
-`;
-export const HrFull = styled.hr`
-  border: 0px;
-  border-top: 1px solid #ccc;
-  margin: 1em 0em;
-  width: 100%;
-  @media (max-width: 1200px) {
-    border: 0px;
-    border-top: 1px solid #ccc;
-    margin: 1em 0em;
-    width: 100%;
+    display: none;
   }
 `;

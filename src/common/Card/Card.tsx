@@ -1,14 +1,14 @@
 import React from "react";
-import { CardInterface } from "../Set/interfaces";
 import { formatTime } from "./helper";
 import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
+import { ActivityCardProps } from "./interfaces";
 
 /**
  * Card component
  */
-export const Card: React.FC<CardInterface> = ({ event }) => {
+export const Card: React.FC<ActivityCardProps> = ({ event }) => {
   return (
     <UI.StyledCard>
       <UI.EventImgContainer>
@@ -16,7 +16,7 @@ export const Card: React.FC<CardInterface> = ({ event }) => {
         <Reminder startTime={event.startTime} duration={event.duration} />
       </UI.EventImgContainer>
       <UI.EventInfo>
-        <h4>{event.title}</h4>
+        <h5>{event.title}</h5>
         <UI.EventTime>
           {formatTime(event.startTime, event.duration)}
         </UI.EventTime>

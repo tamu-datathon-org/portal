@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
-import { ReminderInterface } from "../../Set/interfaces";
+import { ReminderProps } from "../interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
 /**
  * Reminder component
  */
-export const Reminder: React.FC<ReminderInterface> = ({
-  startTime,
-  duration,
-}) => {
+export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
   const mins = Math.ceil((startTime.getTime() - currentTime.getTime()) / 60000);
 

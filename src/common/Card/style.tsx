@@ -4,6 +4,7 @@ export const StyledCard = styled.div`
   background-color: white;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
+  margin-bottom: 1em;
   overflow: hidden;
   @media only screen and (max-width: 1200px) {
     flex-grow: 0;
