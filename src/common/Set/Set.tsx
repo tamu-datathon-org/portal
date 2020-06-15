@@ -50,7 +50,7 @@ export const Set: React.FC<Section> = ({ info }) => {
     return (
       <>
         <UI.SectionInfo>
-          <h4>{info.SectionTitle}</h4>
+          <h4>{info.sectionTitle}</h4>
           <p>{info.sectionDescription}</p>
         </UI.SectionInfo>
         <UI.CardsContainer>
@@ -77,7 +77,7 @@ export const Set: React.FC<Section> = ({ info }) => {
     return (
       <>
         <UI.SectionInfo>
-          <h4>{info.SectionTitle}</h4>
+          <h4>{info.sectionTitle}</h4>
           <p>{info.sectionDescription}</p>
         </UI.SectionInfo>
         <UI.CardsContainer>

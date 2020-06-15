@@ -12,7 +12,7 @@ export interface CardInterface {
 
 export interface ActivitySection {
   eventList: Array<CardInterface>;
-  SectionTitle: string;
+  sectionTitle: string;
   sectionDescription: string;
   isCollapsible: boolean;
 }
