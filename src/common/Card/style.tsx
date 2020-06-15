@@ -26,11 +26,12 @@ export const EventImg = styled.img`
   object-fit: cover;
 `;
 
-export const EventInfo = styled.div`
+export const EventInfo = styled.p`
   padding: 0.75em;
+  margin-bottom: 0px;
 `;
 
-export const EventTitle = styled.div`
+export const EventTitle = styled.h4`
   font-weight: bold;
   font-size: 1.1em;
 `;

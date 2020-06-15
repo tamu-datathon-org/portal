@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-export const SectionInfo = styled.div`
+export const SectionInfo = styled.p`
   margin-bottom: 0.75em;
 `;
-export const SectionTitle = styled.div`
+export const SectionTitle = styled.h4`
   font-size: 1.5em;
   font-weight: bolder;
 `;
-export const SectionDescription = styled.div`
+export const SectionDescription = styled.p`
   font-weight: 100;
 `;
 export const CardsContainer = styled.div`
