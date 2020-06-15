@@ -6,12 +6,9 @@ export const StyledCard = styled.div`
   border-radius: 8px;
   overflow: hidden;
   @media only screen and (max-width: 1200px) {
-    background-color: white;
-    border: 1px solid #dbdbdb;
-    border-radius: 8px;
-    overflow: hidden;
+    flex-grow: 0;
+    flex-shrink: 0;
     margin: 0.5em;
-    min-width: max-content;
   }
 `;
 
