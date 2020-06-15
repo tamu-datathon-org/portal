@@ -52,12 +52,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
       <UI.CardsContainer>
         {eventList.map((card) => (
           <Card
-            key={
-              Math.random().toString() +
-              card.event.title +
-              card.event.startTime +
-              card.event.duration
-            }
+            key={card.event.title + card.event.startTime + card.event.duration}
             event={card.event}
           />
         ))}
