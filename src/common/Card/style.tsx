@@ -37,7 +37,9 @@ export const EventTitle = styled.h4`
   font-size: 1.1em;
 `;
 
-export const EventTime = styled.p``;
+export const EventTime = styled.p`
+  font-weight: 300;
+`;
 
 export const EventInfoLinkContainer = styled.div`
   text-align: right;
