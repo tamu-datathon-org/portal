@@ -46,7 +46,6 @@ export const Set: React.FC<Section> = ({ info }) => {
         {eventList.map((card) => (
           <Card
             key={
-              Math.random().toString() +
               card.event.title +
               card.event.startTime +
               card.event.duration
