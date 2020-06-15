@@ -34,13 +34,11 @@ export const EventInfo = styled.div`
 `;
 
 export const EventTitle = styled.div`
-  font-family: "Roboto Mono", monospace;
   font-weight: bold;
   font-size: 1.1em;
 `;
 
-export const EventTime = styled.div`
-  font-family: "Work Sans", sans-serif;
+export const EventTime = styled.p`
   font-weight: 300;
 `;
 
@@ -50,7 +48,6 @@ export const EventInfoLinkContainer = styled.div`
 `;
 
 export const EventInfoLink = styled.a`
-  font-family: "Work Sans", sans-serif;
   text-decoration: none;
   font-weight: 700;
   background-image: linear-gradient(#c3e5ff 0%, #c3e5ff 100%);

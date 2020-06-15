@@ -28,7 +28,12 @@ export const Reminder: React.FC<ReminderInterface> = ({
     );
     let message = "Starts in " + mins.toString() + " minutes";
     if (mins < 0) {
-      message = duration + mins > 0 ? "Ongoing" : "Ended";
+      if (duration + mins > 0) {
+        message = "Ongoing";
+      } else {
+        message = "Ended";
+        return <UI.StyledExpiredReminder>{message}</UI.StyledExpiredReminder>;
+      }
     }
     return <UI.StyledReminder>{message}</UI.StyledReminder>;
   } else {

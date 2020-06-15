@@ -4,12 +4,10 @@ export const SectionInfo = styled.div`
   margin-bottom: 0.75em;
 `;
 export const SectionTitle = styled.div`
-  font-family: "Roboto Mono", monospace;
   font-size: 1.5em;
   font-weight: bolder;
 `;
 export const SectionDescription = styled.div`
-  font-family: "Roboto Mono", monospace;
   font-weight: 100;
 `;
 export const CardsContainer = styled.div`
@@ -47,6 +45,18 @@ export const Hr = styled.hr`
   border: 0px;
   border-top: 1px solid #ccc;
   margin: 1em;
+  width: 100%;
+  @media (max-width: 1200px) {
+    border: 0px;
+    border-top: 1px solid #ccc;
+    margin: 1em 0em;
+    width: 100%;
+  }
+`;
+export const HrFull = styled.hr`
+  border: 0px;
+  border-top: 1px solid #ccc;
+  margin: 1em 0em;
   width: 100%;
   @media (max-width: 1200px) {
     border: 0px;

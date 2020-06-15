@@ -14,6 +14,7 @@ export interface ActivitySection {
   eventList: Array<CardInterface>;
   SectionTitle: string;
   sectionDescription: string;
+  isCollapsible: boolean;
 }
 
 export interface Section {
@@ -23,4 +24,10 @@ export interface Section {
 export interface ReminderInterface {
   startTime: Date;
   duration: number;
+}
+
+export interface ShowMoreBtnInterface {
+  visible: boolean;
+  text: string;
+  triggerFunction: void;
 }

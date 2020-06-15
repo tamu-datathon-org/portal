@@ -16,7 +16,7 @@ export const Card: React.FC<CardInterface> = ({ event }) => {
         <Reminder startTime={event.startTime} duration={event.duration} />
       </UI.EventImgContainer>
       <UI.EventInfo>
-        <UI.EventTitle>{event.title}</UI.EventTitle>
+        <h4>{event.title}</h4>
         <UI.EventTime>
           {formatTime(event.startTime, event.duration)}
         </UI.EventTime>
