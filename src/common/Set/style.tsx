@@ -18,7 +18,11 @@ export const CardsContainer = styled.div`
   grid-template-columns: auto auto auto auto;
   @media (max-width: 1200px) {
     display: flex;
-    overflow: scroll;
+    overflow: auto;
+    & > div {
+      width: 80vw;
+      max-width: 350px;
+    }
     &::-webkit-scrollbar {
       display: none;
       -webkit-appearance: none;
