@@ -32,7 +32,7 @@ export const CardsContainer = styled.div`
 export const ShowBtnContainer = styled.div`
   display: flex;
   justify-content: center;
-  padding: 1em;
+  padding: 1em 0em;
 `;
 export const ShowBtn = styled.button`
   padding: 0.6em 1.2em;
@@ -43,6 +43,7 @@ export const ShowBtn = styled.button`
   border: 1px solid #dbdbdb;
   cursor: pointer;
   font-size: 0.75em;
+  margin: 0em 1em;
   @media (max-width: 1200px) {
     display: none;
   }
@@ -50,7 +51,7 @@ export const ShowBtn = styled.button`
 export const Hr = styled.hr`
   border: 0px;
   border-top: 1px solid #ccc;
-  margin: 1em;
+  margin: 1em 0em;
   width: 100%;
   @media (max-width: 1200px) {
     border: 0px;
