@@ -4,7 +4,7 @@
 export class THEMES {
   static readonly PrimaryTheme = {
     // original value from _app.tsx
-    color: {
+    colors: {
       primary: "#0070f3",
     },
     // TAMU Datathon Theme Colors
