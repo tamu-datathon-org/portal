@@ -5,12 +5,10 @@ import "../styles/index.scss";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
 
-// TODO: add our colors and such
-const theme = {
-  colors: {
-    primary: "#0070f3",
-  },
-};
+import { THEMES } from "../styles/theme.config";
+
+// import constants from Theme configuration
+const theme = THEMES.PrimaryTheme;
 
 const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
   return (
