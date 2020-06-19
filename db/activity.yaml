@@ -1,7 +1,7 @@
 name: string (Data Science 101)
 id: unique_string (a10101)
 startTime: Month Date, Year hh:mm:ss (June 20, 2020 10:30:00)
-duration: number_in_minutes (60)
+endTime: Month Date, Year hh:mm:ss (June 20, 2020 10:30:00)
 mediaLink: url_string (https://tamu.zoom.us/j/28347923874)
 presenter: string (Jon Doe)
 priority: number_between_1_10 (7)

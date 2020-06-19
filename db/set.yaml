@@ -1,7 +1,7 @@
 name: string (Get started with Data Science)
 id: unique_string (s10101)
 description: string (New to Data Science? Attend these live classes to improve your skill!)
-showMoreState: boolean (yes/no)
+showMoreState: boolean (true/false)
 orderedBy: order_type (start_time / alphabetical / attendance)
 priority: number_between_1_10 (4)
 activityList:
