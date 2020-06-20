@@ -4,6 +4,7 @@ import React from "react";
 import "../styles/index.scss";
 import { AppProps } from "next/app";
 import { ThemeProvider } from "styled-components";
+import { UserProvider } from "../common/UserProvider";
 
 import { THEMES } from "../styles/theme.config";
 
@@ -13,7 +14,9 @@ const theme = THEMES.PrimaryTheme;
 const App = ({ Component, pageProps }: AppProps): React.ReactElement => {
   return (
     <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
+      <UserProvider>
+        <Component {...pageProps} />
+      </UserProvider>
     </ThemeProvider>
   );
 };
