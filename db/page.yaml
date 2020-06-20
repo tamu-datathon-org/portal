@@ -1,6 +1,6 @@
 name: string (Day 1)
-id: unique_string (d10101)
-orderedBy: order_type (alphabetical / priority / start_time)
+id: file_name_without_extension (day_1)
+orderedBy: order_type (alphabetical / priority / start_time / none)
 sets:
   - set_file_name (starter_set)
   - set_file_name (starter_set)

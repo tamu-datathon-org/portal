@@ -1,10 +1,11 @@
 name: Get started with Data Science
-id: s10101
+id: starter_set
 description: New to Data Science? Attend these live classes to improve your skill!
 showMoreState: yes
 orderedBy: start_time
 priority: 4
 activityList:
+  - data_science_101
   - data_science_202
   - data_science_303
   - data_science_404
