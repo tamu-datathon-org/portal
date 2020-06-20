@@ -1,2 +1,2 @@
-export * from "./Nav";
+export * from "./Navbar";
 export * from "./interfaces";
