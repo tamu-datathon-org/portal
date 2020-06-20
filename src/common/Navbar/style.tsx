@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   Navbar as ReactNavbar,
   Nav as ReactNav,
@@ -7,7 +8,6 @@ import {
 
 export const Navbar = styled(ReactNavbar)`
   border-bottom: solid 1px #cfcfcf;
-  background-color: #fafafa;
 `;
 
 export const NavbarLogo = styled.img`
@@ -15,22 +15,53 @@ export const NavbarLogo = styled.img`
   height 40px;
 `;
 
-export const Nav = styled(ReactNav)`
-  float: center;
-`;
-
-export const NavLink = styled(Nav.Link)`
+export const NavLink = styled(ReactNav.Link)`
+  padding: 10px 15px !important;
   color: #00109b !important;
 `;
 
-export const NavbarDropdownToggle = styled(Dropdown.Toggle)`
-  background: transparent;
-  border: none;
-  color: blue;
+export const NavbarAccountSpan = styled.span`
+  display: inline-flex;
+  align-items: center;
+`;
+
+export const DropdownUserInfoDivider = styled.hr`
+  margin: 10px auto;
+`;
+
+export const DropdownUserInfo = styled.small`
+  padding: 10px 15px;
+`;
+
+export const DropdownLink = styled.a`
+  color: #00109b !important;
+  margin: 10px auto;
+  display: block;
 
   &:hover {
-    background: transparent;
-    border: none;
-    color: blue;
+    text-decoration: none;
+  }
+`;
+
+export const NavbarDropdownToggle = styled(Dropdown.Toggle)`
+  &,
+  &:hover,
+  &:focus {
+    background: transparent !important;
+    border: none !important;
+    color: #00109b !important;
+    padding: 0 !important;
+  }
+`;
+
+export const NavbarUserIcon = styled(FontAwesomeIcon)`
+  font-size: 25px;
+`;
+
+export const NavbarLoginLink = styled.a`
+  &,
+  &:hover,
+  &:focus {
+    color: #00109b;
   }
 `;
