@@ -3,6 +3,7 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
 import styled from "styled-components";
+import { Navbar } from "../common/Navbar";
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
 
 const CustomHeader = styled.h1`
@@ -20,6 +21,7 @@ const IndexPage = (): React.ReactNode => {
       <Head>
         <title>This was a triumph</title>
       </Head>
+      <Navbar></Navbar>
       <Container className="pt-5">
         <CustomHeader>Hello Next.js 👋</CustomHeader>
         <p>
