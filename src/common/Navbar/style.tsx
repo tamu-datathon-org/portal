@@ -20,9 +20,10 @@ export const NavLink = styled(ReactNav.Link)`
   color: #00109b !important;
 `;
 
-export const NavbarAccountSpan = styled.span`
+export const NavbarSpan = styled.span`
   display: inline-flex;
   align-items: center;
+  width: 110px;
 `;
 
 export const NavUserInfoDivider = styled.hr`

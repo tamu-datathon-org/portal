@@ -28,13 +28,13 @@ export const Navbar: React.FC = () => {
 
   return (
     <UI.Navbar expand="sm">
-      <ReactNavbar.Brand>
+      <UI.NavbarSpan>
         <ReactNavbar.Toggle aria-controls="navbar-responsive-dropdown" />
         <UI.NavbarLogo
           src="events/img/logos/main.png"
           className="d-none d-sm-block" // Hide icon below sm screens.
         ></UI.NavbarLogo>
-      </ReactNavbar.Brand>
+      </UI.NavbarSpan>
       <ReactNavbar.Collapse
         id="navbar-responsive-dropdown"
         className="justify-content-center"
@@ -62,8 +62,8 @@ export const Navbar: React.FC = () => {
           )}
         </span>
       </ReactNavbar.Collapse>
-      <UI.NavbarAccountSpan
-        className="d-none d-sm-block" // Hide icon below sm screens.
+      <UI.NavbarSpan
+        className="d-none d-sm-block text-right" // Hide icon below sm screens.
       >
         {status === UserCurrentStatus.LoggedIn ? (
           navbarUserDropdown
@@ -72,7 +72,7 @@ export const Navbar: React.FC = () => {
             Login / Signup
           </UI.NavbarLoginLink>
         )}
-      </UI.NavbarAccountSpan>
+      </UI.NavbarSpan>
     </UI.Navbar>
   );
 };
