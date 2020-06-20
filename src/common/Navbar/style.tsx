@@ -25,11 +25,11 @@ export const NavbarAccountSpan = styled.span`
   align-items: center;
 `;
 
-export const DropdownUserInfoDivider = styled.hr`
+export const NavUserInfoDivider = styled.hr`
   margin: 10px auto;
 `;
 
-export const DropdownUserInfo = styled.small`
+export const NavUserInfo = styled.small`
   padding: 10px 15px;
 `;
 

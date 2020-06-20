@@ -1,8 +1,5 @@
 import React from "react";
 import * as UI from "./style";
-import PropTypes from "prop-types";
-import { NavProps } from "./interfaces";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
 import {
   Navbar as ReactNavbar,
@@ -50,18 +47,18 @@ export const Navbar: React.FC = () => {
         <span
           className="d-sm-none" // Hide above sm screens.
         >
-          <UI.DropdownUserInfoDivider />
+          <UI.NavUserInfoDivider />
           {status === UserCurrentStatus.LoggedIn ? (
             <>
-              <UI.DropdownUserInfo className="text-muted">
+              <UI.NavUserInfo className="text-muted">
                 {user?.email}
-              </UI.DropdownUserInfo>
+              </UI.NavUserInfo>
               <UI.NavLink href="/auth/logout?r=/events">Logout</UI.NavLink>
             </>
           ) : (
-            <UI.DropdownLink href="/auth/logout?r=/events">
+            <UI.NavLink href="/auth/logout?r=/events">
               Login / Signup
-            </UI.DropdownLink>
+            </UI.NavLink>
           )}
         </span>
       </ReactNavbar.Collapse>
