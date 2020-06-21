@@ -1,10 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Head from "next/head";
 import styled from "styled-components";
-import { Navbar } from "../common/Navbar";
+
+// custom components
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
+import { Navbar } from "../common/Navbar";
+import { EventsContainer } from "../common/EventsContainer";
+import { dummyEvents } from "../libs";
 
 const CustomHeader = styled.h1`
   color: ${(props) => props.theme.colors.primary};
@@ -23,17 +27,14 @@ const IndexPage = (): React.ReactNode => {
       </Head>
       <Navbar></Navbar>
       <Container className="pt-5">
-        <CustomHeader>Hello Next.js 👋</CustomHeader>
-        <p>
-          <b>Folder structure:</b> pages go in <code>pages/</code>,
-          components/hooks/etc go in <code>common/</code> in which the folder
-          has an index.tsx that exports all the child components like this:{" "}
-          <code>export * from "./WhateverComponent"</code>
-        </p>
-        <p>
-          For component files don't use default export (only use default export
-          for page files)
-        </p>
+        <CustomHeader>Events and Workshops</CustomHeader>
+
+        <EventsContainer events={dummyEvents} />
+        
+
+        <br />
+        <hr />
+
         <p>User Status: {status}</p>
         <p>Returned User:</p>
         <pre>{JSON.stringify(user, null, 4)}</pre>
