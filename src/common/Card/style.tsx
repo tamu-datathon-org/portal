@@ -1,7 +1,7 @@
 import styled from "styled-components";
+import { Card as BootstrapCard } from "react-bootstrap";
 
-// included col-md-3 properties - I expect this is temporary
-export const StyledCard = styled.div`
+export const StyledCard = styled(BootstrapCard)`
   background-color: white;
   border: 1px solid #dbdbdb;
   border-radius: 8px;
@@ -12,14 +12,6 @@ export const StyledCard = styled.div`
     flex-shrink: 0;
     margin: 0.5em;
   }
-
-  position: relative;
-  width: 100%;
-  padding-right: 10px;
-  padding-left: 10px;
-
-  flex: 0 0 25%;
-  max-width: 25%;
 `;
 
 export const EventImgContainer = styled.div`
