@@ -18,7 +18,7 @@ export const EventImgContainer = styled.div`
   position: relative;
   width: 100%;
   height: 145px;
-  background-color: #f7ffe1;
+  background-color: #f9fee3;
   overflow: hidden;
 `;
 

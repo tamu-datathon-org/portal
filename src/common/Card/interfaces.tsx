@@ -1,5 +1,5 @@
 export interface Activity {
-  imgUrl: string;
+  imgUrl?: string;
   title: string;
   startTime: Date;
   duration: number;
