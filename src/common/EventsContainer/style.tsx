@@ -4,6 +4,4 @@ import {
 } from "react-bootstrap";
 
 // color it red for testing
-export const EventsContainer = styled(BootstrapContainer)`
-  color: red;
-`;
+export const EventsContainer = styled(BootstrapContainer)``;

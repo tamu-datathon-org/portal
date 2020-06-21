@@ -10,7 +10,10 @@ import { EventsContainerProps } from "./interfaces";
  * Events Container (styling in progress)
  */
 export const EventsContainer: React.FC<EventsContainerProps> = ({ events }) => {
-  const renderEvents = events.map((event) => <Card event={event} />);
+  const renderEvents = events.map((event, i) => {
+    const eventKey = `__card_event_{event.duration}`;
+    return <Card key={eventKey} event={event} />;
+  });
 
   return (
     <UI.EventsContainer>
