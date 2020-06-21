@@ -11,15 +11,13 @@ import { EventsContainerProps } from "./interfaces";
  */
 export const EventsContainer: React.FC<EventsContainerProps> = ({ events }) => {
   const renderEvents = events.map((event, i) => {
-    const eventKey = `__card_event_{event.duration}`;
+    const eventKey = `__card_event_${i}_${event.title}_${event.duration}`;
     return <Card key={eventKey} event={event} />;
   });
 
   return (
     <UI.EventsContainer>
-      <Row>
-        {renderEvents}
-      </Row>
+      <Row>{renderEvents}</Row>
     </UI.EventsContainer>
   );
 };

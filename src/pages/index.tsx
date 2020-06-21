@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
-import { Container, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import Head from "next/head";
 import styled from "styled-components";
 
@@ -30,7 +30,6 @@ const IndexPage = (): React.ReactNode => {
         <CustomHeader>Events and Workshops</CustomHeader>
 
         <EventsContainer events={dummyEvents} />
-        
 
         <br />
         <hr />
