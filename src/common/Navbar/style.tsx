@@ -17,7 +17,7 @@ export const NavbarLogo = styled.img`
 
 export const NavLink = styled(ReactNav.Link)`
   padding: 10px 15px !important;
-  color: #00109b !important;
+  color: ${(props) => props.theme.colors.primary} !important;
 `;
 
 export const NavbarSpan = styled.span`
@@ -35,7 +35,7 @@ export const NavUserInfo = styled.small`
 `;
 
 export const DropdownLink = styled.a`
-  color: #00109b !important;
+  color: ${(props) => props.theme.colors.primary}} !important;
   margin: 10px auto;
   display: block;
 
@@ -50,7 +50,7 @@ export const NavbarDropdownToggle = styled(Dropdown.Toggle)`
   &:focus {
     background: transparent !important;
     border: none !important;
-    color: #00109b !important;
+    color: ${(props) => props.theme.colors.primary} !important;
     padding: 0 !important;
   }
 `;
@@ -63,6 +63,6 @@ export const NavbarLoginLink = styled.a`
   &,
   &:hover,
   &:focus {
-    color: #00109b;
+    color: ${(props) => props.theme.colors.primary};
   }
 `;
