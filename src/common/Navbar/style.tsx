@@ -23,7 +23,7 @@ export const NavLink = styled(ReactNav.Link)`
 export const NavbarSpan = styled.span`
   display: inline-flex;
   align-items: center;
-  width: 110px;
+  width: 120px;
 `;
 
 export const NavUserInfoDivider = styled.hr`
