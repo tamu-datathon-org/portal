@@ -7,7 +7,6 @@ import styled from "styled-components";
 // custom components
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
 import { Navbar } from "../common/Navbar";
-import { EventsContainer } from "../common/EventsContainer";
 import { dummyEvents } from "../libs";
 
 const CustomHeader = styled.h1`
@@ -29,7 +28,7 @@ const IndexPage = (): React.ReactNode => {
       <Container className="pt-5">
         <CustomHeader>Events and Workshops</CustomHeader>
 
-        <EventsContainer events={dummyEvents} />
+        {/* <EventsContainer events={dummyEvents} /> */}
 
         <br />
         <hr />
