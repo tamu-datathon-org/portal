@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import { Card as BootstrapCard } from "react-bootstrap";
 
-export const StyledCard = styled(BootstrapCard)`
+export const StyledCard = styled.div`
   background-color: white;
   border: 1px solid #dbdbdb;
   border-radius: 8px;

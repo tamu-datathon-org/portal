@@ -5,9 +5,10 @@ import Head from "next/head";
 import styled from "styled-components";
 
 // custom components
-import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
+import { Set } from "../common/Set";
 import { Navbar } from "../common/Navbar";
-import { dummyEvents } from "../libs";
+import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
+import { set1Info, set2Info } from "../libs";
 
 const CustomHeader = styled.h1`
   color: ${(props) => props.theme.colors.primary};
@@ -28,10 +29,8 @@ const IndexPage = (): React.ReactNode => {
       <Container className="pt-5">
         <CustomHeader>Events and Workshops</CustomHeader>
 
-        {/* <EventsContainer events={dummyEvents} /> */}
-
-        <br />
-        <hr />
+        <Set info={set1Info}></Set>
+        <Set info={set2Info}></Set>
 
         <p>User Status: {status}</p>
         <p>Returned User:</p>
