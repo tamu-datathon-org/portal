@@ -1,0 +1,10 @@
+name: string (Get started with Data Science)
+id: file_name_without_extension (get_started_set)
+description: string (New to Data Science? Attend these live classes to improve your skill!)
+showMoreState: boolean (true/false)
+orderedBy: order_type (start_time / alphabetical / attendance / none)
+priority: number_between_1_10 (4)
+activityList:
+  - activity_folder_name (data_science_202)
+  - activity_folder_name (data_science_303)
+  - activity_folder_name (data_science_404)
