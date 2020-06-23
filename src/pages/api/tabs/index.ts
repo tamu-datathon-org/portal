@@ -1,14 +1,14 @@
 import yaml from "js-yaml";
 import fs from "graceful-fs";
 import * as path from "path";
-import { Request, Response } from "express";
+import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler<JSON = unknown>(
-  req: Request,
-  res: Response
-): Promise<JSON> {
+  req: NextApiRequest,
+  res: NextApiResponse
+): Promise<void> {
   const files = await fs.promises.readdir("db/pages/");
-  const arr = [];
+  const arr: Array<string> = [];
   files.forEach((file) => {
     if (path.extname(file).toLowerCase() === ".yaml") {
       arr.push(yaml.safeLoad(fs.readFileSync("db/pages/" + file, "utf8")));

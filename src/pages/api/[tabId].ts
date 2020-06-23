@@ -1,11 +1,11 @@
 import yaml from "js-yaml";
 import fs from "graceful-fs";
-import { Response } from "express";
+import { NextApiRequest, NextApiResponse } from "next";
 
 export default function handler<JSON = unknown>(
-  { query: { tabId } }: JSON,
-  res: Response
-): Promise<JSON> {
+  { query: { tabId } }: NextApiRequest,
+  res: NextApiResponse
+): void {
   const file = "db/pages/" + tabId + ".yaml";
   let str = "[]";
   if (fs.existsSync(file)) {
