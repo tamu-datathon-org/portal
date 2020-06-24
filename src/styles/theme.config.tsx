@@ -41,7 +41,7 @@ export class THEMES {
       theme_dark_green: "#22b9a5",
       theme_light_green: "#86eace",
       theme_light_blue: "#4fc2f8",
-      theme_lighter_blue: "#f1f8ff",
+      theme_lighter_blue: "#f5faff",
       splash_light_purple: "#7c408a",
       splash_light_blue: "#3f5aaa",
     },

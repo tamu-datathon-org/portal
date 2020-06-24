@@ -9,7 +9,7 @@ import * as UI from "./style";
  */
 export const NavPills: React.FC = () => {
   return (
-    <Nav variant="pills" defaultActiveKey="/events">
+    <UI.Nav variant="pills" defaultActiveKey="/events">
       <UI.NavItem>
         <Link href="/events" passHref>
           <UI.NavAnchor>Everything</UI.NavAnchor>
@@ -30,6 +30,6 @@ export const NavPills: React.FC = () => {
           <UI.NavAnchor>Sponsor Activities</UI.NavAnchor>
         </Link>
       </UI.NavItem>
-    </Nav>
+    </UI.Nav>
   );
 };
