@@ -9,10 +9,14 @@ export default async function handler<JSON = unknown>(
 ): Promise<void> {
   const files = await fs.promises.readdir("db/pages/");
   const arr: Array<string> = [];
-  files.forEach((file) => {
+  for (const file of files) {
     if (path.extname(file).toLowerCase() === ".yaml") {
-      arr.push(yaml.safeLoad(fs.readFileSync("db/pages/" + file, "utf8")));
+      const fileContent = await fs.promises.readFile(
+        "db/pages/" + file,
+        "utf8"
+      );
+      arr.push(yaml.safeLoad(fileContent));
     }
-  });
+  }
   return res.status(200).json(arr);
 }
