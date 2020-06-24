@@ -45,10 +45,11 @@ const set2Titles = [
 const set2Events: Array<ActivityCardProps> = [];
 for (let i = 0; i < 5; i++) {
   set2Events.push({
-    ...eventCard,
     event: {
-      ...eventCard.event,
-      title: set2Titles[i] || "Industry Expert Workshop",
+      title: set2Titles[i] || "...",
+      startTime: new Date("June 24, 2020 12:45:00"),
+      duration: 60,
+      infoUrl: "#",
       imgUrl: set2Images[i] || "#",
     },
   });

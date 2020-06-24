@@ -2,21 +2,19 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
-import styled from "styled-components";
 
 // custom components
 import { Set } from "../common/Set";
 import { Navbar } from "../common/Navbar";
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
-import { set1Info, set2Info } from "../libs";
-
-const CustomHeader = styled.h1`
-  color: ${(props) => props.theme.colors.primary};
-`;
-
-const EventsBlueWrapper = styled.div`
-  background: ${(props) => props.theme.colors.theme_lighter_blue};
-`;
+import { set2Info } from "../libs";
+import {
+  CustomHeader,
+  EventsBlueWrapper,
+  ColorSpan,
+  NavPillsContainer,
+  NavPills,
+} from "../common/Misc";
 
 /**
  * This page appears on root
@@ -27,16 +25,22 @@ const IndexPage = (): React.ReactNode => {
   return (
     <>
       <Head>
-        <title>This was a triumph</title>
+        <title>Events - TAMU Datathon</title>
       </Head>
       <Navbar></Navbar>
       <Container className="pt-5">
-        <CustomHeader>Events and Workshops</CustomHeader>
+        <CustomHeader>
+          <ColorSpan>Events and Workshops</ColorSpan>
+        </CustomHeader>
       </Container>
+
+      <NavPillsContainer>
+        <NavPills />
+      </NavPillsContainer>
 
       <EventsBlueWrapper>
         <Container className="pt-5">
-          <Set info={set1Info}></Set>
+          {/* <Set info={set1Info}></Set> */}
           <Set info={set2Info}></Set>
         </Container>
       </EventsBlueWrapper>
