@@ -12,7 +12,7 @@ export default async function handler<JSON = unknown>(
   for (const file of files) {
     if (path.extname(file).toLowerCase() === ".yaml") {
       const fileContent = await fs.promises.readFile(
-        "../../../../db/pages/" + file,
+        "db/pages/" + file,
         "utf8"
       );
       arr.push(yaml.safeLoad(fileContent));
