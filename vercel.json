@@ -1,6 +1,12 @@
 {
   "builds": [
-    { "src": "package.json", "use": "@now/next" }
+    { 
+      "src": "package.json",
+      "use": "@now/next",
+      "config": {
+        "includeFiles": ["db/**"]
+      } 
+    }
   ],
   "routes": [
     { "src": "/events/_next(.*)", "dest": "_next$1" },
