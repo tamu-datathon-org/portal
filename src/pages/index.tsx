@@ -14,6 +14,10 @@ const CustomHeader = styled.h1`
   color: ${(props) => props.theme.colors.primary};
 `;
 
+const EventsBlueWrapper = styled.div`
+  background: ${(props) => props.theme.colors.theme_lighter_blue};
+`;
+
 /**
  * This page appears on root
  */
@@ -28,10 +32,16 @@ const IndexPage = (): React.ReactNode => {
       <Navbar></Navbar>
       <Container className="pt-5">
         <CustomHeader>Events and Workshops</CustomHeader>
+      </Container>
 
-        <Set info={set1Info}></Set>
-        <Set info={set2Info}></Set>
+      <EventsBlueWrapper>
+        <Container className="pt-5">
+          <Set info={set1Info}></Set>
+          <Set info={set2Info}></Set>
+        </Container>
+      </EventsBlueWrapper>
 
+      <Container className="pt-5">
         <p>User Status: {status}</p>
         <p>Returned User:</p>
         <pre>{JSON.stringify(user, null, 4)}</pre>
