@@ -29,7 +29,8 @@ export const NavItem = styled(Nav.Item)`
   margin: 0 0.5rem;
   .active {
     color: ${(props) => props.theme.colors.indigo} !important;
-    background-color: ${(props) => props.theme.colors.theme_lighter_blue} !important;
+    background-color: ${(props) =>
+      props.theme.colors.theme_lighter_blue} !important;
   }
 `;
 
