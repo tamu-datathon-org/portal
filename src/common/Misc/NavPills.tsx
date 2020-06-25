@@ -3,14 +3,14 @@ import Link from "next/link";
 import PropTypes from "prop-types";
 
 import * as UI from "./style";
-import { NavItemProps } from "./interfaces";
+import { NavItemProps, NavPillsProps } from "./interfaces";
 
 /**
  * NavPills Component
  */
-export const NavPills: React.FC = ({ children }) => {
+export const NavPills: React.FC<NavPillsProps> = ({ children, activeKey }) => {
   return (
-    <UI.Nav variant="pills" defaultActiveKey="/events">
+    <UI.Nav variant="pills" activeKey={activeKey}>
       {children}
     </UI.Nav>
   );
@@ -18,6 +18,7 @@ export const NavPills: React.FC = ({ children }) => {
 
 NavPills.propTypes = {
   children: PropTypes.any,
+  activeKey: PropTypes.string,
 };
 
 // NavItem Component

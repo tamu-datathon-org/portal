@@ -49,7 +49,10 @@ export const EventInfoLinkContainer = styled.div`
 export const EventInfoLink = styled.a`
   text-decoration: none;
   font-weight: 700;
-  background-image: linear-gradient(#c3e5ff 0%, #c3e5ff 100%);
+  background-image: linear-gradient(
+    ${(props) => props.theme.colors.highlight_blue} 0%,
+    ${(props) => props.theme.colors.highlight_blue} 100%
+  );
   background-size: 100% 0.8em;
   background-repeat: no-repeat;
   background-position: 0px 6px;

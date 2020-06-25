@@ -36,7 +36,7 @@ const IndexPage = (): React.ReactNode => {
       </Container>
 
       <NavPillsContainer>
-        <NavPills>
+        <NavPills activeKey="/events">
           <NavItem href="/events">Everything</NavItem>
           <NavItem href="/day-1">Day 1</NavItem>
           <NavItem href="/day-2">Day 2</NavItem>
@@ -45,7 +45,7 @@ const IndexPage = (): React.ReactNode => {
       </NavPillsContainer>
 
       <EventsBlueWrapper>
-        <Container className="pt-5">
+        <Container className="pt-4">
           <Set info={set2Info}></Set>
         </Container>
       </EventsBlueWrapper>

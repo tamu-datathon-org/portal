@@ -1,5 +1,11 @@
+import React from "react";
+
+export interface NavPillsProps {
+  children: React.ReactNode;
+  activeKey?: string;
+}
+
 export interface NavItemProps {
   href: string;
-  // eslint-disable-next-line
-  children: any;
+  children: React.ReactNode;
 }
