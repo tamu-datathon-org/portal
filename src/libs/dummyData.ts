@@ -41,13 +41,20 @@ const set2Titles = [
   "Epidemiology & Mitigation with Python",
   "Geology and Data Science",
 ];
+const set2Times = [
+  "June 26, 2020 12:45:00",
+  "June 27, 2020 12:45:00",
+  "June 28, 2020 12:45:00",
+  "June 29, 2020 12:45:00",
+  "June 30, 2020 12:45:00",
+];
 
 const set2Events: Array<ActivityCardProps> = [];
 for (let i = 0; i < 5; i++) {
   set2Events.push({
     event: {
       title: set2Titles[i] || "...",
-      startTime: new Date("June 24, 2020 12:45:00"),
+      startTime: new Date(set2Times[i]),
       duration: 60,
       infoUrl: "#",
       imgUrl: set2Images[i] || "#",

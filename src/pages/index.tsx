@@ -14,6 +14,7 @@ import {
   ColorSpan,
   NavPillsContainer,
   NavPills,
+  NavItem,
 } from "../common/Misc";
 
 /**
@@ -35,12 +36,16 @@ const IndexPage = (): React.ReactNode => {
       </Container>
 
       <NavPillsContainer>
-        <NavPills />
+        <NavPills>
+          <NavItem href="/events">Everything</NavItem>
+          <NavItem href="/day-1">Day 1</NavItem>
+          <NavItem href="/day-2">Day 2</NavItem>
+          <NavItem href="/sponsor-activities">Sponsor Activities</NavItem>
+        </NavPills>
       </NavPillsContainer>
 
       <EventsBlueWrapper>
         <Container className="pt-5">
-          {/* <Set info={set1Info}></Set> */}
           <Set info={set2Info}></Set>
         </Container>
       </EventsBlueWrapper>

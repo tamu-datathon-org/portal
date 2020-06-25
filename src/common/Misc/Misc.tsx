@@ -1,35 +1,31 @@
 import React from "react";
 import Link from "next/link";
-import { Nav } from "react-bootstrap";
+import PropTypes from "prop-types";
 
 import * as UI from "./style";
+import { NavItemProps } from "./interfaces";
 
 /**
  * NavPills Component
  */
-export const NavPills: React.FC = () => {
+export const NavPills: React.FC = ({ children }) => {
   return (
-    <UI.Nav variant="pills" defaultActiveKey="/events">
-      <UI.NavItem>
-        <Link href="/events" passHref>
-          <UI.NavAnchor>Everything</UI.NavAnchor>
-        </Link>
-      </UI.NavItem>
-      <UI.NavItem>
-        <Link href="/day-1" passHref>
-          <UI.NavAnchor>Day 1</UI.NavAnchor>
-        </Link>
-      </UI.NavItem>
-      <UI.NavItem>
-        <Link href="/day-2" passHref>
-          <UI.NavAnchor>Day 2</UI.NavAnchor>
-        </Link>
-      </UI.NavItem>
-      <UI.NavItem>
-        <Link href="/sponsor-activities" passHref>
-          <UI.NavAnchor>Sponsor Activities</UI.NavAnchor>
-        </Link>
-      </UI.NavItem>
-    </UI.Nav>
+    <UI.Nav variant="pills" defaultActiveKey="/events">{children}</UI.Nav>
   );
+};
+
+// NavItem Component
+// <NavItem href="/day-1">Everything</NavItem>
+export const NavItem: React.FC<NavItemProps> = ({ href: hrefEntry, children }) => {
+  return (
+    <UI.NavItem>
+      <Link href={hrefEntry} passHref>
+        <UI.NavAnchor>{children}</UI.NavAnchor>
+      </Link>
+    </UI.NavItem>
+  );
+};
+
+NavItem.propTypes = {
+  href: PropTypes.string.isRequired
 };
