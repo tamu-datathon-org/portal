@@ -2,13 +2,20 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import Head from "next/head";
-import styled from "styled-components";
+
+// custom components
+import { Set } from "../common/Set";
 import { Navbar } from "../common/Navbar";
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
-
-const CustomHeader = styled.h1`
-  color: ${(props) => props.theme.colors.primary};
-`;
+import { set2Info } from "../libs";
+import {
+  CustomHeader,
+  EventsBlueWrapper,
+  ColorSpan,
+  NavPillsContainer,
+  NavPills,
+  NavItem,
+} from "../common/Misc";
 
 /**
  * This page appears on root
@@ -19,21 +26,31 @@ const IndexPage = (): React.ReactNode => {
   return (
     <>
       <Head>
-        <title>This was a triumph</title>
+        <title>Events - TAMU Datathon</title>
       </Head>
       <Navbar></Navbar>
       <Container className="pt-5">
-        <CustomHeader>Hello Next.js 👋</CustomHeader>
-        <p>
-          <b>Folder structure:</b> pages go in <code>pages/</code>,
-          components/hooks/etc go in <code>common/</code> in which the folder
-          has an index.tsx that exports all the child components like this:{" "}
-          <code>export * from "./WhateverComponent"</code>
-        </p>
-        <p>
-          For component files don't use default export (only use default export
-          for page files)
-        </p>
+        <CustomHeader>
+          <ColorSpan>Events and Workshops</ColorSpan>
+        </CustomHeader>
+      </Container>
+
+      <NavPillsContainer>
+        <NavPills activeKey="/events">
+          <NavItem href="/events">Everything</NavItem>
+          <NavItem href="/day-1">Day 1</NavItem>
+          <NavItem href="/day-2">Day 2</NavItem>
+          <NavItem href="/sponsor-activities">Sponsor Activities</NavItem>
+        </NavPills>
+      </NavPillsContainer>
+
+      <EventsBlueWrapper>
+        <Container className="pt-4">
+          <Set info={set2Info}></Set>
+        </Container>
+      </EventsBlueWrapper>
+
+      <Container className="pt-5">
         <p>User Status: {status}</p>
         <p>Returned User:</p>
         <pre>{JSON.stringify(user, null, 4)}</pre>

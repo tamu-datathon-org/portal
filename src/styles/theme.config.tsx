@@ -37,10 +37,13 @@ export class THEMES {
       light: "#f8f9fa",
       dark: "#343a40",
 
+      highlight_blue: "#e0f1ff",
+
       // TAMU Datathon Theme Colors
       theme_dark_green: "#22b9a5",
       theme_light_green: "#86eace",
       theme_light_blue: "#4fc2f8",
+      theme_lighter_blue: "#F8FAFD",
       splash_light_purple: "#7c408a",
       splash_light_blue: "#3f5aaa",
     },
