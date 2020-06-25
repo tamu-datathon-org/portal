@@ -25,7 +25,7 @@ export const EventsBlueWrapper = styled.div`
   background: ${(props) => props.theme.colors.theme_lighter_blue};
 `;
 
-export const NavItem = styled(Nav.Item)`
+export const _NavItem = styled(Nav.Item)`
   margin: 0 0.5rem;
   .active {
     color: ${(props) => props.theme.colors.indigo} !important;

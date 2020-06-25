@@ -21,15 +21,14 @@ NavPills.propTypes = {
 };
 
 // NavItem Component
-// <NavItem href="/day-1">Everything</NavItem>
 export const NavItem: React.FC<NavItemProps> = (props) => {
   const { href: hrefEntry, children } = props;
   return (
-    <UI.NavItem>
+    <UI._NavItem>
       <Link href={hrefEntry} passHref>
         <UI.NavAnchor>{children}</UI.NavAnchor>
       </Link>
-    </UI.NavItem>
+    </UI._NavItem>
   );
 };
 
