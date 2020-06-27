@@ -1,5 +1,4 @@
 import { getPostBySlug, getAllPosts } from '../../src/libs/api'
-import markdownToHtml from '../../src/libs/markdownToHtml'
 
 const Post = (post: JSON) => {
   return (
@@ -17,7 +16,7 @@ type Params = {
 
 export async function getStaticProps({ params }: Params) {
   const post = getPostBySlug(params.slug)
-  const content = await markdownToHtml(post.content || '')
+  const content = await (post.content || '')
   
   return {
     props: {
