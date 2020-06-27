@@ -7,12 +7,12 @@ import {
 } from "react-bootstrap";
 
 export const Navbar = styled(ReactNavbar)`
-  border-bottom: solid 1px #cfcfcf;
+  border-bottom: solid 3px #eee;
 `;
 
 export const NavbarLogo = styled.img`
   width: 40px;
-  height 40px;
+  height: 40px;
 `;
 
 export const NavLink = styled(ReactNav.Link)`
@@ -24,6 +24,7 @@ export const NavbarSpan = styled.span`
   display: inline-flex;
   align-items: center;
   width: 120px;
+  margin-left: 4em;
 `;
 
 export const NavUserInfoDivider = styled.hr`
@@ -35,7 +36,7 @@ export const NavUserInfo = styled.small`
 `;
 
 export const DropdownLink = styled.a`
-  color: ${(props) => props.theme.colors.primary}} !important;
+  color: ${(props) => props.theme.colors.primary} !important;
   margin: 10px auto;
   display: block;
 
