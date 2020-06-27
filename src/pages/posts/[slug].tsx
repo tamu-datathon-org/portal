@@ -1,4 +1,4 @@
-import { getPostBySlug, getAllPosts } from "../../src/libs/api";
+import { getPostBySlug, getAllPosts } from "../../libs/api";
 
 const Post = (post: JSON) => {
   return JSON.stringify(post);
