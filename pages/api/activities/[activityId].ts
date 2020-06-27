@@ -6,7 +6,7 @@ export default async function handler<JSON = unknown>(
   { query: { activityId } }: NextApiRequest,
   res: NextApiResponse
 ): Promise<void> {
-  const file = "../../../../db/activities/" + activityId + ".md";
+  const file = "db/activities/" + activityId + ".md";
   let str;
   if (!fs.existsSync(file)) {
     str = "{}";
