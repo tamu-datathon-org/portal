@@ -15,7 +15,7 @@ const proxyToLocalhost = (req, res, next) => {
     const path = req.originalUrl.split("/").slice(1);
     let url = req.originalUrl;
     if (path[0] == "events") {
-      url = path.slice(1).length >= 1 ? path.slice(1).join("/") : "";
+      url = path.length >= 1 ? path.join("/") : "";
     }
     req.originalUrl = url;
     req.headers["host"] = "tamudatathon.com";
