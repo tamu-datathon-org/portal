@@ -6,8 +6,20 @@ module.exports = {
   sassOptions: {
     includePaths: [path.join(__dirname)],
   },
-  assetPrefix: BASE_PATHNAME ? `/${BASE_PATHNAME}` : "",
-  publicRuntimeConfig: {
-    basePath: BASE_PATHNAME ? `/${BASE_PATHNAME}` : "",
+  experimental: {
+    rewrites() {
+      return [
+        // TODO: test out basePath to replace below rewrites
+        {
+          source: "/events/_next/:path*",
+          destination: "/_next/:path*",
+        },
+        {
+          source: "/events/static/:path*",
+          destination: "/static/:path*",
+        },
+      ];
+    },
   },
+  assetPrefix: BASE_PATHNAME ? `/${BASE_PATHNAME}` : "",
 };

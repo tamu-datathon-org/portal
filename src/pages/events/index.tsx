@@ -4,10 +4,10 @@ import { Container } from "react-bootstrap";
 import Head from "next/head";
 
 // custom components
-import { Set } from "../common/Set";
-import { Navbar } from "../common/Navbar";
-import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
-import { set2Info } from "../libs";
+import { Set } from "../../common/Set";
+import { Navbar } from "../../common/Navbar";
+import { useActiveUser, UserCurrentStatus } from "../../common/UserProvider";
+import { set2Info } from "../../libs";
 import {
   CustomHeader,
   EventsBlueWrapper,
@@ -15,7 +15,7 @@ import {
   NavPillsContainer,
   NavPills,
   NavItem,
-} from "../common/Misc";
+} from "../../common/Misc";
 
 /**
  * This page appears on root
