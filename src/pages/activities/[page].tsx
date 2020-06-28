@@ -1,37 +1,34 @@
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
+import { GetStaticProps, GetStaticPaths } from "next";
+import React from "react";
 
-const Page = (page: JSON) => {
-  return JSON.stringify(page);
+const Page: React.FC = ({ page }: any) => {
+  return <pre>{JSON.stringify(page)}</pre>;
 };
 
 export default Page;
 
-type Params = {
-  params: {
-    page: string;
-  };
-};
-
-export async function getStaticProps({ params }: Params) {
-  const page = await getActivityByName(params.page);
+export const getStaticProps: GetStaticProps = async ({ params }) => {
+  const activityName = (params ? params.page : "") as string;
+  const page = await getActivityByName(activityName);
   return {
     props: {
       page,
     },
   };
-}
+};
 
-export async function getStaticPaths() {
+export const getStaticPaths: GetStaticPaths = async () => {
   const pages = getAllActivities();
 
   return {
     paths: pages.map((pages) => {
       return {
         params: {
-          page: pages.data.id,
+          page: pages.id,
         },
       };
     }),
     fallback: false,
   };
-}
+};
