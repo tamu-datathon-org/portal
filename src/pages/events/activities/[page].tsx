@@ -1,4 +1,7 @@
-import { getActivityByName, getAllActivities } from "../../../libs";
+import {
+  getActivityByName,
+  getAllActivities,
+} from "../../../libs/activitiesAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
 import { Container } from "react-bootstrap";
