@@ -4,9 +4,7 @@
   ],
   "routes": [
     { "src": "/events/_next(.*)", "dest": "_next$1" },
-    { "src": "/events", "dest": "/" },
-    { "src": "/events(.*)", "dest": "$1" },
-    { "src": "/auth(.*)", "dest": "https://td-gatekeeper.herokuapp.com$1" },
-    { "src": "/(.*)", "dest": "https://gigabowser.now.sh/$1" }
+    { "src": "/events(.*)", "dest": "/events$1" },
+    { "src": "/(.*)", "dest": "https://dev.tamudatathon.com/$1" }
   ]
 }
