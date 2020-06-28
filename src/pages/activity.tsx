@@ -14,7 +14,7 @@ const Activity = (): React.ReactNode => {
     <>
       <Navbar></Navbar>
       <BackBtn url={"/events"}></BackBtn>
-      <Media type={"youtube"} link={"https://www.youtube.com/watch?v=5qap5aO4i9A"}></Media>
+      <Media link={"#"} type={"youtube"}></Media>
       <ActivityInfo></ActivityInfo>
     </>
   );
