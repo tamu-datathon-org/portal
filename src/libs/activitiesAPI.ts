@@ -5,10 +5,10 @@ import matter from "gray-matter";
 const activityDirectory = join(process.cwd(), "db/activities");
 
 /**
- * @returns names of files in activityDirectory path
+ * @returns {Promise<string[]>} names of files in activityDirectory path
  */
-export function getActivityNames(): string[] {
-  return fs.readdirSync(activityDirectory);
+export async function getActivityNames(): Promise<string[]> {
+  return fs.promises.readdir(activityDirectory);
 }
 
 export interface Activity {
@@ -16,7 +16,7 @@ export interface Activity {
   id: string;
   startTime: Date;
   endTime: Date;
-  mediaType: string;
+  mediaType: "meeting_url" | "embed_url";
   mediaLink: string;
   thumbnail: string;
   presenter: string;
@@ -27,22 +27,23 @@ export interface Activity {
 
 /**
  * Returns contents of an activity file in activityDirectory as JSON
- * @param page ID of the activity (filename without .md)
+ * @param {string} page ID of the activity (filename without .md)
+ * @returns {Promise<Activity>}
  */
-export function getActivityByName(page: string): Activity {
+export async function getActivityByName(page: string): Promise<Activity> {
   const realPage = page.replace(/\.md$/, "");
   const fullPath = join(activityDirectory, `${realPage}.md`);
-  const fileContents = fs.readFileSync(fullPath, "utf8");
+  const fileContents = await fs.promises.readFile(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
   return { ...data, content } as Activity;
 }
 
 /**
- * @returns list of contents of the activitiy files in the activityDirectory path
+ * @returns {Promise<Activity[]>} list of contents of the activitiy files in the activityDirectory path
  */
-export function getAllActivities(): Activity[] {
-  const activityNames = getActivityNames();
+export async function getAllActivities(): Promise<Activity[]> {
+  const activityNames = await getActivityNames();
   const pages = activityNames.map((page) => getActivityByName(page));
-  return pages;
+  return Promise.all(pages);
 }

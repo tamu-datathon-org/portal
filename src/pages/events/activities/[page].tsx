@@ -1,9 +1,16 @@
-import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
+import { getActivityByName, getAllActivities } from "../../../libs";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
+import { Container } from "react-bootstrap";
 
+// TODO: Replace Component with a proper one!
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Page: React.FC = ({ page }: any) => {
-  return <pre>{JSON.stringify(page)}</pre>;
+  return (
+    <Container>
+      <pre>{JSON.stringify(page, null, 4)}</pre>
+    </Container>
+  );
 };
 
 export default Page;
@@ -19,7 +26,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pages = getAllActivities();
+  const pages = await getAllActivities();
 
   return {
     paths: pages.map((pages) => {
