@@ -15,6 +15,10 @@ module.exports = {
           destination: "/_next/:path*",
         },
         {
+          source: "/events/_next/webpack-hmr:path*",
+          destination: "/_next/webpack-hmr:path*",
+        },
+        {
           source: "/events/static/:path*",
           destination: "/static/:path*",
         },

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const SectionInfo = styled.p`
+export const SectionInfo = styled.div`
   margin-bottom: 0.75em;
 `;
 export const SectionTitle = styled.h4`
