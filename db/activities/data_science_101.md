@@ -3,10 +3,16 @@ name: Data Science 101
 id: data_science_101
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
-mediaType: "meeting_url"
+mediaType: join_url
 mediaLink: https://tamu.zoom.us/j/28347923874
 thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
 presenter: Jon Doe
+presenterAbout: Some information about Jon Doe
+presenterSocials:
+  - type: Facebook
+    link: https://www.facebook.com/public/John-Doe
+  - type: LinkedIn
+    link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
 priority: 7
 relatedActivities:
   - data_science_202

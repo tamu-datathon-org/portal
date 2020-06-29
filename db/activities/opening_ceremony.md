@@ -7,6 +7,12 @@ mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/Y6ljFaKRTrI
 thumbnail: https://picsum.photos/300
 presenter: Jon Doe
+presenterAbout: Some information about Jon Doe
+presenterSocials:
+  - type: Facebook
+    link: https://www.facebook.com/public/John-Doe
+  - type: LinkedIn
+    link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
 priority: 7
 relatedActivities:
   - data_science_202
