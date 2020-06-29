@@ -48,7 +48,7 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages }) => {
       <NavPillsContainer>
         <NavPills activeKey={`/events/${page?.id}`}>
           {allPages?.map((p) => (
-            <NavItem href={`/events/${p.id}`} key={p.id}>
+            <NavItem href="/events/[tabId]" as={`/events/${p.id}`} key={p.id}>
               {p.name}
             </NavItem>
           ))}
