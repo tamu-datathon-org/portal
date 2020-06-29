@@ -27,7 +27,7 @@ export const EventImg = styled.img`
   object-fit: cover;
 `;
 
-export const EventInfo = styled.p`
+export const EventInfo = styled.div`
   padding: 0.75em;
   margin-bottom: 0px;
 `;
