@@ -5,17 +5,6 @@ export const InfoContainer = styled.div`
     padding: 3em 10em;
 `;
 
-export const DescriptionContainer = styled.div`
-`;
-
-export const DetailsContainer = styled.div`
-    padding-left: 5em;
-`;
-
-export const Flexbox = styled.div`
-    display: flex;
-`;
-
 export const Button = styled.button`
     width: 100%;
     border-radius: 0.25rem;

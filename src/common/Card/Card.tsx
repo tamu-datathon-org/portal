@@ -42,7 +42,7 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
         </UI.EventTime>
         <UI.EventInfoLinkContainer>
           <UI.EventInfoLink href={event.infoUrl || "#"}>
-            Learn more
+            Learn more <FontAwesomeIcon icon={faArrowRight} />
           </UI.EventInfoLink>
         </UI.EventInfoLinkContainer>
       </UI.EventInfo>

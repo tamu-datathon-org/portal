@@ -28,6 +28,11 @@ export const formatTime = (time: Date, endTime: Date): string => {
 };
 
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
+
+  const handleClick = () => {
+    console.log('user wants to be made interested')
+  }
+
   return (
     <>
       <UI.InfoContainer>
@@ -38,7 +43,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
             <p>{props.description}</p>
           </Col>
           <Col lg={3} md={5}>
-            <UI.Button>🤔 Mark me interested</UI.Button>
+            <UI.Button onClick={handleClick}>🤔 Mark me interested</UI.Button>
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
