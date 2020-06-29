@@ -17,7 +17,7 @@ export const Flexbox = styled.div`
 `;
 
 export const Button = styled.button`
-    width: 18em;
+    width: 100%;
     border-radius: 0.25rem;
     padding: 0.25em 1em;
     background: white;
