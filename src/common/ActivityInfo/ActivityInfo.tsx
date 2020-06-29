@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 import * as UI from "./style";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
@@ -28,10 +29,20 @@ export const formatTime = (time: Date, endTime: Date): string => {
 };
 
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
+  const [interestedBtnText, setInterestedBtnText] = useState(
+    "🤔 Mark me interested"
+  );
 
   const handleClick = () => {
-    console.log('user wants to be made interested')
-  }
+    if (interestedBtnText == "🙄 I'm no longer interested") {
+      setInterestedBtnText("🤔 Mark me interested")
+      console.log("user is interested");
+    } else {
+      setInterestedBtnText("🙄 I'm no longer interested")
+      console.log("user is no longer interested");
+    }
+    
+  };
 
   return (
     <>
@@ -43,7 +54,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
             <p>{props.description}</p>
           </Col>
           <Col lg={3} md={5}>
-            <UI.Button onClick={handleClick}>🤔 Mark me interested</UI.Button>
+            <UI.Button onClick={handleClick}>{interestedBtnText}</UI.Button>
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
