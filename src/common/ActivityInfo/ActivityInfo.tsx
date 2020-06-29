@@ -6,6 +6,11 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import moment from "moment";
 
+export interface SocialInfo {
+  type: string;
+  link: string;
+}
+
 export interface InfoProps {
   title: string;
   description: string;
@@ -13,8 +18,7 @@ export interface InfoProps {
   endTime: Date;
   speakerName: string;
   speakerAbout: string;
-  speakerLinkedIn: string;
-  speakerSocials: any;
+  speakerSocials: SocialInfo[];
   relatedActivities?: string[];
 }
 
@@ -35,13 +39,15 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
 
   const handleClick = () => {
     if (interestedBtnText == "🙄 I'm no longer interested") {
-      setInterestedBtnText("🤔 Mark me interested")
+      setInterestedBtnText("🤔 Mark me interested");
       console.log("user is interested");
     } else {
-      setInterestedBtnText("🙄 I'm no longer interested")
+      setInterestedBtnText("🙄 I'm no longer interested");
       console.log("user is no longer interested");
     }
-    
+    /**
+     * TODO: Add activity to list of activities user is interested in during the session.
+     */
   };
 
   return (
@@ -64,7 +70,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 <Card.Title>Presented By:</Card.Title>
                 <Card.Text>{props.speakerName}</Card.Text>
                 <Card.Title>About the Speaker:</Card.Title>
-                {props.speakerSocials.map((social: any) => (
+                {props.speakerSocials.map((social: SocialInfo) => (
                   <Card.Link key={social.type} href={social.link}>
                     {social.type}
                   </Card.Link>

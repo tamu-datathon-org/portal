@@ -21,7 +21,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       </>
     );
   } else if (props.type == "join_url") {
-    let callOngoing: boolean = true;
+    const callOngoing = true;
     let callStatus: string, callDescription: string;
     let joinBtn;
 
