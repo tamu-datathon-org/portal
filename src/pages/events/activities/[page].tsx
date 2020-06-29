@@ -1,18 +1,25 @@
+import React from "react";
+import { Navbar } from "../../../common/Navbar";
+import { BackBtn } from "../../../common/BackBtn";
+import { Media } from "../../../common/Media";
+import { ActivityInfo } from "../../../common/ActivityInfo";
 import {
   getActivityByName,
   getAllActivities,
 } from "../../../libs/activitiesAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
-import React from "react";
 import { Container } from "react-bootstrap";
 
 // TODO: Replace Component with a proper one!
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 const Page: React.FC = ({ page }: any) => {
   return (
-    <Container>
-      <pre>{JSON.stringify(page, null, 4)}</pre>
-    </Container>
+    <>
+      <Navbar></Navbar>
+      <BackBtn url={"/events"}></BackBtn>
+      <Media link={page.mediaLink} type={page.mediaType}></Media>
+      <ActivityInfo title={page.name} description={page.content} startTime={new Date(page.startTime)} endTime={new Date(page.endTime)} speakerName={page.presenter} speakerAbout={page.presenterAbout} speakerLinkedIn={"#"} speakerSocials={page.presenterSocials} relatedActivities={page.relatedActivities}></ActivityInfo>
+    </>
   );
 };
 
