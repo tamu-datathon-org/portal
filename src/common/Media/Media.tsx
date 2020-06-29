@@ -1,14 +1,5 @@
 import React from "react";
-import fs from "graceful-fs";
 import * as UI from "./style";
-
-const getLink = async () => {
-  const file = "db/activities/data_science_101.md";
-  if (fs.existsSync(file)) {
-    const fileContent = await fs.promises.readFile(file, "utf8");
-  }
-  return "https://www.youtube.com/embed/5qap5aO4i9A";
-};
 
 export interface MediaProps {
   type: string;
@@ -16,13 +7,12 @@ export interface MediaProps {
 }
 
 export const Media: React.FC<MediaProps> = (props: MediaProps) => {
-  const link = getLink();
-  if (props.type === "youtube") {
+  if (props.type === "embed_url") {
     return (
       <>
         <UI.MediaContainer>
           <UI.YtMedia
-            src={link.toString()}
+            src={props.link}
             frameBorder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
@@ -30,7 +20,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
         </UI.MediaContainer>
       </>
     );
-  } else if (props.type == "zoom") {
+  } else if (props.type == "join_url") {
     let callOngoing: boolean = true;
     let callStatus: string, callDescription: string;
     let joinBtn;
@@ -40,7 +30,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       callDescription = `Click Join to join in on the discussion. Can't make it? Don't worry,
       a VOD will show up here afterwards.`;
       joinBtn = (
-        <UI.Button href={link.toString()}>
+        <UI.Button href={props.link}>
           <UI.BtnText>Join Now</UI.BtnText>
         </UI.Button>
       );
