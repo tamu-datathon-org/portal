@@ -7,7 +7,7 @@ import {
 } from "react-bootstrap";
 
 export const Navbar = styled(ReactNavbar)`
-  border-bottom: solid 3px #eee;
+  border-bottom: solid 1px #cfcfcf;
 `;
 
 export const NavbarLogo = styled.img`
@@ -24,7 +24,6 @@ export const NavbarSpan = styled.span`
   display: inline-flex;
   align-items: center;
   width: 120px;
-  margin-left: 4em;
 `;
 
 export const NavUserInfoDivider = styled.hr`
