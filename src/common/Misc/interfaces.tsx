@@ -8,4 +8,5 @@ export interface NavPillsProps {
 export interface NavItemProps {
   href: string;
   children: React.ReactNode;
+  as?: string;
 }

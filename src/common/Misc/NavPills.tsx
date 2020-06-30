@@ -23,11 +23,11 @@ NavPills.propTypes = {
 
 // NavItem Component
 export const NavItem: React.FC<NavItemProps> = (props) => {
-  const { href: hrefEntry, children } = props;
+  const { href: hrefEntry, as, children } = props;
   return (
     <UI._NavItem>
-      <Link href={hrefEntry} passHref>
-        <UI.NavAnchor>{children}</UI.NavAnchor>
+      <Link href={hrefEntry} as={as} passHref prefetch>
+        <UI.NavAnchor eventKey={as}>{children}</UI.NavAnchor>
       </Link>
     </UI._NavItem>
   );
@@ -38,4 +38,5 @@ export const NavItem: React.FC<NavItemProps> = (props) => {
 NavItem.propTypes = {
   href: PropTypes.string.isRequired,
   children: PropTypes.any,
+  as: PropTypes.string,
 };
