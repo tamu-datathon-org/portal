@@ -30,7 +30,6 @@ export const Button = styled.a`
   }
 `;
 
-
 export const BtnText = styled.h5`
   margin: 0px;
 `;
