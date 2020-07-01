@@ -22,6 +22,10 @@ module.exports = {
           source: "/events/static/:path*",
           destination: "/static/:path*",
         },
+        {
+          source: "/events/api/:path*",
+          destination: "/api/:path*",
+        },
       ];
     },
   },
