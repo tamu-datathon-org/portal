@@ -1,6 +1,6 @@
 import { IncomingMessage, ServerResponse } from "http";
 import { User, GatekeeperRequestError } from "../common/UserProvider";
-import { fetcher, getBaseUrl, authenticatedFetch } from "./fetcher";
+import { getBaseUrl, authenticatedFetch } from "./fetcher";
 
 type Request = IncomingMessage & { cookies: { accessToken: string } };
 
