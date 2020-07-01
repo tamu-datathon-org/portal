@@ -13,11 +13,6 @@ export const ZoomContainer = styled.div`
   background-color: #f8fafd;
 `;
 
-export const YtMedia = styled.iframe`
-  /* height: 500px;
-  width: 50%; */
-`;
-
 export const Button = styled.a`
   display: block;
   width: 100%;

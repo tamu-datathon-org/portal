@@ -14,14 +14,14 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       <>
         <UI.MediaContainer>
           <Row>
-            <UI.YtMedia
+            <iframe
               width="800"
               height="450"
               src={props.link}
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
-            ></UI.YtMedia>
+            ></iframe>
           </Row>
         </UI.MediaContainer>
       </>
