@@ -83,7 +83,21 @@ TabPage.propTypes = {
 
 export default TabPage;
 
+/**
+ * (1/2) Example of how to get activity sets for page "lectures"
+ */
+import { getPageSets } from "../../libs/setsAPI";
+
 export const getStaticProps: GetStaticProps = async ({ params }) => {
+  /**
+   * (2/2) Example of how to get activity sets for page "lectures"
+   */
+  const result1 = await getPageSets("lectures");
+  console.log(result1);
+  console.log("     -----------------------------     ");
+  const result2 = await getPageSets("day_1");
+  console.log(result2);
+
   const tabId = (params ? params.tabId : "") as string;
   const page = await getPageByName(tabId);
   const allPages = await getAllPages();
