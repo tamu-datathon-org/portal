@@ -19,6 +19,7 @@
     "@types/js-yaml": "^3.12.5",
     "bootstrap": "^4.5.0",
     "gray-matter": "^4.0.2",
+    "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.26.0",
     "next": "9.3.5",
     "react": "16.13.1",
