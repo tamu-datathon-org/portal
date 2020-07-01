@@ -10,14 +10,33 @@ export async function fetcher<JSON = unknown>(
   const res = await fetch(input, {
     ...init,
     headers: {
-      accept: "application/json",
       ...init?.headers,
+      accept: "application/json",
     },
   });
   return res.json();
 }
 
-export const getBaseUrl = (req: IncomingMessage) => {
+type AuthenticatedRequest = IncomingMessage & {
+  cookies: { accessToken: string };
+};
+
+export const authenticatedFetch = <JSON = unknown>(
+  input: RequestInfo,
+  req: AuthenticatedRequest,
+  init?: RequestInit
+): Promise<JSON> => {
+  const { accessToken } = req.cookies;
+  return fetcher(input, {
+    ...init,
+    headers: {
+      ...init?.headers,
+      Cookie: `accessToken=${accessToken}`,
+    },
+  });
+};
+
+export const getBaseUrl = (req: IncomingMessage): string => {
   const httpProto = req.headers["x-forwarded-proto"] || "https";
   return `${httpProto}://${req.headers.host}`;
 };

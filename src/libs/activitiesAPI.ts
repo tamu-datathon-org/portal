@@ -14,6 +14,7 @@ export async function getActivityNames(): Promise<string[]> {
 export interface Activity {
   name: string;
   id: string;
+  eventId: string;
   startTime: Date;
   endTime: Date;
   mediaType: "meeting_url" | "embed_url";

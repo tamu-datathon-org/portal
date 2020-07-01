@@ -1,6 +1,6 @@
 import { IncomingMessage, ServerResponse } from "http";
 import { User, GatekeeperRequestError } from "../common/UserProvider";
-import { fetcher, getBaseUrl } from "./fetcher";
+import { fetcher, getBaseUrl, authenticatedFetch } from "./fetcher";
 
 type Request = IncomingMessage & { cookies: { accessToken: string } };
 
@@ -13,14 +13,9 @@ type AuthenticatedRouteHandler = (
 export const authenticatedRoute = (
   handler: AuthenticatedRouteHandler
 ) => async (req: Request, res: ServerResponse): Promise<any> => {
-  const { accessToken } = req.cookies;
-  const response: User | GatekeeperRequestError = await fetcher(
+  const response: User | GatekeeperRequestError = await authenticatedFetch(
     `${getBaseUrl(req)}/auth/user`,
-    {
-      headers: {
-        Cookie: `accessToken=${accessToken}`,
-      },
-    }
+    req
   );
 
   if ((response as GatekeeperRequestError).statusCode === 401)
