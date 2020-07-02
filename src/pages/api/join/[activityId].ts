@@ -26,7 +26,7 @@ const joinEventHandler = async (
     body: JSON.stringify(payload),
     headers: {
       "Gatekeeper-Integration": process.env
-        .GATEKEEPER_INTEGRATION_KEY as string,
+        .GATEKEEPER_INTEGRATION_SECRET as string,
       "Content-Type": "application/json",
     },
   });
