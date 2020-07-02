@@ -25,7 +25,8 @@ const joinEventHandler = async (
     method: "POST",
     body: JSON.stringify(payload),
     headers: {
-      "Gatekeeper-Integration": "",
+      "Gatekeeper-Integration": process.env
+        .GATEKEEPER_INTEGRATION_KEY as string,
       "Content-Type": "application/json",
     },
   });
