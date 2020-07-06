@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
 export interface MediaProps {
-  type: string;
+  type: "embed_url" | "meeting_url";
   link: string;
 }
 
