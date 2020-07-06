@@ -1,20 +1,17 @@
-import { IncomingMessage, ServerResponse } from "http";
+import { NextApiRequest, NextApiResponse } from "next";
 import { authenticatedRoute } from "../../../libs/middleware";
 import { User } from "../../../common/UserProvider";
 import { getBaseUrl, authenticatedFetch } from "../../../libs";
 import { getActivityByName } from "../../../libs/activitiesAPI";
 
-type Request = IncomingMessage & {
-  query: { activityId: string };
-  cookies: { accessToken: string };
-};
-
 const joinEventHandler = async (
-  req: Request,
-  res: ServerResponse,
+  req: NextApiRequest,
+  res: NextApiResponse,
   user: User
 ): Promise<void> => {
-  const { eventId, mediaLink } = await getActivityByName(req.query.activityId);
+  const { eventId, mediaLink } = await getActivityByName(
+    req.query.activityId as string
+  );
 
   const payload = {
     eventId,

@@ -1,18 +1,16 @@
-import { IncomingMessage, ServerResponse } from "http";
+import { NextApiRequest, NextApiResponse } from "next";
 import { User, GatekeeperRequestError } from "../common/UserProvider";
 import { getBaseUrl, authenticatedFetch } from "./fetcher";
 
-type Request = IncomingMessage & { cookies: { accessToken: string } };
-
 type AuthenticatedRouteHandler = (
-  req: IncomingMessage & any,
-  res: ServerResponse & any,
+  req: NextApiRequest,
+  res: NextApiResponse,
   user: User
-) => any;
+) => void;
 
 export const authenticatedRoute = (
   handler: AuthenticatedRouteHandler
-) => async (req: Request, res: ServerResponse): Promise<any> => {
+) => async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
   const response: User | GatekeeperRequestError = await authenticatedFetch(
     `${getBaseUrl(req)}/auth/user`,
     req
