@@ -2,7 +2,7 @@ import React from "react";
 import { Navbar } from "../../../common/Navbar";
 import { BackBtn } from "../../../common/BackBtn";
 import { Media } from "../../../common/Media";
-import { ActivityInfo } from "../../../common/ActivityInfo";
+import { ActivityInfo, SocialInfo } from "../../../common/ActivityInfo";
 import {
   getActivityByName,
   getAllActivities,
@@ -10,12 +10,31 @@ import {
 import { GetStaticProps, GetStaticPaths } from "next";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Page: React.FC = ({ page }: any) => {
+
+interface PageInterface {
+  mediaLink: string;
+  mediaType: "embed_url" | "meeting_url";
+  name: string;
+  content: string;
+  startTime: Date;
+  endTime: Date;
+  presenter: string;
+  presenterAbout: string;
+  presenterSocials: SocialInfo[];
+  relatedActivities: string[];
+}
+
+interface ActivityProps {
+  page: PageInterface;
+}
+
+const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   return (
     <>
       <Navbar></Navbar>
       <BackBtn url={"/events"}></BackBtn>
       <Media link={page.mediaLink} type={page.mediaType}></Media>
+      <br />
       <ActivityInfo
         title={page.name}
         description={page.content}
@@ -30,7 +49,7 @@ const Page: React.FC = ({ page }: any) => {
   );
 };
 
-export default Page;
+export default ActivityPage;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const activityName = (params ? params.page : "") as string;

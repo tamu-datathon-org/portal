@@ -1,9 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import * as UI from "./style";
-import Card from "react-bootstrap/Card";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+import { Card, Row, Col, Container, Button } from "react-bootstrap";
 import moment from "moment";
 
 export interface SocialInfo {
@@ -33,18 +30,10 @@ export const formatTime = (time: Date, endTime: Date): string => {
 };
 
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
-  const [interestedBtnText, setInterestedBtnText] = useState(
-    "🤔 Mark me interested"
-  );
+  const [interested, setInterested] = useState(false);
 
   const handleClick = () => {
-    if (interestedBtnText == "🙄 I'm no longer interested") {
-      setInterestedBtnText("🤔 Mark me interested");
-      console.log("user is interested");
-    } else {
-      setInterestedBtnText("🙄 I'm no longer interested");
-      console.log("user is no longer interested");
-    }
+    setInterested(!interested);
     /**
      * TODO: Add activity to list of activities user is interested in during the session.
      */
@@ -52,15 +41,28 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
 
   return (
     <>
-      <UI.InfoContainer>
-        <h2>{props.title}</h2>
+      <Container>
+        <Row>
+          <Col>
+            <h2>{props.title}</h2>
+          </Col>
+        </Row>
         <br />
         <Row>
           <Col>
             <p>{props.description}</p>
           </Col>
           <Col lg={3} md={5}>
-            <UI.Button onClick={handleClick}>{interestedBtnText}</UI.Button>
+            <Button
+              onClick={handleClick}
+              variant={interested ? "outline-secondary" : "outline-primary"}
+              block
+            >
+              {interested
+                ? "🙄 I'm no longer interested"
+                : "🤔 Mark me interested"}
+            </Button>
+            <br />
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
@@ -80,7 +82,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
             </Card>
           </Col>
         </Row>
-      </UI.InfoContainer>
+      </Container>
     </>
   );
 };
