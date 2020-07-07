@@ -18,7 +18,6 @@ import {
   NavItem,
 } from "../../common/Misc";
 
-import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getAllPages, getPageByName, Page } from "../../libs/pagesAPI";
 
