@@ -2,6 +2,9 @@ import fs from "fs";
 import { join } from "path";
 import yaml from "js-yaml";
 import { getPageByName } from "./pagesAPI";
+import { ActivitySection } from "../common/Set/interfaces";
+import { Activity, ActivityCardProps } from "../common/Card/interfaces";
+import { getActivityByName } from "../libs/activitiesAPI";
 
 const setDirectory = join(process.cwd(), "db/sets");
 
@@ -16,7 +19,7 @@ export interface Set {
   name: string;
   id: string;
   description: string;
-  showMoreState: string;
+  showMoreState: boolean;
   orderBy: "alphabetical" | "priority" | "start_time" | "none" | "";
   priority: number;
   activityList: string[];
@@ -54,4 +57,39 @@ export async function getPageSets(pageName: string): Promise<Set[]> {
   const sets = pageData.sets.map((set) => getSetByName(set));
 
   return Promise.all(sets);
+}
+
+/**
+ * Converts page sets to the format required by the Set react component.
+ * @param tabSets A list of sets to be converted to the required format.
+ * @returns Promise<ActivitySection[]> Promise of a list of sets.
+ */
+export async function getPageSetsContent(
+  tabSets: Set[]
+): Promise<ActivitySection[]> {
+  const allSets = await Promise.all(
+    tabSets.map(async function (set) {
+      const activities: Array<ActivityCardProps> = await Promise.all(
+        set.activityList.map(async function (activity) {
+          const activityFileContent = await getActivityByName(activity);
+          const activityContent: Activity = {
+            imgUrl: activityFileContent.thumbnail,
+            title: activityFileContent.name,
+            startTime: activityFileContent.startTime,
+            duration: 60,
+            infoUrl: "#",
+          };
+          return { event: activityContent };
+        })
+      );
+      const setObject: ActivitySection = {
+        eventList: activities,
+        sectionTitle: set.name,
+        sectionDescription: set.description,
+        defaultShowMoreState: set.showMoreState,
+      };
+      return setObject;
+    })
+  );
+  return allSets;
 }

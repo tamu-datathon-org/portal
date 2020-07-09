@@ -5,7 +5,7 @@ import { ActivitySection } from "../common/Set/interfaces";
 const eventCard: ActivityCardProps = {
   event: {
     title: "Data Science 101",
-    startTime: new Date("June 24, 2020 12:45:00"),
+    startTime: "June 24, 2020 12:45:00",
     duration: 60,
     infoUrl: "#",
     imgUrl:
@@ -54,7 +54,7 @@ for (let i = 0; i < 5; i++) {
   set2Events.push({
     event: {
       title: set2Titles[i] || "...",
-      startTime: new Date(set2Times[i]),
+      startTime: set2Times[i],
       duration: 60,
       infoUrl: "#",
       imgUrl: set2Images[i] || "#",

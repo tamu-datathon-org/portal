@@ -13,12 +13,15 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
     <UI.StyledCard>
       <UI.EventImgContainer>
         <UI.EventImg src={event.imgUrl} alt="" />
-        <Reminder startTime={event.startTime} duration={event.duration} />
+        <Reminder
+          startTime={new Date(event.startTime)}
+          duration={event.duration}
+        />
       </UI.EventImgContainer>
       <UI.EventInfo>
         <h5>{event.title}</h5>
         <UI.EventTime>
-          {formatTime(event.startTime, event.duration)}
+          {formatTime(new Date(event.startTime), event.duration)}
         </UI.EventTime>
         <UI.EventInfoLinkContainer>
           <UI.EventInfoLink href={event.infoUrl || "#"}>
