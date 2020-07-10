@@ -32,6 +32,8 @@ export const formatTime = (time: Date, endTime: Date): string => {
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   const [interested, setInterested] = useState(false);
 
+  const description_parts: string[] = props.description.split('\n');
+
   const handleClick = () => {
     setInterested(!interested);
     /**
@@ -50,7 +52,9 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
         <br />
         <Row>
           <Col>
-            <p>{props.description}</p>
+            {description_parts.map((part) => (
+              <p>{part}</p>
+            ))}
           </Col>
           <Col lg={3} md={5}>
             <Button
