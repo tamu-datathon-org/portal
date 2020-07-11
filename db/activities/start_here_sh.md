@@ -1,6 +1,6 @@
 ---
 name: "Data Science: Start Here"
-id: data_science_start_here
+id: start_here_sh
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
 mediaType: embed_url
@@ -17,7 +17,6 @@ relatedActivities:
   - data_science_303
   - data_science_404
 ---
-
 Howdy
 
 So. You're interested in data science, but you don't know where to start. I want to let you know; you've come to right place. 
