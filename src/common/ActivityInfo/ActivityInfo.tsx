@@ -53,7 +53,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
         <Row>
           <Col>
             {description_parts.map((part) => (
-              <p>{part}</p>
+              <p key={Math.random().toString()}>{part}</p>
             ))}
           </Col>
           <Col lg={3} md={5}>
@@ -80,10 +80,13 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                   <>
                     <Card.Link key={social.type} href={social.link}>
                       {social.type}
-                    </Card.Link><br/>
+                    </Card.Link>
+                    <br />
                   </>
                 ))}
-                <Card.Text style={{ marginTop: "0.75rem" }}>{props.speakerAbout}</Card.Text>
+                <Card.Text style={{ marginTop: "0.75rem" }}>
+                  {props.speakerAbout}
+                </Card.Text>
               </Card.Body>
             </Card>
           </Col>
