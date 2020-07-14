@@ -1,4 +1,4 @@
-import { getSetByName, getAllSets } from "../../../libs/setsAPI";
+import { getSetByName, getAllSets } from "../../libs/setsAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
 import { Container } from "react-bootstrap";
