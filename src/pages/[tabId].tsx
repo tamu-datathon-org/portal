@@ -4,11 +4,11 @@ import { Container } from "react-bootstrap";
 import Head from "next/head";
 
 // custom components
-import { Set } from "../../common/Set";
-import { Navbar } from "../../common/Navbar";
-import { ActivitySection } from "../../common/Set/interfaces";
+import { Set } from "../common/Set";
+import { ActivitySection } from "../common/Set/interfaces";
+import { Navbar } from "../common/Navbar";
 import PropTypes from "prop-types";
-import { useActiveUser, UserCurrentStatus } from "../../common/UserProvider";
+import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
 import {
   CustomHeader,
   EventsBlueWrapper,
@@ -16,11 +16,11 @@ import {
   NavPillsContainer,
   NavPills,
   NavItem,
-} from "../../common/Misc";
+} from "../common/Misc";
 
 import { GetStaticProps, GetStaticPaths } from "next";
-import { getAllPages, getPageByName, Page } from "../../libs/pagesAPI";
-import { getPageSets, getPageSetsContent } from "../../libs/setsAPI";
+import { getAllPages, getPageByName, Page } from "../libs/pagesAPI";
+import { getPageSets, getPageSetsContent } from "../libs/setsAPI";
 
 interface IndexPageProps {
   page?: Page;

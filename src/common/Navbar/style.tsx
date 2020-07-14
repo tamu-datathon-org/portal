@@ -12,7 +12,7 @@ export const Navbar = styled(ReactNavbar)`
 
 export const NavbarLogo = styled.img`
   width: 40px;
-  height 40px;
+  height: 40px;
 `;
 
 export const NavLink = styled(ReactNav.Link)`
@@ -35,7 +35,7 @@ export const NavUserInfo = styled.small`
 `;
 
 export const DropdownLink = styled.a`
-  color: ${(props) => props.theme.colors.primary}} !important;
+  color: ${(props) => props.theme.colors.primary} !important;
   margin: 10px auto;
   display: block;
 
