@@ -1,12 +1,12 @@
-import { NextApiRequest, NextApiResponse } from "next";
-import { authenticatedRoute } from "../../../libs/middleware";
-import { User } from "../../../common/UserProvider";
-import { getBaseUrl, authenticatedFetch } from "../../../libs";
-import { getActivityByName } from "../../../libs/activitiesAPI";
+import { NowRequest, NowResponse } from "@vercel/node";
+import { authenticatedRoute } from "../../src/libs/middleware";
+import { User } from "../../src/common/UserProvider";
+import { getBaseUrl, authenticatedFetch } from "../../src/libs";
+import { getActivityByName } from "../../src/libs/activitiesAPI";
 
 const joinEventHandler = async (
-  req: NextApiRequest,
-  res: NextApiResponse,
+  req: NowRequest,
+  res: NowResponse,
   user: User
 ): Promise<void> => {
   const { eventId, mediaLink } = await getActivityByName(

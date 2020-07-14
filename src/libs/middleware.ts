@@ -1,16 +1,16 @@
-import { NextApiRequest, NextApiResponse } from "next";
+import { NowResponse, NowRequest } from "@vercel/node";
 import { User, GatekeeperRequestError } from "../common/UserProvider";
 import { getBaseUrl, authenticatedFetch } from "./fetcher";
 
 type AuthenticatedRouteHandler = (
-  req: NextApiRequest,
-  res: NextApiResponse,
+  req: NowRequest,
+  res: NowResponse,
   user: User
 ) => void;
 
 export const authenticatedRoute = (
   handler: AuthenticatedRouteHandler
-) => async (req: NextApiRequest, res: NextApiResponse): Promise<void> => {
+) => async (req: NowRequest, res: NowResponse): Promise<void> => {
   const response: User | GatekeeperRequestError = await authenticatedFetch(
     `${getBaseUrl(req)}/auth/user`,
     req

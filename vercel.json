@@ -2,6 +2,12 @@
   "builds": [
     { "src": "package.json", "use": "@now/next" }
   ],
+  "functions": {
+    "api/**": {
+      "runtime": "@vercel/node",
+      "includeFiles": "db/**"
+    }
+  },
   "routes": [
     { "src": "/events/_next(.*)", "dest": "/events/_next$1" },
     { "src": "/events(.*)", "dest": "/events/$1" },
