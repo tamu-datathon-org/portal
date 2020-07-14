@@ -1,7 +1,7 @@
 import React from "react";
 import TabPage from "./[tabId]";
 import { GetStaticProps } from "next";
-import { getAllPages, Page } from "../../libs/pagesAPI";
+import { getAllPages, Page } from "../libs/pagesAPI";
 import PropTypes from "prop-types";
 
 /**
