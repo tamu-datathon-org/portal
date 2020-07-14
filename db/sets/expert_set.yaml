@@ -1,11 +1,9 @@
 name: Already know Data Science
 id: expert_set
 description: Not new to Data Science? Attend these classes to build your skill!
-showMoreState: yes
+showMoreState: true
 orderedBy: start_time
 priority: 4
 activityList:
   - data_science_101
-  - data_science_202
-  - data_science_303
-  - data_science_404
+  - opening_ceremony

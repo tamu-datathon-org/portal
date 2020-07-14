@@ -29,7 +29,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   return (
     <>
       <Navbar></Navbar>
-      <BackBtn url={"/events"}></BackBtn>
+      <BackBtn url={"/"}></BackBtn>
       <Media link={page.mediaLink} type={page.mediaType}></Media>
       <br />
       <ActivityInfo

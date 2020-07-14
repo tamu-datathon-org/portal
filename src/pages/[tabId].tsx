@@ -5,10 +5,10 @@ import Head from "next/head";
 
 // custom components
 import { Set } from "../common/Set";
+import { ActivitySection } from "../common/Set/interfaces";
 import { Navbar } from "../common/Navbar";
 import PropTypes from "prop-types";
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
-import { set2Info } from "../libs";
 import {
   CustomHeader,
   EventsBlueWrapper,
@@ -20,16 +20,18 @@ import {
 
 import { GetStaticProps, GetStaticPaths } from "next";
 import { getAllPages, getPageByName, Page } from "../libs/pagesAPI";
+import { getPageSets, getPageSetsContent } from "../libs/setsAPI";
 
 interface IndexPageProps {
   page?: Page;
   allPages?: Page[];
+  allSets?: ActivitySection[];
 }
 
 /**
  * This page is for any of the tabs on the main page
  */
-const TabPage: React.FC<IndexPageProps> = ({ page, allPages }) => {
+const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
   const { user, status } = useActiveUser();
 
   return (
@@ -45,9 +47,9 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages }) => {
       </Container>
 
       <NavPillsContainer>
-        <NavPills activeKey={`/events/${page?.id}`}>
+        <NavPills activeKey={`/${page?.id}`}>
           {allPages?.map((p) => (
-            <NavItem href="/events/[tabId]" as={`/events/${p.id}`} key={p.id}>
+            <NavItem href="/[tabId]" as={`/${p.id}`} key={p.id}>
               {p.name}
             </NavItem>
           ))}
@@ -55,22 +57,15 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages }) => {
       </NavPillsContainer>
 
       <EventsBlueWrapper>
-        <Container className="pt-4">
-          <Set info={set2Info}></Set>
-        </Container>
+        {allSets?.map((p, index) => (
+          <Container
+            className="pt-4"
+            key={p.sectionTitle + "_" + p.eventList.length + "_" + index}
+          >
+            <Set info={p}></Set>
+          </Container>
+        ))}
       </EventsBlueWrapper>
-
-      <Container className="pt-5">
-        <p>User Status: {status}</p>
-        <p>Returned User:</p>
-        <pre>{JSON.stringify(user, null, 4)}</pre>
-        {status == UserCurrentStatus.LoggedOut && (
-          <p>
-            Looks like you are not logged in.{" "}
-            <a href="/auth/login?r=/events">Click here to login</a>
-          </p>
-        )}
-      </Container>
     </>
   );
 };
@@ -78,32 +73,31 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages }) => {
 TabPage.propTypes = {
   page: PropTypes.any,
   allPages: PropTypes.arrayOf(PropTypes.any),
+  allSets: PropTypes.arrayOf(PropTypes.any),
 };
 
 export default TabPage;
 
-/**
- * (1/2) Example of how to get activity sets for page "lectures"
- */
-import { getPageSets } from "../libs/setsAPI";
-
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  /**
-   * (2/2) Example of how to get activity sets for page "lectures"
-   */
-  const result1 = await getPageSets("lectures");
-  console.log(result1);
-  console.log("     -----------------------------     ");
-  const result2 = await getPageSets("day_1");
-  console.log(result2);
-
   const tabId = (params ? params.tabId : "") as string;
+
+  // get info on this tab
   const page = await getPageByName(tabId);
+
+  // get all tabs
   const allPages = await getAllPages();
+
+  // all the sets in this tab
+  const tabSets = await getPageSets(tabId);
+
+  // all the content of each set in this tab
+  const allSets = await getPageSetsContent(tabSets);
+
   return {
     props: {
       page,
       allPages,
+      allSets,
     },
   };
 };
