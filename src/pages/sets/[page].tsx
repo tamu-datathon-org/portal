@@ -1,17 +1,14 @@
-import {
-  getActivityByName,
-  getAllActivities,
-} from "../../../libs/activitiesAPI";
+import { getSetByName, getAllSets } from "../../libs/setsAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
 import React from "react";
 import { Container } from "react-bootstrap";
 
-// TODO: Replace Component with a proper one!
+//TODO: Replace this with the correct stuff!
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const Page: React.FC = ({ page }: any) => {
+const Page: React.FC = ({ pageContent }: any) => {
   return (
     <Container>
-      <pre>{JSON.stringify(page, null, 4)}</pre>
+      <pre>{JSON.stringify(pageContent, null, 4)}</pre>
     </Container>
   );
 };
@@ -19,23 +16,22 @@ const Page: React.FC = ({ page }: any) => {
 export default Page;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-  const activityName = (params ? params.page : "") as string;
-  const page = await getActivityByName(activityName);
+  const setName = (params ? params.page : "") as string;
+  const pageContent = await getSetByName(setName);
   return {
     props: {
-      page,
+      pageContent,
     },
   };
 };
 
 export const getStaticPaths: GetStaticPaths = async () => {
-  const pages = await getAllActivities();
-
+  const sets = await getAllSets();
   return {
-    paths: pages.map((pages) => {
+    paths: sets.map((sets) => {
       return {
         params: {
-          page: pages.id,
+          page: sets.id,
         },
       };
     }),

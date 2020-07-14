@@ -8,11 +8,17 @@ mediaType: "meeting_url" or "embed_url" (one or the other)
 mediaLink: url_string (https://tamu.zoom.us/j/28347923874)
 thumbnail: string (https://tamudatathon.com/portal/db/img/ds101.png)
 presenter: string (Jon Doe)
+presenterAbout: string (Some information about Jon Doe)
+presenterSocials:
+  - type: Facebook
+    link: https://www.facebook.com/public/John-Doe
+  - type: LinkedIn
+    link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
 priority: number_between_1_10 (7)
 relatedActivities:
-  - activity_folder_name (data_science_202)
-  - activity_folder_name (data_science_303)
-  - activity_folder_name (data_science_404)
+  - activity_file_name (data_science_202)
+  - activity_file_name (data_science_303)
+  - activity_file_name (data_science_404)
 ---
 
 The activity body goes here

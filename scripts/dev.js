@@ -19,7 +19,7 @@ const proxyToLocalhost = (req, res, next) => {
     }
     req.originalUrl = url;
     // req.headers["host"] = "tamudatathon.com";
-    const target = `http://localhost:3000/${url || ""}`;
+    const target = `http://localhost:3000/events/${url || ""}`;
     const config = {
       target,
       prependPath: true,

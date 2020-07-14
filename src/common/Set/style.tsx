@@ -13,7 +13,7 @@ export const SectionDescription = styled.p`
 export const CardsContainer = styled.div`
   display: grid;
   grid-gap: 0.5em;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: repeat(4, 1fr);
   @media (max-width: 1200px) {
     display: flex;
     overflow: auto;
