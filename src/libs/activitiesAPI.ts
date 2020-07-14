@@ -15,7 +15,7 @@ export interface Activity {
   name: string;
   id: string;
   startTime: string;
-  endTime: Date;
+  endTime: string;
   mediaType: "meeting_url" | "embed_url";
   mediaLink: string;
   thumbnail: string;

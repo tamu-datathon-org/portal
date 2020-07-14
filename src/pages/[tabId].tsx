@@ -47,9 +47,9 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
       </Container>
 
       <NavPillsContainer>
-        <NavPills activeKey={`/events/${page?.id}`}>
+        <NavPills activeKey={`/${page?.id}`}>
           {allPages?.map((p) => (
-            <NavItem href="/events/[tabId]" as={`/events/${p.id}`} key={p.id}>
+            <NavItem href="/[tabId]" as={`/${p.id}`} key={p.id}>
               {p.name}
             </NavItem>
           ))}
@@ -57,24 +57,15 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
       </NavPillsContainer>
 
       <EventsBlueWrapper>
-        {allSets?.map((p) => (
-          <Container className="pt-4" key={p.sectionTitle}>
+        {allSets?.map((p, index) => (
+          <Container
+            className="pt-4"
+            key={p.sectionTitle + "_" + p.eventList.length + "_" + index}
+          >
             <Set info={p}></Set>
           </Container>
         ))}
       </EventsBlueWrapper>
-
-      <Container className="pt-5">
-        <p>User Status: {status}</p>
-        <p>Returned User:</p>
-        <pre>{JSON.stringify(user, null, 4)}</pre>
-        {status == UserCurrentStatus.LoggedOut && (
-          <p>
-            Looks like you are not logged in.{" "}
-            <a href="/auth/login?r=/events">Click here to login</a>
-          </p>
-        )}
-      </Container>
     </>
   );
 };
@@ -89,10 +80,19 @@ export default TabPage;
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   const tabId = (params ? params.tabId : "") as string;
+
+  // get info on this tab
   const page = await getPageByName(tabId);
+
+  // get all tabs
   const allPages = await getAllPages();
+
+  // all the sets in this tab
   const tabSets = await getPageSets(tabId);
+
+  // all the content of each set in this tab
   const allSets = await getPageSetsContent(tabSets);
+
   return {
     props: {
       page,

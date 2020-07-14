@@ -68,16 +68,17 @@ export async function getPageSetsContent(
   tabSets: Set[]
 ): Promise<ActivitySection[]> {
   const allSets = await Promise.all(
-    tabSets.map(async function (set) {
+    tabSets.map(async (set) => {
       const activities: Array<ActivityCardProps> = await Promise.all(
-        set.activityList.map(async function (activity) {
+        set.activityList.map(async (activity) => {
           const activityFileContent = await getActivityByName(activity);
           const activityContent: Activity = {
             imgUrl: activityFileContent.thumbnail,
             title: activityFileContent.name,
             startTime: activityFileContent.startTime,
+            endTime: activityFileContent.endTime,
             duration: 60,
-            infoUrl: "#",
+            infoUrl: `/events/activities/${activityFileContent.id}`,
           };
           return { event: activityContent };
         })
