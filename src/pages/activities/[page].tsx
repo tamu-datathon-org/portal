@@ -1,12 +1,9 @@
 import React from "react";
-import { Navbar } from "../../../common/Navbar";
-import { BackBtn } from "../../../common/BackBtn";
-import { Media } from "../../../common/Media";
-import { ActivityInfo, SocialInfo } from "../../../common/ActivityInfo";
-import {
-  getActivityByName,
-  getAllActivities,
-} from "../../../libs/activitiesAPI";
+import { Navbar } from "../../common/Navbar";
+import { BackBtn } from "../../common/BackBtn";
+import { Media } from "../../common/Media";
+import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
+import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 import { GetStaticProps, GetStaticPaths } from "next";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

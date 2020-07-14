@@ -2,6 +2,11 @@ import styled from "styled-components";
 
 export const MediaWrapper = styled.div`
   background: black;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: calc((100vw / 16) * 9);
 `;
 
 export const MeetingWrapper = styled.div`

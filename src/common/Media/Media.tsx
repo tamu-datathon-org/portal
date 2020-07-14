@@ -12,18 +12,14 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
     return (
       <>
         <UI.MediaWrapper>
-          <Container>
-            <Row lg="1">
-              <iframe
-                width="800"
-                height="450"
-                src={props.link}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-            </Row>
-          </Container>
+          <iframe
+            width="100%"
+            height="100%"
+            src={props.link}
+            frameBorder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
         </UI.MediaWrapper>
       </>
     );
@@ -37,10 +33,16 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       callDescription = `Click Join to join in on the discussion. Can't make it? Don't worry,
       a VOD will show up here afterwards.`;
       joinBtn = (
-        <a target="_blank" rel="noreferrer" href={props.link}>
+        <a
+          target="_blank"
+          rel="noreferrer"
+          href={props.link}
+          style={{ width: "100%" }}
+        >
           <Button
             style={{ backgroundColor: "#00109B", fontWeight: "bold" }}
             size="lg"
+            className="py-lg-3 my-3"
             block
           >
             Join Now
@@ -66,7 +68,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
                   </Col>
                 </Row>
               </Col>
-              <Col lg={3} md={5}>
+              <Col lg={4} md={12} className="d-flex align-items-center">
                 {joinBtn}
               </Col>
             </Row>

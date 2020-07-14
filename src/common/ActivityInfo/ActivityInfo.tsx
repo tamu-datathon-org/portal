@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { Card, Row, Col, Container, Button } from "react-bootstrap";
 import moment from "moment";
+import ReactMarkdown from "react-markdown";
 
 export interface SocialInfo {
   type: string;
@@ -32,8 +33,6 @@ export const formatTime = (time: Date, endTime: Date): string => {
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   const [interested, setInterested] = useState(false);
 
-  const description_parts: string[] = props.description.split("\n");
-
   const handleClick = () => {
     setInterested(!interested);
     /**
@@ -43,20 +42,13 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
 
   return (
     <>
-      <Container style={{ marginBottom: "2em" }}>
+      <Container className="my-4">
+        <h2 className="pb-3">{props.title}</h2>
         <Row>
           <Col>
-            <h2>{props.title}</h2>
+            <ReactMarkdown source={props.description} />
           </Col>
-        </Row>
-        <br />
-        <Row>
-          <Col>
-            {description_parts.map((part) => (
-              <p key={Math.random().toString()}>{part}</p>
-            ))}
-          </Col>
-          <Col lg={3} md={5}>
+          <Col lg={4} md={12}>
             <Button
               onClick={handleClick}
               variant={interested ? "outline-secondary" : "outline-primary"}
@@ -77,12 +69,9 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 <Card.Text>{props.speakerName}</Card.Text>
                 <Card.Title>About the Speaker:</Card.Title>
                 {props.speakerSocials.map((social: SocialInfo) => (
-                  <>
-                    <Card.Link key={social.type} href={social.link}>
-                      {social.type}
-                    </Card.Link>
-                    <br />
-                  </>
+                  <Card.Link key={social.type} href={social.link}>
+                    {social.type}
+                  </Card.Link>
                 ))}
                 <Card.Text style={{ marginTop: "0.75rem" }}>
                   {props.speakerAbout}

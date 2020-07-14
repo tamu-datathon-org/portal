@@ -4,11 +4,11 @@ import { Container } from "react-bootstrap";
 import Head from "next/head";
 
 // custom components
-import { Set } from "../../common/Set";
-import { Navbar } from "../../common/Navbar";
+import { Set } from "../common/Set";
+import { Navbar } from "../common/Navbar";
 import PropTypes from "prop-types";
-import { useActiveUser, UserCurrentStatus } from "../../common/UserProvider";
-import { set2Info } from "../../libs";
+import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
+import { set2Info } from "../libs";
 import {
   CustomHeader,
   EventsBlueWrapper,
@@ -16,10 +16,10 @@ import {
   NavPillsContainer,
   NavPills,
   NavItem,
-} from "../../common/Misc";
+} from "../common/Misc";
 
 import { GetStaticProps, GetStaticPaths } from "next";
-import { getAllPages, getPageByName, Page } from "../../libs/pagesAPI";
+import { getAllPages, getPageByName, Page } from "../libs/pagesAPI";
 
 interface IndexPageProps {
   page?: Page;
@@ -85,7 +85,7 @@ export default TabPage;
 /**
  * (1/2) Example of how to get activity sets for page "lectures"
  */
-import { getPageSets } from "../../libs/setsAPI";
+import { getPageSets } from "../libs/setsAPI";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   /**
