@@ -1,8 +1,8 @@
 ---
 name: "Data Science: Start Here"
 id: ds_start_here
-startTime: July 25, 2020 16:00:00-500
-endTime: July 25, 2020 17:00:00-500
+startTime: July 25, 2020 17:00:00-500
+endTime: July 25, 2020 19:00:00-500
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: http://i3.ytimg.com/vi/ysfoSauXpq0/maxresdefault.jpg
