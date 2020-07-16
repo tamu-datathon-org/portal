@@ -73,6 +73,9 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 <Card.Title>Presented By:</Card.Title>
                 <Card.Text>{props.speakerName}</Card.Text>
                 <Card.Title>About the Speaker(s):</Card.Title>
+                <Card.Text style={{ marginTop: "0.75rem" }}>
+                  {props.speakerAbout}
+                </Card.Text>
                 <ul>
                   {props.speakerSocials.map((social: SocialInfo) => (
                     <li key={social.type + "_" + social.link}>
@@ -80,9 +83,6 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                     </li>
                   ))}
                 </ul>
-                <Card.Text style={{ marginTop: "0.75rem" }}>
-                  {props.speakerAbout}
-                </Card.Text>
               </Card.Body>
             </Card>
             {user?.isAdmin && (
