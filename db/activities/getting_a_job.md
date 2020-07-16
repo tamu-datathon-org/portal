@@ -3,6 +3,7 @@ name: Getting a Job in Data Science
 id: getting_a_job
 startTime: July 25, 2020 16:00:00-500
 endTime: July 25, 2020 17:00:00-500
+duration: 60
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/f66d470d-73bd-4471-965c-f65f40087e19.jpeg

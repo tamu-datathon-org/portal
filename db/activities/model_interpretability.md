@@ -3,6 +3,7 @@ name: "Model Interpretability"
 id: model_interpretability
 startTime: July 25, 2020 20:00:00-500
 endTime: July 25, 2020 21:00:00-500
+duration: 60
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/907ef44b-9d6c-478c-baa4-5ef79cbb9901.jpeg

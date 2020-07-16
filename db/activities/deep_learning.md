@@ -3,6 +3,7 @@ name: Deep Learning
 id: deep_learning
 startTime: July 25, 2020 18:00:00
 endTime: July 25, 2020 19:00:00
+duration: 60
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/c91cc4f8-d7fa-4195-9e5f-878a6df31e38.jpg
