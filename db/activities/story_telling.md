@@ -14,7 +14,7 @@ presenterSocials:
     link: https://medium.com/@ish_meh/ballmers-peak-tossing-a-cold-one-with-the-boys-8966e52c9930
   - type: Isha's LinkedIn
     link: https://www.linkedin.com/in/ishamehra
-  - type: Shreya's LinkedIin
+  - type: Shreya's LinkedIn
     link: https://www.linkedin.com/in/shreyapunya/
 priority: 7
 relatedActivities:
