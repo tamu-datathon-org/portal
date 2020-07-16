@@ -28,10 +28,10 @@ export const formatTime = (time: Date, endTime: Date): string => {
    * @param time a date object
    */
   return (
-    moment(time).tz("America/Chicago", true).format("dddd MMM Do, h:mma ") +
+    moment(time).tz(moment.tz.guess()).format("dddd MMM Do, h:mma ") +
     " to " +
-    moment(endTime).tz("America/Chicago", true).format("h:mma") +
-    ` (${moment(time).tz("America/Chicago", true).format("z")})`
+    moment(endTime).tz(moment.tz.guess()).format("h:mma") +
+    ` (${moment(time).tz(moment.tz.guess()).format("z")})`
   );
 };
 
@@ -48,7 +48,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
 
   return (
     <>
-      <Container className="my-4">
+      <Container className="mt-4 mb-5">
         <h2 className="pb-3">{props.title}</h2>
         <Row>
           <Col>

@@ -24,6 +24,7 @@ export const ColorSpan = styled.span`
 export const EventsBlueWrapper = styled.div`
   background: ${(props) => props.theme.colors.theme_lighter_blue};
   min-height: 80vh;
+  padding-bottom: 5em;
 `;
 
 export const _NavItem = styled(Nav.Item)`
