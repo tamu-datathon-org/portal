@@ -5,6 +5,6 @@ showMoreState: true
 orderedBy: start_time
 priority: 4
 activityList:
+  - getting_a_job
   - ds_start_here
   - ml_start_here
-  - getting_a_job
