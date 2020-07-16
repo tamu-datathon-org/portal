@@ -1,8 +1,8 @@
 ---
 name: "Machine Learning: Start Here"
 id: ml_start_here
-startTime: July 25, 2020 20:00:00-500
-endTime: July 25, 2020 22:00:00-500
+startTime: July 25, 2020 19:00:00-500
+endTime: July 25, 2020 21:00:00-500
 duration: 120
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
