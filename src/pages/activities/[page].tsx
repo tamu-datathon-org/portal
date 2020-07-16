@@ -14,6 +14,7 @@ interface PageInterface {
   name: string;
   content: string;
   startTime: Date;
+  id: string;
   endTime: Date;
   presenter: string;
   presenterAbout: string;
@@ -41,6 +42,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
       <br />
       <ActivityInfo
         title={page.name}
+        id={page.id}
         description={page.content}
         startTime={new Date(page.startTime)}
         endTime={new Date(page.endTime)}

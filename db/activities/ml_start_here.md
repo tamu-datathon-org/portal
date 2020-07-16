@@ -7,7 +7,7 @@ mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: http://i3.ytimg.com/vi/3eJoJUJlkWg/maxresdefault.jpg
 presenter: Josiah Coad
-presenterAbout: 
+presenterAbout: Josiah is a person
 presenterSocials:
   - type: Josiah's Medium
     link: https://medium.com/@josiahcoad

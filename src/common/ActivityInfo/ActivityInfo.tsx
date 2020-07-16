@@ -1,8 +1,9 @@
 import React from "react";
 import { useState } from "react";
-import { Card, Row, Col, Container, Button } from "react-bootstrap";
+import { Card, Row, Col, Container, Button, Alert } from "react-bootstrap";
 import moment from "moment";
 import ReactMarkdown from "react-markdown";
+import { useActiveUser } from "../UserProvider";
 
 export interface SocialInfo {
   type: string;
@@ -11,6 +12,7 @@ export interface SocialInfo {
 
 export interface InfoProps {
   title: string;
+  id: string;
   description: string;
   startTime: Date;
   endTime: Date;
@@ -34,6 +36,7 @@ export const formatTime = (time: Date, endTime: Date): string => {
 
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   const [interested, setInterested] = useState(false);
+  const { user } = useActiveUser();
 
   const handleClick = () => {
     setInterested(!interested);
@@ -81,6 +84,23 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 </Card.Text>
               </Card.Body>
             </Card>
+            {user?.isAdmin && (
+              <Alert variant="light" className="mt-3">
+                <b>Hey Psst! ✨</b>
+                <br />
+                Looks like you&apos;re an admin! If the information here looks
+                like it could be better please edit the markdown (and send a PR)
+                below by clicking the button below.
+                <Button
+                  variant="light"
+                  block
+                  className="mt-2"
+                  href={`https://github.com/tamu-datathon-org/portal/blob/master/db/activities/${props.id}.md`}
+                >
+                  ✏️ Edit This Page
+                </Button>
+              </Alert>
+            )}
           </Col>
         </Row>
       </Container>
