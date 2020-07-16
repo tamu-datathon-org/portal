@@ -26,7 +26,9 @@ export const formatTime = (time: Date, endTime: Date): string => {
    * @param time a date object
    */
   return (
-    moment(time).format("dddd h:mma") + " to " + moment(endTime).format("h:mma")
+    moment(time).format("dddd MMM Do, h:mma") +
+    " to " +
+    moment(endTime).format("h:mma")
   );
 };
 
@@ -46,10 +48,10 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
         <h2 className="pb-3">{props.title}</h2>
         <Row>
           <Col>
-            <ReactMarkdown source={props.description} />
+            <ReactMarkdown escapeHtml={false} source={props.description} />
           </Col>
           <Col lg={4} md={12}>
-            <Button
+            {/* <Button
               onClick={handleClick}
               variant={interested ? "outline-secondary" : "outline-primary"}
               block
@@ -57,8 +59,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
               {interested
                 ? "🙄 I'm no longer interested"
                 : "🤔 Mark me interested"}
-            </Button>
-            <br />
+            </Button> */}
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
@@ -67,12 +68,14 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 </Card.Text>
                 <Card.Title>Presented By:</Card.Title>
                 <Card.Text>{props.speakerName}</Card.Text>
-                <Card.Title>About the Speaker:</Card.Title>
-                {props.speakerSocials.map((social: SocialInfo) => (
-                  <Card.Link key={social.type} href={social.link}>
-                    {social.type}
-                  </Card.Link>
-                ))}
+                <Card.Title>About the Speaker(s):</Card.Title>
+                <ul>
+                  {props.speakerSocials.map((social: SocialInfo) => (
+                    <li key={social.type + "_" + social.link}>
+                      <Card.Link href={social.link}>{social.type}</Card.Link>
+                    </li>
+                  ))}
+                </ul>
                 <Card.Text style={{ marginTop: "0.75rem" }}>
                   {props.speakerAbout}
                 </Card.Text>

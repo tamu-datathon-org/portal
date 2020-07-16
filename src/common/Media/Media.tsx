@@ -1,13 +1,16 @@
 import React from "react";
 import * as UI from "./style";
 import { Col, Row, Container, Button } from "react-bootstrap";
+import { useActiveUser, UserCurrentStatus } from "../UserProvider";
 
 export interface MediaProps {
   type: "embed_url" | "meeting_url";
   link: string;
+  callOngoing?: boolean;
 }
 
 export const Media: React.FC<MediaProps> = (props: MediaProps) => {
+  const { status } = useActiveUser();
   if (props.type === "embed_url") {
     return (
       <>
@@ -23,36 +26,53 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
         </UI.MediaWrapper>
       </>
     );
-  } else if (props.type == "meeting_url") {
-    const callOngoing = true;
-    let callStatus: string, callDescription: string;
+  } else {
+    let callStatus: React.ReactElement | undefined,
+      callDescription: React.ReactElement;
     let joinBtn;
 
-    if (callOngoing) {
-      callStatus = "The Zoom Call has Started";
-      callDescription = `Click Join to join in on the discussion. Can't make it? Don't worry,
-      a VOD will show up here afterwards.`;
+    if (props.callOngoing) {
+      callStatus = <>The meeting has started</>;
+      callDescription = (
+        <>
+          Click Join to join in on the discussion. Can&apos;t make it?
+          Don&apos;t worry, a VOD will show up here afterwards.
+        </>
+      );
       joinBtn = (
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href={props.link}
-          style={{ width: "100%" }}
-        >
-          <Button
-            style={{ backgroundColor: "#00109B", fontWeight: "bold" }}
-            size="lg"
-            className="py-lg-3 my-3"
-            block
+        <Col lg={4} md={12} className="d-flex align-items-center">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href={props.link}
+            style={{ width: "100%" }}
           >
-            Join Now
-          </Button>
-        </a>
+            <Button
+              style={{ backgroundColor: "#00109B", fontWeight: "bold" }}
+              size="lg"
+              className="py-lg-3 my-3"
+              block
+            >
+              Join Now
+            </Button>
+          </a>
+        </Col>
       );
     } else {
-      callStatus = "The Zoom Call will start at 10:30AM";
-      callDescription = `Stay tuned for the meeting by clicking on the 'Mark me interested' button! Can't make it? Don't worry,
-      a VOD will show up here afterwards.`;
+      callDescription = (
+        <div>
+          Come back here later to join this meeting. Can&apos;t make it?
+          Don&apos;t worry, a VOD will show up here afterwards.
+          <br />
+          {status !== UserCurrentStatus.LoggedIn && (
+            <b>
+              Heads Up! You&apos;ll need an account to join the meeting. Click
+              &quot;Login/Signup&quot; in the top navbar to make one if you
+              haven&apos;t already.
+            </b>
+          )}
+        </div>
+      );
       joinBtn = <></>;
     }
     return (
@@ -63,20 +83,16 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
               <Col>
                 <Row>
                   <Col>
-                    <h3>{callStatus}</h3>
+                    {callStatus && <h3>{callStatus}</h3>}
                     {callDescription}
                   </Col>
                 </Row>
               </Col>
-              <Col lg={4} md={12} className="d-flex align-items-center">
-                {joinBtn}
-              </Col>
+              {joinBtn}
             </Row>
           </Container>
         </UI.MeetingWrapper>
       </>
     );
-  } else {
-    return <></>;
   }
 };

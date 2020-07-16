@@ -30,7 +30,14 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
     <>
       <Navbar></Navbar>
       <BackBtn url={"/"}></BackBtn>
-      <Media link={page.mediaLink} type={page.mediaType}></Media>
+      <Media
+        link={page.mediaLink}
+        type={page.mediaType}
+        callOngoing={
+          new Date().getTime() >= new Date(page.startTime).getTime() &&
+          new Date().getTime() <= new Date(page.endTime).getTime()
+        }
+      ></Media>
       <br />
       <ActivityInfo
         title={page.name}

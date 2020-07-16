@@ -1,17 +1,17 @@
 ---
 name: "Intro to Natural Language Processing"
 id: intro_nlp
-startTime: June 20, 2020 10:30:00
-endTime: June 20, 2020 11:30:00
-mediaType: embed_url
-mediaLink: https://www.youtube.com/embed/YrnxaV5itXo
-thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
+startTime: July 25, 2020 19:00:00-500
+endTime: July 25, 2020 20:00:00-500
+mediaType: meeting_url
+mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
+thumbnail: http://i3.ytimg.com/vi/YrnxaV5itXo/maxresdefault.jpg
 presenter: Allyson King
 presenterAbout: Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI
 presenterSocials:
-  - type: Medium
+  - type: Allyson's Medium
     link: https://medium.com/@allysonmking
-  - type: LinkedIn
+  - type: Allyson's LinkedIn
     link: https://www.linkedin.com/in/allysonmking
 priority: 7
 relatedActivities:
@@ -19,4 +19,12 @@ relatedActivities:
   - data_science_303
   - data_science_404
 ---
-Interested in learning what Natural Language Processing is all about? This hour long course will teach you how to identify and separate words, extract topics, and conduct sentiment analysis. We will be using Python for this course, relying heavily on the NLTK package. By the end of the hour, you will be well-versed with the basics of NLP, the applications of which are endless. Identifying fake news and analyzing product reviews will be no trouble for you!
+<div class="embed-responsive embed-responsive-16by9 mb-3">
+<iframe src="https://www.youtube.com/embed/YrnxaV5itXo" frameBorder="0" allowfullscreen></iframe>
+</div>
+
+Interested in learning what Natural Language Processing is all about?
+
+This hour long course will teach you how to identify and separate words, extract topics, and conduct sentiment analysis. We will be using [Python](https://python.org) for this course, relying heavily on [the NLTK package](https://www.nltk.org/). By the end of the hour, you will be well-versed with the basics of NLP, the applications of which are endless.
+
+Identifying fake news and analyzing product reviews will be no trouble for you!

@@ -1,0 +1,6 @@
+name: Summer Bootcamp
+id: bootcamp
+orderedBy: none
+sets:
+  - beginner_bootcamp_set
+  - intermediate_bootcamp_set

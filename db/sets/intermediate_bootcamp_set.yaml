@@ -1,0 +1,12 @@
+name: Intermediate Topics
+id: intermediate_bootcamp_set
+description: Take a deep dive into great DS/ML topics!
+showMoreState: true
+orderedBy: start_time
+priority: 4
+activityList:
+  # missing Statistics for Data Geeks
+  - story_telling
+  - deep_learning
+  - intro_nlp
+  - model_interpretability
