@@ -5,7 +5,7 @@ startTime: July 25, 2020 20:00:00-500
 endTime: July 25, 2020 21:00:00-500
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
-thumbnail: http://i3.ytimg.com/vi/O4w0cE2rmTk/maxresdefault.jpg
+thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/907ef44b-9d6c-478c-baa4-5ef79cbb9901.jpeg
 presenter: Sheel Dey
 presenterAbout: Sheel is a Ph.D. student in computer science at Texas A&M University, working at the intersection of reinforcement learning and robotics. He has won the TAMIDS data science competitions (grad division) in 2019 and 2020.
 presenterSocials:

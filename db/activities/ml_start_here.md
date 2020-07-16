@@ -5,7 +5,7 @@ startTime: July 25, 2020 19:00:00-500
 endTime: July 25, 2020 21:00:00-500
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
-thumbnail: http://i3.ytimg.com/vi/3eJoJUJlkWg/maxresdefault.jpg
+thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/8d0a08a7-826f-4305-ac07-4b7907301372.jpg
 presenter: Josiah Coad
 presenterAbout: Josiah is a person
 presenterSocials:

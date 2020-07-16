@@ -5,7 +5,7 @@ startTime: July 25, 2020 19:00:00-500
 endTime: July 25, 2020 20:00:00-500
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
-thumbnail: http://i3.ytimg.com/vi/YrnxaV5itXo/maxresdefault.jpg
+thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/0dd3d528-a1b1-481c-8ccf-01e7913ae268.jpeg
 presenter: Allyson King
 presenterAbout: Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI
 presenterSocials:

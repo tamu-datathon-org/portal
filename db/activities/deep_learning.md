@@ -5,7 +5,7 @@ startTime: July 25, 2020 18:00:00
 endTime: July 25, 2020 19:00:00
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
-thumbnail: https://media-exp1.licdn.com/dms/image/C4D03AQGPH5tHpFWPxw/profile-displayphoto-shrink_800_800/0?e=1600300800&v=beta&t=vS6700pa2fqeQUAgGaxjasb_eJiperPSFbE-Vq852Do
+thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/c91cc4f8-d7fa-4195-9e5f-878a6df31e38.jpg
 presenter: Ankit Ramchandani
 presenterAbout: Ankit is currently researching deep learning to predict the spread of COVID-19 in the US using several heterogenous features. He has also interned at Facebook in an applied machine learning team to create models to rank Facebook stories and researched in autonomous driving and detected lane marks and traffic signs using machine learning.
 presenterSocials:
