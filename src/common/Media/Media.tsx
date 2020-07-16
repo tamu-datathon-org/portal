@@ -64,7 +64,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
           Come back here later to join this meeting. Can&apos;t make it?
           Don&apos;t worry, a VOD will show up here afterwards.
           <br />
-          {status !== UserCurrentStatus.LoggedIn && (
+          {status === UserCurrentStatus.LoggedOut && (
             <b>
               Heads Up! You&apos;ll need an account to join the meeting. Click
               &quot;Login/Signup&quot; in the top navbar to make one if you
