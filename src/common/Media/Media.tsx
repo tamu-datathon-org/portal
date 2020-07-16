@@ -62,7 +62,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       callDescription = (
         <div>
           Come back here later to join this meeting. Can&apos;t make it?
-          Don&apos;t worry, a VOD will show up here afterwards.
+          Don&apos;t worry, the recording will show up here afterwards.
           <br />
           {status === UserCurrentStatus.LoggedOut && (
             <b>

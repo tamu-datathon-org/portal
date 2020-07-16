@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 import { ActivityCardProps } from "./interfaces";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import moment from "moment";
+import moment from "moment-timezone";
 
 /**
  * Formats date to a string for the start and end time.
@@ -19,9 +19,12 @@ export const formatTime = (time: Date, duration: number): string => {
    */
 
   return (
-    moment(time).format("MMMM Do h:mm a") +
+    moment(time).tz("America/Chicago", true).format("MMMM Do h:mm a") +
     " to " +
-    moment(new Date(time.getTime() + duration * 60000)).format("h:mm a")
+    moment(new Date(time.getTime() + duration * 60000))
+      .tz("America/Chicago", true)
+      .format("h:mm a") +
+    ` (${moment(time).tz("America/Chicago", true).format("z")})`
   );
 };
 

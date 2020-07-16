@@ -1,6 +1,6 @@
-name: Intermediate Topics
+name: Perfect for Intermediates
 id: intermediate_bootcamp_set
-description: Take a deep dive into great DS/ML topics!
+description: Experienced with Data Science or Machine Learning? These events will dive into exciting applications of your skills.
 showMoreState: true
 orderedBy: start_time
 priority: 4

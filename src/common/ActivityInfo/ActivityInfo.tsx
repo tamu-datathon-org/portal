@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Card, Row, Col, Container, Button, Alert } from "react-bootstrap";
-import moment from "moment";
+import moment from "moment-timezone";
 import ReactMarkdown from "react-markdown";
 import { useActiveUser } from "../UserProvider";
 
@@ -28,9 +28,10 @@ export const formatTime = (time: Date, endTime: Date): string => {
    * @param time a date object
    */
   return (
-    moment(time).format("dddd MMM Do, h:mma") +
+    moment(time).tz("America/Chicago", true).format("dddd MMM Do, h:mma ") +
     " to " +
-    moment(endTime).format("h:mma")
+    moment(endTime).tz("America/Chicago", true).format("h:mma") +
+    ` (${moment(time).tz("America/Chicago", true).format("z")})`
   );
 };
 
