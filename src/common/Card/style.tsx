@@ -5,6 +5,8 @@ export const StyledCard = styled.div`
   border: 1px solid #dbdbdb;
   border-radius: 8px;
   margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
   @media only screen and (max-width: 1200px) {
     flex-grow: 0;
@@ -29,6 +31,9 @@ export const EventImg = styled.img`
 
 export const EventInfo = styled.div`
   padding: 0.75em;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
   margin-bottom: 0px;
 `;
 
@@ -39,6 +44,7 @@ export const EventTitle = styled.h4`
 
 export const EventTime = styled.p`
   font-weight: 300;
+  flex: 1;
 `;
 
 export const EventInfoLinkContainer = styled.div`
