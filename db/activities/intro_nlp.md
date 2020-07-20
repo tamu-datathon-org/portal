@@ -1,8 +1,8 @@
 ---
 name: "Intro to Natural Language Processing"
 id: intro_nlp
-startTime: July 25, 2020 19:00:00-500
-endTime: July 25, 2020 20:00:00-500
+startTime: July 25, 2020 17:00:00-500
+endTime: July 25, 2020 18:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
