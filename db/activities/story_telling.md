@@ -1,8 +1,8 @@
 ---
 name: "Storytelling with Data"
 id: story_telling
-startTime: July 25, 2020 16:00:00-500
-endTime: July 25, 2020 17:00:00-500
+startTime: July 25, 2020 20:00:00-500
+endTime: July 25, 2020 21:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
