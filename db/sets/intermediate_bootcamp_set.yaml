@@ -6,7 +6,7 @@ orderedBy: start_time
 priority: 4
 activityList:
   # missing Statistics for Data Geeks
-  - story_telling
-  - deep_learning
   - intro_nlp
+  - deep_learning
   - model_interpretability
+  - story_telling
