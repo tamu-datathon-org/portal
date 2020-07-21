@@ -1,10 +1,12 @@
 import React from "react";
+import { GetStaticProps, GetStaticPaths } from "next";
+import Head from "next/head";
+
 import { Navbar } from "../../common/Navbar";
 import { BackBtn } from "../../common/BackBtn";
 import { Media } from "../../common/Media";
 import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
-import { GetStaticProps, GetStaticPaths } from "next";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 
@@ -29,6 +31,9 @@ interface ActivityProps {
 const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   return (
     <>
+      <Head>
+        <title>{page.name} - TAMU Datathon</title>
+      </Head>
       <Navbar></Navbar>
       <BackBtn url={"/"}></BackBtn>
       <Media
