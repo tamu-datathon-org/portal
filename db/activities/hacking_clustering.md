@@ -8,6 +8,9 @@ mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/312ff56c-bd96-4f79-8ccf-a4918c0028c3.jpg
 presenter: Shahina Rahman
+presenterSocials:
+  - type: Shahina's LinkedIn
+    link: https://www.linkedin.com/in/shahina-rahman-296b1aa7/
 presenterAbout: Shanina is a PhD in Statistics, got first place in Distinguished Postdoctoral Flash Talks, and has worked as a postdoc in Germany.
 priority: 7
 relatedActivities:
