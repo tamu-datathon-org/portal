@@ -5,7 +5,7 @@ showMoreState: true
 orderedBy: start_time
 priority: 4
 activityList:
-  # missing Statistics for Data Geeks
+  - hacking_clustering
   - intro_nlp
   - deep_learning
   - model_interpretability
