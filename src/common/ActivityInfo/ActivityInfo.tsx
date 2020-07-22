@@ -108,7 +108,11 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                   <br />
                   {channelLink}
                 </Card.Text>
-                <Button href={"#slack-link-here"} variant={"outline-primary"} block>
+                <Button
+                  href={"#slack-link-here"}
+                  variant={"outline-primary"}
+                  block
+                >
                   Join our Slack!
                 </Button>
               </Card.Body>
