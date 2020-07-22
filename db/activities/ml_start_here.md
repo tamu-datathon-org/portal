@@ -12,8 +12,6 @@ presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is cu
 presenterSocials:
   - type: Josiah's Medium
     link: https://medium.com/@josiahcoad
-slackChannel: ml-start-here
-slackChannelLink: "#ml-start-here-slack-link"
 priority: 7
 relatedActivities:
   - data_science_202

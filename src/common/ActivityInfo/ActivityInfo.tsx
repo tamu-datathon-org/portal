@@ -53,7 +53,9 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
       <br />
       Check out this channel for discussions on this event:
       <br />
-      <a href={props.slackChannelLink}>{props.slackChannel}</a>
+      <a href={props.slackChannelLink}>
+        <b>{props.slackChannel}</b>
+      </a>
     </>
   ) : (
     <></>
@@ -109,7 +111,9 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                   {channelLink}
                 </Card.Text>
                 <Button
-                  href={"#slack-link-here"}
+                  href={
+                    "https://join.slack.com/t/tamudatathon2020/shared_invite/zt-fnyi8tdv-Tm1ArAaznmVd9cXDaglq9Q"
+                  }
                   variant={"outline-primary"}
                   block
                 >
