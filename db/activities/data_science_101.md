@@ -14,6 +14,8 @@ presenterSocials:
     link: https://www.facebook.com/public/John-Doe
   - type: LinkedIn
     link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
+slackChannel: data-science-101
+slackChannelLink: "#data_science-101-link"
 priority: 7
 relatedActivities:
   - data_science_202
