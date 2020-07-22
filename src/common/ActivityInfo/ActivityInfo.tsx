@@ -20,6 +20,8 @@ export interface InfoProps {
   speakerAbout: string;
   speakerSocials: SocialInfo[];
   relatedActivities?: string[];
+  slackChannel?: string;
+  slackChannelLink?: string;
 }
 
 export const formatTime = (time: Date, endTime: Date): string => {
@@ -45,6 +47,17 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
      * TODO: Add activity to list of activities user is interested in during the session.
      */
   };
+
+  const channelLink = props.slackChannel ? (
+    <>
+      <br />
+      Check out this channel for discussions on this event:
+      <br />
+      <a href={props.slackChannelLink}>{props.slackChannel}</a>
+    </>
+  ) : (
+    <></>
+  );
 
   return (
     <>
@@ -83,6 +96,21 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                     </li>
                   ))}
                 </ul>
+              </Card.Body>
+            </Card>
+            <br />
+            <Card>
+              <Card.Body>
+                <Card.Title>Join the Discussion:</Card.Title>
+                <Card.Text>
+                  Join our slack to discuss with presenters, mentors, and other
+                  TAMU Datathon 2020 attendees.
+                  <br />
+                  {channelLink}
+                </Card.Text>
+                <Button href={"#slack-link-here"} variant={"outline-primary"} block>
+                  Join our Slack!
+                </Button>
               </Card.Body>
             </Card>
             {user?.isAdmin && (
