@@ -11,7 +11,7 @@ presenter: Shahina Rahman
 presenterSocials:
   - type: Shahina's LinkedIn
     link: https://www.linkedin.com/in/shahina-rahman-296b1aa7/
-presenterAbout: Shanina is a PhD in Statistics, got first place in Distinguished Postdoctoral Flash Talks, and has worked as a postdoc in Germany.
+presenterAbout: Shanina is a Instructional Assistant Professor in Statistics, got first place in Distinguished Postdoctoral Flash Talks, and has worked as a postdoc in Germany.
 priority: 7
 relatedActivities:
   - data_science_202

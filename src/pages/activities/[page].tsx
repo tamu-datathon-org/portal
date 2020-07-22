@@ -21,6 +21,8 @@ interface PageInterface {
   presenter: string;
   presenterAbout: string;
   presenterSocials: SocialInfo[];
+  slackChannel?: string;
+  slackChannelLink?: string;
   relatedActivities: string[];
 }
 
@@ -55,6 +57,8 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
         speakerAbout={page.presenterAbout}
         speakerSocials={page.presenterSocials}
         relatedActivities={page.relatedActivities}
+        slackChannel={page.slackChannel}
+        slackChannelLink={page.slackChannelLink}
       ></ActivityInfo>
     </>
   );
