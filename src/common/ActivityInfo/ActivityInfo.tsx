@@ -51,7 +51,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   const channelLink = props.slackChannel ? (
     <>
       <br />
-      Check out this channel for discussions on this event:
+      Check out this slack channel for discussions on this event:
       <br />
       <a href={props.slackChannelLink}>
         <b>{props.slackChannel}</b>
