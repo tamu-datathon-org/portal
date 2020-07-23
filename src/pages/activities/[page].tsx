@@ -8,8 +8,6 @@ import { Media } from "../../common/Media";
 import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-
 interface PageInterface {
   mediaLink: string;
   mediaType: "embed_url" | "meeting_url";
@@ -24,16 +22,39 @@ interface PageInterface {
   slackChannel?: string;
   slackChannelLink?: string;
   relatedActivities: string[];
+  thumbnail: string;
 }
 
 interface ActivityProps {
   page: PageInterface;
 }
 
+// This works but a little janky for now.
+// https://www.w3resource.com/javascript-exercises/javascript-string-exercise-35.php
+// https://stackoverflow.com/questions/1418050/string-strip-for-javascript
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function stripHtmlTags(str: any) {
+  if (str === null || str === "") return false;
+  else str = str.toString();
+  // strip HTML & whitespace
+  return str.replace(/<[^>]*>/g, "").replace(/^\s+|\s+$/g, "");
+}
+
 const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
+  // add an ellipsis if longer than 100 characters
+  const desc = stripHtmlTags(page.content);
+  const trimDesc = desc.length > 100 ? `${desc.substring(0, 100)}...` : desc;
+  const pageURL = `https://tamudatathon.com/events/activities/${page.id}`;
+
   return (
     <>
-      <Head title={`${page.name} - TAMU Datathon`} />
+      <Head title={`${page.name} - TAMU Datathon`}>
+        <meta property="og:title" content={page.name} />
+        <meta property="og:description" content={trimDesc} />
+        <meta property="og:image" content={page.thumbnail} />
+        <meta property="og:url" content={pageURL} />
+        <meta name="twitter:card" content="summary_large_image" />
+      </Head>
       <Navbar />
       <BackBtn url={"/"}></BackBtn>
       <Media
