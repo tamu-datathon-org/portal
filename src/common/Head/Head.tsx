@@ -17,7 +17,3 @@ export const Head: React.FC<HeadProps> = ({ children, title }) => {
     </NextHead>
   );
 };
-
-Head.propTypes = {
-  title: PropTypes.string,
-};

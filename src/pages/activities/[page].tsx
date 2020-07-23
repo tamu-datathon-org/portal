@@ -1,7 +1,7 @@
 import React from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
-import Head from "next/head";
 
+import { Head } from "../../common/Head";
 import { Navbar } from "../../common/Navbar";
 import { BackBtn } from "../../common/BackBtn";
 import { Media } from "../../common/Media";
@@ -33,10 +33,8 @@ interface ActivityProps {
 const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   return (
     <>
-      <Head>
-        <title>{page.name} - TAMU Datathon</title>
-      </Head>
-      <Navbar></Navbar>
+      <Head title={`${page.name} - TAMU Datathon`} />
+      <Navbar />
       <BackBtn url={"/"}></BackBtn>
       <Media
         link={page.mediaLink}

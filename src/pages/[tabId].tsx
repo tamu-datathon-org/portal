@@ -1,13 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import { GetStaticProps, GetStaticPaths } from "next";
 import { Container } from "react-bootstrap";
-import Head from "next/head";
+import PropTypes from "prop-types";
 
 // custom components
+import { Head } from "../common/Head";
+import { Navbar } from "../common/Navbar";
 import { Set } from "../common/Set";
 import { ActivitySection } from "../common/Set/interfaces";
-import { Navbar } from "../common/Navbar";
-import PropTypes from "prop-types";
 import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
 import {
   CustomHeader,
@@ -18,7 +19,6 @@ import {
   NavItem,
 } from "../common/Misc";
 
-import { GetStaticProps, GetStaticPaths } from "next";
 import { getAllPages, getPageByName, Page } from "../libs/pagesAPI";
 import { getPageSets, getPageSetsContent } from "../libs/setsAPI";
 
@@ -36,10 +36,8 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
 
   return (
     <>
-      <Head>
-        <title>Events - TAMU Datathon</title>
-      </Head>
-      <Navbar></Navbar>
+      <Head />
+      <Navbar />
       <Container className="pt-5">
         <CustomHeader>
           <ColorSpan>Events and Workshops</ColorSpan>
