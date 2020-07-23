@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/ban-types */
 export interface HeadProps {
-  title: string;
+  children?: Object;
+  title?: string;
 }

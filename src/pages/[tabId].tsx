@@ -9,7 +9,6 @@ import { Head } from "../common/Head";
 import { Navbar } from "../common/Navbar";
 import { Set } from "../common/Set";
 import { ActivitySection } from "../common/Set/interfaces";
-import { useActiveUser, UserCurrentStatus } from "../common/UserProvider";
 import {
   CustomHeader,
   EventsBlueWrapper,
@@ -32,7 +31,7 @@ interface IndexPageProps {
  * This page is for any of the tabs on the main page
  */
 const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
-  const { user, status } = useActiveUser();
+  // const { user, status } = useActiveUser();
 
   return (
     <>

@@ -1,5 +1,5 @@
 import React from "react";
-import { useState } from "react";
+// import { useState } from "react";
 import { Card, Row, Col, Container, Button, Alert } from "react-bootstrap";
 import moment from "moment-timezone";
 import ReactMarkdown from "react-markdown";
@@ -38,15 +38,15 @@ export const formatTime = (time: Date, endTime: Date): string => {
 };
 
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
-  const [interested, setInterested] = useState(false);
+  // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
 
-  const handleClick = () => {
-    setInterested(!interested);
-    /**
-     * TODO: Add activity to list of activities user is interested in during the session.
-     */
-  };
+  // const handleClick = () => {
+  //   setInterested(!interested);
+  //   /**
+  //    * TODO: Add activity to list of activities user is interested in during the session.
+  //    */
+  // };
 
   const channelLink = props.slackChannel ? (
     <>
