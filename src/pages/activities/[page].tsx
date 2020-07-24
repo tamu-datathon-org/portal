@@ -78,6 +78,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
         relatedActivities={page.relatedActivities}
         slackChannel={page.slackChannel}
         slackChannelLink={page.slackChannelLink}
+        mediaLink={page.mediaLink}
       ></ActivityInfo>
     </>
   );
