@@ -4,6 +4,7 @@ id: intro_nlp
 startTime: July 25, 2020 17:00:00-500
 endTime: July 25, 2020 18:00:00-500
 duration: 60
+eventId: 5f1bc40e19f52100035dda01
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/0dd3d528-a1b1-481c-8ccf-01e7913ae268.jpeg
