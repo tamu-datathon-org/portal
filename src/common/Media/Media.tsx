@@ -36,7 +36,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       callDescription = (
         <>
           Click Join to join in on the discussion. Can&apos;t make it?
-          Don&apos;t worry, a VOD will show up here afterwards.
+          Don&apos;t worry, a recording will show up here afterwards.
         </>
       );
       joinBtn = (

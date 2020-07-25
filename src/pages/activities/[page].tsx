@@ -61,7 +61,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
         link={`/events/api/join.ts?activityId=${page.id}`}
         type={page.mediaType}
         callOngoing={
-          new Date().getTime() >= new Date(page.startTime).getTime() &&
+          new Date().getTime() >= new Date(page.startTime).getTime() - 900000 &&
           new Date().getTime() <= new Date(page.endTime).getTime()
         }
       ></Media>
