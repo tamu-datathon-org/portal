@@ -6,7 +6,7 @@ endTime: July 25, 2020 17:00:00-500
 duration: 60
 eventId: 5f1bc35419f52100035dda00
 mediaType: meeting_url
-mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
+mediaLink: https://tamu.zoom.us/j/97731520079
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/312ff56c-bd96-4f79-8ccf-a4918c0028c3.jpg
 presenter: Shahina Rahman
 presenterSocials:

@@ -6,7 +6,7 @@ endTime: July 25, 2020 17:00:00-500
 duration: 60
 eventId: 5f1bc1f719f52100035dd9ff
 mediaType: meeting_url
-mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
+mediaLink: https://tamu.zoom.us/j/4422915103
 thumbnail: https://firebasestorage.googleapis.com/v0/b/posana-org.appspot.com/o/uploaded_content%2Fimg.jpg?alt=media&token=65a7a595-fb45-4f29-8b10-6785337ee0cf
 presenter: Isha Mehra
 presenterAbout: Isha Mehra is a Data Scientist at Facebook. She has a B. S. Statistics and Machine Learning at Carnegie Mellon University, and has been a TA for Computer Science classes at Carnegie Mellon University (Intro to CS).

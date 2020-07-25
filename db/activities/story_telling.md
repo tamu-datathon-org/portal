@@ -6,7 +6,7 @@ endTime: July 25, 2020 21:00:00-500
 eventId: 5f1bbcc919f52100035dd9fb
 duration: 60
 mediaType: meeting_url
-mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
+mediaLink: https://tamu.zoom.us/j/98880459784
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png
 presenter: Isha Mehra and Shreya Punya
 presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon University Isha - Data Scientist at Facebook, Shreya - Data Scientist at Instagram Both were TAs for Computer Science classes at Carnegie Mellon University (Isha Intro to CS, Shreya Intro to ML)
