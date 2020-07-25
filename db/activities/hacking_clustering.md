@@ -29,3 +29,7 @@ In this workshop, I am going to take you to the fascinating journey into unsuper
 First I discuss the ill-posed definition of clustering. Next, I will discuss major clustering algorithms followed by their application on real and complex data set in R or Python. 
 
 The goal of this talk is to understand the intuition behind these algorithms so that we can gauge their limitations.
+
+
+### Links to Resources in this talk
+https://drive.google.com/drive/folders/1L0eAVBaXHvbVb6OpcVDEIFQjMh8k6ph0
