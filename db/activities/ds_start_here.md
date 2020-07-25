@@ -4,6 +4,7 @@ id: ds_start_here
 startTime: July 25, 2020 17:00:00-500
 endTime: July 25, 2020 19:00:00-500
 duration: 120
+eventId: 5f1bc1bc19f52100035dd9fe
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/1268a546-810c-4e7e-a427-c1dfcc4eda76.jpg
