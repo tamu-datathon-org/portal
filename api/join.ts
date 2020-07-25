@@ -26,15 +26,21 @@ const joinEventHandler = async (
     userAuthId: user.authId,
   };
 
-  await authenticatedFetch(`${getBaseUrl(req)}/auth/attended`, req, {
-    method: "POST",
-    body: JSON.stringify(payload),
-    headers: {
-      "Gatekeeper-Integration": process.env
-        .GATEKEEPER_INTEGRATION_SECRET as string,
-      "Content-Type": "application/json",
-    },
-  });
+  const resp = await authenticatedFetch(
+    `${getBaseUrl(req)}/auth/attended`,
+    req,
+    {
+      method: "POST",
+      body: JSON.stringify(payload),
+      headers: {
+        "Gatekeeper-Integration": process.env
+          .GATEKEEPER_INTEGRATION_SECRET as string,
+        "Content-Type": "application/json",
+      },
+    }
+  );
+
+  console.log("fetch body", resp);
 
   return res
     .writeHead(302, {

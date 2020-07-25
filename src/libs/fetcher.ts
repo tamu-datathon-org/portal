@@ -23,6 +23,13 @@ export const authenticatedFetch = <JSON = unknown>(
   init?: RequestInit
 ): Promise<JSON> => {
   const { accessToken } = req.cookies;
+  console.log("fetch", input, {
+    ...init,
+    headers: {
+      ...init?.headers,
+      Cookie: `accessToken=${accessToken}`,
+    },
+  });
   return fetcher(input, {
     ...init,
     headers: {
