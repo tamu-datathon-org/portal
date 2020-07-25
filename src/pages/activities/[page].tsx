@@ -4,7 +4,7 @@ import { GetStaticProps, GetStaticPaths } from "next";
 import { Head } from "../../common/Head";
 import { Navbar } from "../../common/Navbar";
 import { BackBtn } from "../../common/BackBtn";
-import { Media } from "../../common/Media";
+import { Media, CallStatus } from "../../common/Media";
 import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 
@@ -46,6 +46,16 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   const trimDesc = desc.length > 100 ? `${desc.substring(0, 100)}...` : desc;
   const pageURL = `https://tamudatathon.com/events/activities/${page.id}`;
 
+  let callStatus = CallStatus.NOT_STARTED;
+  if (
+    new Date().getTime() >= new Date(page.startTime).getTime() - 900000 &&
+    new Date().getTime() <= new Date(page.endTime).getTime()
+  ) {
+    callStatus = CallStatus.ONGOING;
+  }
+  if (new Date().getTime() > new Date(page.endTime).getTime()) {
+    callStatus = CallStatus.FINISHED;
+  }
   return (
     <>
       <Head title={`${page.name} - TAMU Datathon`}>
@@ -60,10 +70,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
       <Media
         link={`/events/api/join.ts?activityId=${page.id}`}
         type={page.mediaType}
-        callOngoing={
-          new Date().getTime() >= new Date(page.startTime).getTime() - 900000 &&
-          new Date().getTime() <= new Date(page.endTime).getTime()
-        }
+        callStatus={callStatus}
       ></Media>
       <br />
       <ActivityInfo
