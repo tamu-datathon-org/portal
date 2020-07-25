@@ -1,6 +1,7 @@
 ---
 name: Data Science 101
 id: data_science_101
+eventId: 5efe2be0c7febf000306be94
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
 duration: 60

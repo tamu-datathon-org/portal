@@ -1,6 +1,7 @@
 ---
 name: Opening Ceremony
 id: opening_ceremony
+eventId: 5efe2be0c7febf000306be94
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
 mediaType: embed_url
