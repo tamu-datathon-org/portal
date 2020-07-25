@@ -90,7 +90,9 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
               </Col>
               {joinBtn}
             </Row>
-            <small><strong>By joining the call, you agree to being recorded.</strong></small>
+            <small>
+              <strong>By joining the call, you agree to being recorded.</strong>
+            </small>
           </Container>
         </UI.MeetingWrapper>
       </>
