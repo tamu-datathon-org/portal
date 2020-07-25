@@ -2,7 +2,6 @@
 import React from "react";
 import { GetStaticProps, GetStaticPaths } from "next";
 import { Container } from "react-bootstrap";
-import PropTypes from "prop-types";
 
 // custom components
 import { Head } from "../common/Head";
@@ -65,12 +64,6 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
       </EventsBlueWrapper>
     </>
   );
-};
-
-TabPage.propTypes = {
-  page: PropTypes.any,
-  allPages: PropTypes.arrayOf(PropTypes.any),
-  allSets: PropTypes.arrayOf(PropTypes.any),
 };
 
 export default TabPage;

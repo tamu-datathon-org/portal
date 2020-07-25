@@ -3,7 +3,6 @@ import { useState, useEffect } from "react";
 import { Card } from "../Card";
 import { SetProps } from "./interfaces";
 import * as UI from "./style";
-import PropTypes from "prop-types";
 
 /**
  * Set component
@@ -66,8 +65,4 @@ export const Set: React.FC<SetProps> = ({ info }) => {
       )}
     </>
   );
-};
-
-Set.propTypes = {
-  info: PropTypes.any.isRequired,
 };

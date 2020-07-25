@@ -5,7 +5,6 @@ import {
   UserProviderState,
   GatekeeperRequestError,
 } from "./interfaces";
-import PropTypes from "prop-types";
 import useSWR from "swr";
 import { fetcher } from "../../libs";
 
@@ -48,8 +47,4 @@ export const UserProvider: React.FC<React.HTMLProps<HTMLDivElement>> = ({
       {children}
     </UserProviderContext.Provider>
   );
-};
-
-UserProvider.propTypes = {
-  children: PropTypes.element,
 };

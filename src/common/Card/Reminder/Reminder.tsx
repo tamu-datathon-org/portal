@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { useState } from "react";
 import { ReminderProps } from "../interfaces";
 import * as UI from "./style";
-import PropTypes from "prop-types";
 
 /**
  * Reminder component
@@ -34,8 +33,4 @@ export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
   } else {
     return <></>;
   }
-};
-
-Reminder.propTypes = {
-  startTime: PropTypes.any.isRequired,
 };

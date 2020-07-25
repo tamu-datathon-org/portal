@@ -1,11 +1,11 @@
 import React from "react";
-import { Reminder } from "./Reminder";
-import * as UI from "./style";
-import PropTypes from "prop-types";
-import { ActivityCardProps } from "./interfaces";
+import moment from "moment-timezone";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import moment from "moment-timezone";
+
+import { Reminder } from "./Reminder";
+import * as UI from "./style";
+import { ActivityCardProps } from "./interfaces";
 
 /**
  * Formats date to a string for the start and end time.
@@ -54,8 +54,4 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
       </UI.EventInfo>
     </UI.StyledCard>
   );
-};
-
-Card.propTypes = {
-  event: PropTypes.any.isRequired,
 };

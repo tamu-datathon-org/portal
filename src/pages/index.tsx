@@ -1,8 +1,8 @@
 import React from "react";
-import TabPage from "./[tabId]";
 import { GetStaticProps } from "next";
+
+import TabPage from "./[tabId]";
 import { getAllPages, Page } from "../libs/pagesAPI";
-import PropTypes from "prop-types";
 import { ActivitySection } from "../common/Set/interfaces";
 import { getPageSets, getPageSetsContent } from "../libs/setsAPI";
 
@@ -15,11 +15,6 @@ const IndexPage: React.FC<{
   allSets?: ActivitySection[];
 }> = ({ page, allPages, allSets }) => {
   return <TabPage page={page} allPages={allPages} allSets={allSets}></TabPage>;
-};
-IndexPage.propTypes = {
-  page: PropTypes.any,
-  allPages: PropTypes.arrayOf(PropTypes.any),
-  allSets: PropTypes.arrayOf(PropTypes.any),
 };
 export default IndexPage;
 

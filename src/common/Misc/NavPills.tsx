@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import PropTypes from "prop-types";
 
 import * as UI from "./style";
 import { NavItemProps, NavPillsProps } from "./interfaces";
@@ -16,11 +15,6 @@ export const NavPills: React.FC<NavPillsProps> = ({ children, activeKey }) => {
   );
 };
 
-NavPills.propTypes = {
-  children: PropTypes.any,
-  activeKey: PropTypes.string,
-};
-
 // NavItem Component
 export const NavItem: React.FC<NavItemProps> = (props) => {
   const { href: hrefEntry, as, children } = props;
@@ -31,12 +25,4 @@ export const NavItem: React.FC<NavItemProps> = (props) => {
       </Link>
     </UI._NavItem>
   );
-};
-
-// children not required b/c link can be made w/o text
-// i mean it shouldn't but welp
-NavItem.propTypes = {
-  href: PropTypes.string.isRequired,
-  children: PropTypes.any,
-  as: PropTypes.string,
 };
