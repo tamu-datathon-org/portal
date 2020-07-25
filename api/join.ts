@@ -1,8 +1,8 @@
 import { NowRequest, NowResponse } from "@vercel/node";
-import { authenticatedRoute } from "../../src/libs/middleware";
-import { User } from "../../src/common/UserProvider";
-import { getBaseUrl, authenticatedFetch } from "../../src/libs";
-import { getActivityByName } from "../../src/libs/activitiesAPI";
+import { authenticatedRoute } from "../src/libs/middleware";
+import { User } from "../src/common/UserProvider";
+import { getBaseUrl, authenticatedFetch } from "../src/libs";
+import { getActivityByName } from "../src/libs/activitiesAPI";
 
 const joinEventHandler = async (
   req: NowRequest,
