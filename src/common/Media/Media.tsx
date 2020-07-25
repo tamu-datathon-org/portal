@@ -85,6 +85,12 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
                   <Col>
                     {callStatus && <h3>{callStatus}</h3>}
                     {callDescription}
+                    <br />
+                    <small>
+                      <strong>
+                        By joining the call, you agree to being recorded.
+                      </strong>
+                    </small>
                   </Col>
                 </Row>
               </Col>
