@@ -5,7 +5,6 @@ startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: embed_url
-eventId: 5f1bbd0819f52100035dd9fc
 mediaLink: https://www.youtube.com/embed/ysfoSauXpq0
 thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
 presenter: Seth Hamilton
