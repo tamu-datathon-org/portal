@@ -58,7 +58,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
       <Navbar />
       <BackBtn url={"/"}></BackBtn>
       <Media
-        link={page.mediaLink}
+        link={`/events/api/join.ts?activityId=${page.id}`}
         type={page.mediaType}
         callOngoing={
           new Date().getTime() >= new Date(page.startTime).getTime() &&
