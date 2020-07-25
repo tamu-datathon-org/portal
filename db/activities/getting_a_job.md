@@ -7,21 +7,26 @@ duration: 60
 eventId: 5f1bc1f719f52100035dd9ff
 mediaType: meeting_url
 mediaLink: https://zoom.us/join/zoomRoomIdGoesHere
-thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/f66d470d-73bd-4471-965c-f65f40087e19.jpeg
-presenter: Brandon Walker
-presenterAbout: Brandon is a Data Scientist at IBM.
+thumbnail: https://firebasestorage.googleapis.com/v0/b/posana-org.appspot.com/o/uploaded_content%2Fimg.jpg?alt=media&token=65a7a595-fb45-4f29-8b10-6785337ee0cf
+presenter: Isha Mehra
+presenterAbout: Isha Mehra is a Data Scientist at Facebook. She has a B. S. Statistics and Machine Learning at Carnegie Mellon University, and has been a TA for Computer Science classes at Carnegie Mellon University (Intro to CS).
 presenterSocials:
-  - type: Brandon's Medium
-    link: https://medium.com/@branwalker19
+  - type: Isha's LinkedIn
+    link: https://www.linkedin.com/in/ishamehra
 priority: 7
 relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
 ---
-<div class="embed-responsive embed-responsive-16by9 mb-3">
-<iframe src="https://www.youtube.com/embed/X5kTfI5cuy8" frameBorder="0" allowfullscreen></iframe>
-</div>
+
+
+---
+
+##### Notice
+The presenter for this presentation has changed to [Isha](https://www.linkedin.com/in/ishamehra). She is a Data Scientist at Facebook, has a B. S. Statistics and Machine Learning at Carnegie Mellon University, and has been a TA for Computer Science classes at Carnegie Mellon University (Intro to CS).
+
+---
 
 In my talk I'll be covering how to apply for a data science job this one could had to build projects for a data science portfolio, how to structure your resume, and how to reach out to people effectively.
 
