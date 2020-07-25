@@ -12,6 +12,14 @@ const joinEventHandler = async (
   const { eventId, mediaLink } = await getActivityByName(
     req.query.activityId as string
   );
+  console.log(
+    "trying for eventId:",
+    eventId,
+    "; mediaLink:",
+    mediaLink,
+    "; activityId:",
+    req.query.activityId
+  );
 
   const payload = {
     eventId,
