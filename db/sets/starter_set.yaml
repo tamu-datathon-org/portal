@@ -1,9 +1,0 @@
-name: Get started with Data Science
-id: starter_set
-description: New to Data Science? Attend these live classes to improve your skill!
-showMoreState: true
-orderedBy: start_time
-priority: 4
-activityList:
-  - opening_ceremony
-  - data_science_101

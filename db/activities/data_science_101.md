@@ -4,6 +4,7 @@ id: data_science_101
 eventId: 5efe2be0c7febf000306be94
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
+duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/28347923874
 thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
@@ -14,6 +15,8 @@ presenterSocials:
     link: https://www.facebook.com/public/John-Doe
   - type: LinkedIn
     link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
+slackChannel: data-science-101
+slackChannelLink: "#data_science-101-link"
 priority: 7
 relatedActivities:
   - data_science_202

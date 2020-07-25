@@ -1,9 +1,0 @@
-name: Already know Data Science
-id: expert_set
-description: Not new to Data Science? Attend these classes to build your skill!
-showMoreState: true
-orderedBy: start_time
-priority: 4
-activityList:
-  - data_science_101
-  - opening_ceremony

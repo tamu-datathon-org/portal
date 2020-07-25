@@ -57,11 +57,13 @@ export const Set: React.FC<SetProps> = ({ info }) => {
           />
         ))}
       </UI.CardsContainer>
-      <UI.ShowBtnContainer>
-        <UI.Hr />
-        <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>
-        <UI.Hr />
-      </UI.ShowBtnContainer>
+      {info.eventList.length > 4 && (
+        <UI.ShowBtnContainer>
+          <UI.Hr />
+          <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>
+          <UI.Hr />
+        </UI.ShowBtnContainer>
+      )}
     </>
   );
 };

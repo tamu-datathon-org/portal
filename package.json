@@ -8,7 +8,7 @@
     "dev:next": "next dev",
     "lint": "eslint src/",
     "fix": "eslint src/ --fix",
-    "build": "next build",
+    "build": "TZ=America/Chicago next build",
     "start": "next start"
   },
   "dependencies": {
@@ -21,6 +21,7 @@
     "gray-matter": "^4.0.2",
     "isomorphic-unfetch": "^3.0.0",
     "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
     "next": "9.3.5",
     "react": "16.13.1",
     "react-bootstrap": "^1.0.1",

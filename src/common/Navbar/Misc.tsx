@@ -7,12 +7,14 @@ import {
   Dropdown,
 } from "react-bootstrap";
 import { useActiveUser, UserCurrentStatus } from "../UserProvider";
+import { useRouter } from "next/router";
 
 /**
  * Nav component
  */
 export const Navbar: React.FC = () => {
   const { user, status } = useActiveUser();
+  const router = useRouter();
 
   const navbarUserDropdown = (
     <Dropdown>
@@ -55,10 +57,24 @@ export const Navbar: React.FC = () => {
               <UI.NavUserInfo className="text-muted">
                 {user?.email}
               </UI.NavUserInfo>
-              <UI.NavLink href="/auth/logout?r=/events">Logout</UI.NavLink>
+              <UI.NavLink
+                href={`/auth/logout?r=${
+                  process.browser
+                    ? window.location.pathname
+                    : `${router.basePath}${router.asPath}`
+                }`}
+              >
+                Logout
+              </UI.NavLink>
             </>
           ) : (
-            <UI.NavLink href="/auth/logout?r=/events">
+            <UI.NavLink
+              href={`/auth/login?r=${
+                process.browser
+                  ? window.location.pathname
+                  : `${router.basePath}${router.asPath}`
+              }`}
+            >
               Login / Signup
             </UI.NavLink>
           )}
@@ -70,7 +86,13 @@ export const Navbar: React.FC = () => {
         {status === UserCurrentStatus.LoggedIn ? (
           navbarUserDropdown
         ) : (
-          <UI.NavbarLoginLink href="/auth/login?r=/events">
+          <UI.NavbarLoginLink
+            href={`/auth/login?r=${
+              process.browser
+                ? window.location.pathname
+                : `${router.basePath}${router.asPath}`
+            }`}
+          >
             Login / Signup
           </UI.NavbarLoginLink>
         )}

@@ -77,7 +77,7 @@ export async function getPageSetsContent(
             title: activityFileContent.name,
             startTime: activityFileContent.startTime,
             endTime: activityFileContent.endTime,
-            duration: 60,
+            duration: activityFileContent.duration,
             infoUrl: `/events/activities/${activityFileContent.id}`,
           };
           return { event: activityContent };

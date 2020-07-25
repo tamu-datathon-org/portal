@@ -14,6 +14,8 @@ presenterSocials:
     link: https://www.facebook.com/public/John-Doe
   - type: LinkedIn
     link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
+slackChannel: slack channel name for activity (ml-start-here)
+slackChannelLink: slack channel link for activity (https://tamudatathon.slack.com/some_stuff)
 priority: number_between_1_10 (7)
 relatedActivities:
   - activity_file_name (data_science_202)
