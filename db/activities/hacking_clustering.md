@@ -26,4 +26,7 @@ First I discuss the ill-posed definition of clustering. Next, I will discuss maj
 
 The goal of this talk is to understand the intuition behind these algorithms so that we can gauge their limitations.
 
+
+#### Useful Links
 - [Watch the trailer for this class](https://www.youtube.com/watch?v=gsfDVH2id-U)
+- [Jupyter Notebooks](https://drive.google.com/drive/folders/1L0eAVBaXHvbVb6OpcVDEIFQjMh8k6ph0)
