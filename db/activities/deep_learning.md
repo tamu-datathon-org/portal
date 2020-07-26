@@ -25,3 +25,6 @@ I will start by talking about the convolution operation, the motivation of choos
 I will then briefly go over the architecture of a famous convolution network. I will end by talking about some applications and sharing a Colab notebook of at least one convolutional network for semantic segmentation (using [PyTorch](https://pytorch.org/)).
 
 If time permits and people are interested, I will be happy to touch on some pertinent advanced topics like transpose convolutions etc.
+
+#### Useful Links
+- [Google Colab Notebook](https://github.com/tamu-datathon-org/portal/issues/59)
