@@ -5,8 +5,8 @@ startTime: July 25, 2020 16:00:00-500
 endTime: July 25, 2020 17:00:00-500
 duration: 60
 eventId: 5f1bc35419f52100035dda00
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/97731520079
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/x_WWwbBqFLQ
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/312ff56c-bd96-4f79-8ccf-a4918c0028c3.jpg
 presenter: Shahina Rahman
 presenterSocials:
@@ -19,10 +19,6 @@ relatedActivities:
   - data_science_303
   - data_science_404
 ---
-<div class="embed-responsive embed-responsive-16by9 mb-3">
-<iframe src="https://www.youtube.com/embed/gsfDVH2id-U" frameBorder="0" allowfullscreen></iframe>
-</div>
-
 
 In this workshop, I am going to take you to the fascinating journey into unsupervised clustering algorithms.
 
@@ -31,5 +27,6 @@ First I discuss the ill-posed definition of clustering. Next, I will discuss maj
 The goal of this talk is to understand the intuition behind these algorithms so that we can gauge their limitations.
 
 
-### Links to Resources in this talk
-https://drive.google.com/drive/folders/1L0eAVBaXHvbVb6OpcVDEIFQjMh8k6ph0
+#### Useful Links
+- [Watch the trailer for this class](https://www.youtube.com/watch?v=gsfDVH2id-U)
+- [Jupyter Notebooks](https://drive.google.com/drive/folders/1L0eAVBaXHvbVb6OpcVDEIFQjMh8k6ph0)
