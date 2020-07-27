@@ -67,7 +67,11 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
         <h2 className="pb-3">{props.title}</h2>
         <Row>
           <Col>
-            <ReactMarkdown escapeHtml={false} source={props.description} />
+            <ReactMarkdown
+              linkTarget="_blank"
+              escapeHtml={false}
+              source={props.description}
+            />
           </Col>
           <Col lg={4} md={12}>
             {/* <Button
