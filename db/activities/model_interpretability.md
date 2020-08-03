@@ -32,3 +32,4 @@ In this session, we will cover a few of the necessary tools such as feature impo
 
 #### Useful Links
 - [Watch the trailer for this class](https://www.youtube.com/watch?v=O4w0cE2rmTk)
+- [Tutorial Materials](https://github.com/sheelabhadra/TAMU-Datathon-Model-Interpretability)
