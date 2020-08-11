@@ -73,7 +73,10 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   //    */
   // };
 
-  const getICS = () => {
+  /**
+   * Creates and downloads an iCalendar file with the current activity's information.
+   */
+  const getICS = React.useCallback(() => {
     const startTimeString = moment(props.startTime)
       .tz(moment.tz.guess())
       .format("YYYY-MM-DD-HH-mm");
@@ -86,8 +89,8 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
       start: startTimeArr as ics.DateArray,
       end: endTimeArr as ics.DateArray,
       title: props.title,
-      description: "Attend Here: tamudatathon.com/events",
-      url: "http://tamudatathon.com/events/",
+      description: `Attend Here: tamudatathon.com/events/activities/${props.id}`,
+      url: `https://tamudatathon.com/events/activities/${props.id}`,
     };
     ics.createEvent(event, (error, value) => {
       if (error) {
@@ -97,7 +100,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
       const blob = new Blob([value], { type: "text/plain;charset=utf-8" });
       FileSaver.saveAs(blob, "invite.ics");
     });
-  };
+  }, []);
 
   const remindMeMenu =
     minsToEvent > 0 ? (
@@ -114,7 +117,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 `action=TEMPLATE&` +
                 `text=${props.title}&` +
                 `dates=${formatGoogleTime(props.startTime, props.endTime)}&` +
-                `details=Attend Here: tamudatathon.com/events&` +
+                `details=Attend Here: tamudatathon.com/events/activities/${props.id}&` +
                 `ctz=America/Chicago`
               }
             >
