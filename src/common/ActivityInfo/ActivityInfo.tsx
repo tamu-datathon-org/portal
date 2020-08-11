@@ -32,7 +32,6 @@ export interface InfoProps {
   relatedActivities?: string[];
   slackChannel?: string;
   slackChannelLink?: string;
-  mediaLink: string;
 }
 
 export const formatTime = (time: Date, endTime: Date): string => {
@@ -64,6 +63,8 @@ export const formatGoogleTime = (startTime: Date, endTime: Date): string => {
 export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
+  const curTime = new Date();
+  const minsToEvent = props.startTime.getTime() - curTime.getTime();
 
   // const handleClick = () => {
   //   setInterested(!interested);
@@ -98,6 +99,38 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
     });
   };
 
+  const remindMeMenu =
+    minsToEvent > 0 ? (
+      <>
+        <Dropdown>
+          <Dropdown.Toggle id="add-to-calendar" style={{ width: "100%" }}>
+            Add to calendar
+          </Dropdown.Toggle>
+          <Dropdown.Menu style={{ width: "100%" }}>
+            <Dropdown.Item
+              target="_blank"
+              href={
+                `https://www.google.com/calendar/render?` +
+                `action=TEMPLATE&` +
+                `text=${props.title}&` +
+                `dates=${formatGoogleTime(props.startTime, props.endTime)}&` +
+                `details=Attend Here: tamudatathon.com/events&` +
+                `ctz=America/Chicago`
+              }
+            >
+              Google Calendar
+            </Dropdown.Item>
+            <Dropdown.Item onSelect={getICS}>
+              Other Calendar (.ics file)
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+        <br />
+      </>
+    ) : (
+      <></>
+    );
+
   const channelLink = props.slackChannel ? (
     <>
       <br />
@@ -129,33 +162,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                 ? "🙄 I'm no longer interested"
                 : "🤔 Mark me interested"}
             </Button> */}
-            <Dropdown>
-              <Dropdown.Toggle id="add-to-calendar">
-                Add to calendar
-              </Dropdown.Toggle>
-              <Dropdown.Menu>
-                <Dropdown.Item
-                  target="_blank"
-                  href={
-                    `https://www.google.com/calendar/render?` +
-                    `action=TEMPLATE&` +
-                    `text=${props.title}&` +
-                    `dates=${formatGoogleTime(
-                      props.startTime,
-                      props.endTime
-                    )}&` +
-                    `details=Attend Here: tamudatathon.com/events&` +
-                    `ctz=America/Chicago`
-                  }
-                >
-                  Google Calendar
-                </Dropdown.Item>
-                <Dropdown.Item onSelect={getICS}>
-                  Other Calendar (.ics file)
-                </Dropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-            <br />
+            {remindMeMenu}
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
