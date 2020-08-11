@@ -12,6 +12,8 @@ import {
 import moment from "moment-timezone";
 import ReactMarkdown from "react-markdown";
 import { useActiveUser } from "../UserProvider";
+import * as ics from "ics";
+import * as FileSaver from "file-saver";
 
 export interface SocialInfo {
   type: string;
@@ -70,6 +72,32 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   //    */
   // };
 
+  const getICS = () => {
+    const startTimeString = moment(props.startTime)
+      .tz(moment.tz.guess())
+      .format("YYYY-MM-DD-HH-mm");
+    const startTimeArr = startTimeString.split("-").map(Number);
+    const endTimeString = moment(props.endTime)
+      .tz(moment.tz.guess())
+      .format("YYYY-MM-DD-HH-mm");
+    const endTimeArr = endTimeString.split("-").map(Number);
+    const event = {
+      start: startTimeArr as ics.DateArray,
+      end: endTimeArr as ics.DateArray,
+      title: props.title,
+      description: "Attend Here: tamudatathon.com/events",
+      url: "http://tamudatathon.com/events/",
+    };
+    ics.createEvent(event, (error, value) => {
+      if (error) {
+        console.log(error);
+        return;
+      }
+      const blob = new Blob([value], { type: "text/plain;charset=utf-8" });
+      FileSaver.saveAs(blob, "invite.ics");
+    });
+  };
+
   const channelLink = props.slackChannel ? (
     <>
       <br />
@@ -116,13 +144,15 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                       props.startTime,
                       props.endTime
                     )}&` +
-                    `details=Attend Here: ${props.mediaLink}&` +
+                    `details=Attend Here: tamudatathon.com/events&` +
                     `ctz=America/Chicago`
                   }
                 >
                   Google Calendar
                 </Dropdown.Item>
-                <Dropdown.Item>Other Calendar (.ics file)</Dropdown.Item>
+                <Dropdown.Item onSelect={getICS}>
+                  Other Calendar (.ics file)
+                </Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>
             <br />
