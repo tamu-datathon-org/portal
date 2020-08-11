@@ -1,8 +1,9 @@
 ---
 name: Data Science 101
 id: data_science_101
-startTime: June 20, 2020 10:30:00
-endTime: June 20, 2020 11:30:00
+eventId: 5efe2be0c7febf000306be94
+startTime: July 25, 2020 13:00:00-500
+endTime: July 25, 2020 13:45:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/28347923874

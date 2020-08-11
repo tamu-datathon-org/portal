@@ -14,3 +14,8 @@ export const MeetingWrapper = styled.div`
   color: #00109b;
   padding: 2em 0em;
 `;
+
+export const RecordingDisclaimer = styled.small`
+  display: block;
+  margin-top: 10px;
+`;

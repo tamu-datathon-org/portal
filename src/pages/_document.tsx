@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 /* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import React from "react";
-import Document from "next/document";
+import Document, { Html, Head, Main, NextScript } from "next/document";
 import { ServerStyleSheet } from "styled-components";
 
 export default class MyDocument extends Document {
@@ -29,5 +29,32 @@ export default class MyDocument extends Document {
     } finally {
       sheet.seal();
     }
+  }
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-138612638-1"
+          ></script>
+
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'UA-138612638-1');
+            `,
+            }}
+          />
+        </Head>
+        <body>
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
   }
 }

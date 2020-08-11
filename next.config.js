@@ -7,7 +7,7 @@ module.exports = {
     includePaths: [path.join(__dirname)],
   },
   experimental: {
-    basePath: "/events",
+    basePath: `/${BASE_PATHNAME}`,
   },
   assetPrefix: BASE_PATHNAME ? `/${BASE_PATHNAME}` : "",
 };
