@@ -34,11 +34,11 @@ export interface InfoProps {
   slackChannelLink?: string;
 }
 
+/**
+ * Returns string in Day HH:MM(AM/PM) format.
+ * @param time a date object
+ */
 export const formatTime = (time: Date, endTime: Date): string => {
-  /**
-   * returns string in Day HH:MM(AM/PM) format
-   * @param time a date object
-   */
   return (
     moment(time).tz(moment.tz.guess()).format("dddd MMM Do, h:mma ") +
     " to " +
@@ -47,12 +47,12 @@ export const formatTime = (time: Date, endTime: Date): string => {
   );
 };
 
+/**
+ * Returns string in YYYYMMDDTHHmmSS/YYYYMMDDTHHmmSS format.
+ * @param startTime a date object
+ * @param endTime a date object
+ */
 export const formatGoogleTime = (startTime: Date, endTime: Date): string => {
-  /**
-   * Returns string in YYYYMMDDTHHmmSS/YYYYMMDDTHHmmSS format.
-   * @param startTime a date object
-   * @param endTime a date object
-   */
   return (
     moment(startTime).tz("America/Chicago").format("YYYYMMDDTHHmmSS") +
     "/" +
@@ -106,7 +106,11 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
     minsToEvent > 0 ? (
       <>
         <Dropdown>
-          <Dropdown.Toggle id="add-to-calendar" style={{ width: "100%" }}>
+          <Dropdown.Toggle
+            id="add-to-calendar"
+            style={{ width: "100%" }}
+            variant={"outline-primary"}
+          >
             Add to calendar
           </Dropdown.Toggle>
           <Dropdown.Menu style={{ width: "100%" }}>
