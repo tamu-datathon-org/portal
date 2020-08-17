@@ -2,9 +2,8 @@ import { NowRequest, NowResponse } from "@vercel/node";
 import { authenticatedRoute } from "../src/libs/middleware";
 import { User } from "../src/common/UserProvider";
 import { Firestore } from "@google-cloud/firestore";
-import md5 from "md5";
 
-const addEventHandler = async (
+const getEventsHandler = async (
   req: NowRequest,
   res: NowResponse,
   user: User
@@ -15,12 +14,13 @@ const addEventHandler = async (
     credentials: FIRESTORE_CREDENTIALS,
   });
 
-  await db.collection('ScheduledEvents').doc(md5(req.query.eventId+user.authId)).set({
-    eventId: req.query.eventId as string,
-    userAuthId: user.authId,
+  const events: Object[] = [];
+  const snapshot = await db.collection('ScheduledEvents').where('userAuthId', '==', user.authId).get();
+  snapshot.forEach(doc => {
+    events.push(doc.data());
   });
 
-  res.status(201).send("Added Event");
+  res.status(200).json({events: events});
 };
 
-export default authenticatedRoute(addEventHandler);
+export default authenticatedRoute(getEventsHandler);

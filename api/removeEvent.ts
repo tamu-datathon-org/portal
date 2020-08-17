@@ -4,7 +4,7 @@ import { User } from "../src/common/UserProvider";
 import { Firestore } from "@google-cloud/firestore";
 import md5 from "md5";
 
-const addEventHandler = async (
+const removeEventHandler = async (
   req: NowRequest,
   res: NowResponse,
   user: User
@@ -15,12 +15,9 @@ const addEventHandler = async (
     credentials: FIRESTORE_CREDENTIALS,
   });
 
-  await db.collection('ScheduledEvents').doc(md5(req.query.eventId+user.authId)).set({
-    eventId: req.query.eventId as string,
-    userAuthId: user.authId,
-  });
-
-  res.status(201).send("Added Event");
+  await db.collection('ScheduledEvents').doc(md5(req.query.eventId+user.authId)).delete();
+  
+  res.status(200).send("Deleted Event");
 };
 
-export default authenticatedRoute(addEventHandler);
+export default authenticatedRoute(removeEventHandler);
