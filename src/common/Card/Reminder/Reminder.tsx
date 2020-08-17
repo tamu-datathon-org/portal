@@ -8,7 +8,7 @@ import PropTypes from "prop-types";
 const TIME_UNTIL_HIDE_BADGE_MS = 1440 * 60000;
 const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
 
-const minutesSinceStartMemo = (a, b) => {
+const minutesSinceStartMemo = (a: Date, b: Date) => {
   return Math.ceil((a.getTime() - b.getTime()) / 60000);
 };
 
