@@ -1,16 +1,31 @@
 import React, { useEffect } from "react";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 import { ReminderProps } from "../interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
+// Time constants for clarity
+const TIME_UNTIL_HIDE_BADGE_MS = 1440 * 60000;
+const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
+
+const minutesSinceStartMemo = (a: Date, b: Date) => {
+  return Math.ceil((a.getTime() - b.getTime()) / 60000);
+};
+
 /**
  * Reminder component
  */
+// duration = minutes, startTime = Date object
 export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
   const [currentTime, setCurrentTime] = useState(new Date());
-  const mins = Math.ceil((startTime.getTime() - currentTime.getTime()) / 60000);
-
+  // if an event started 2 hours ago & ended 1 hour ago
+  // minutesUntilStart is equal to -120
+  const minutesUntilStart = useMemo(
+    () => minutesSinceStartMemo(startTime, currentTime),
+    [startTime, currentTime, minutesSinceStartMemo]
+  );
+  const millisecondsSinceEnded =
+    (Math.abs(minutesUntilStart) - duration) * 60000;
   /* Updates the reminder every 15 seconds */
   useEffect(() => {
     const checker = setInterval(() => {
@@ -20,14 +35,20 @@ export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
   }, []);
 
   /* Displays the reminder status if start time is less than 15 minutes away */
-  if (startTime.getTime() - currentTime.getTime() < 15 * 60000) {
-    let message = "Starts in " + mins.toString() + " minutes";
-    if (mins < 0) {
-      if (duration + mins > 0) {
+  if (startTime.getTime() - currentTime.getTime() < TIME_BEFORE_SHOW_BADGE_MS) {
+    let message = `Starts in ${minutesUntilStart.toString()} minutes`;
+    // value is negative if the event is ongoing or past
+    if (minutesUntilStart < 0) {
+      // if minsUntilStart is negative then adding duration (minutes) should make the sum positive
+      if (duration + minutesUntilStart > 0) {
         message = "Ongoing";
-      } else {
+      } else if (millisecondsSinceEnded < TIME_UNTIL_HIDE_BADGE_MS) {
+        // if we're within 1 day of event ending, show the "Ended" badge
         message = "Ended";
         return <UI.StyledExpiredReminder>{message}</UI.StyledExpiredReminder>;
+      } else {
+        // otherwise, we're beyond 1 day of event ending, don't show anything
+        return <></>;
       }
     }
     return <UI.StyledReminder>{message}</UI.StyledReminder>;
