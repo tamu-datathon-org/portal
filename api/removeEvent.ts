@@ -1,23 +1,22 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { authenticatedRoute } from "../src/libs/middleware";
+import { getFirestoreDB } from "../src/libs/firestoreDB";
 import { User } from "../src/common/UserProvider";
-import { Firestore } from "@google-cloud/firestore";
 import md5 from "md5";
 
+/**
+ * Removes the document in the database that contains the current user's
+ * userAuthId and the passed in eventId, using a hash for easy lookup.
+ */
 const removeEventHandler = async (
   req: NowRequest,
   res: NowResponse,
   user: User
 ): Promise<void> => {
-  const FIRESTORE_CREDENTIALS = JSON.parse(process.env.FIRESTORE_CREDENTIALS!);
-  const db = new Firestore({
-    projectId: FIRESTORE_CREDENTIALS.project_id,
-    credentials: FIRESTORE_CREDENTIALS,
-  });
-
+  const db = getFirestoreDB();
   await db.collection('ScheduledEvents').doc(md5(req.query.eventId+user.authId)).delete();
   
-  res.status(200).send("Deleted Event");
+  res.status(200).send("Removed Event");
 };
 
 export default authenticatedRoute(removeEventHandler);

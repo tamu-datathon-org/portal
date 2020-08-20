@@ -1,18 +1,18 @@
 import { NowRequest, NowResponse } from "@vercel/node";
 import { authenticatedRoute } from "../src/libs/middleware";
 import { User } from "../src/common/UserProvider";
-import { Firestore } from "@google-cloud/firestore";
+import { getFirestoreDB } from "../src/libs/firestoreDB";
 
+/**
+ * Returns a list of all database entries containing
+ * the current user's userAuthId.
+ */
 const getEventsHandler = async (
   req: NowRequest,
   res: NowResponse,
   user: User
 ): Promise<void> => {
-  const FIRESTORE_CREDENTIALS = JSON.parse(process.env.FIRESTORE_CREDENTIALS!);
-  const db = new Firestore({
-    projectId: FIRESTORE_CREDENTIALS.project_id,
-    credentials: FIRESTORE_CREDENTIALS,
-  });
+  const db = getFirestoreDB();
 
   const events: Object[] = [];
   const snapshot = await db.collection('ScheduledEvents').where('userAuthId', '==', user.authId).get();
