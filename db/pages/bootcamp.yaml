@@ -1,6 +1,6 @@
-name: Summer Bootcamp
+name: Pre-recorded Classes
 id: bootcamp
-orderedBy: none
+orderedBy: 0 # Keep this last
 sets:
   - beginner_bootcamp_set
   - intermediate_bootcamp_set

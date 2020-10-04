@@ -1,0 +1,6 @@
+name: Company Events
+id: expo
+orderedBy: none
+sets:
+  - company_workshops_set
+  - career_fair_set

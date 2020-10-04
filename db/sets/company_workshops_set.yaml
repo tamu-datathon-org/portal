@@ -1,0 +1,12 @@
+name: Company Workshops
+id: company_workshops_set
+description: Companies are great pls watch their workshops
+showMoreState: false
+orderedBy: start_time
+priority: 1
+activityList:
+  - walmart_workshop
+  - mathworks_workshop
+  - tti_workshop
+  - hpe_workshop
+  - tableau_workshop

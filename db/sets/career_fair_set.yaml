@@ -1,0 +1,9 @@
+name: Career Fair
+id: career_fair_set
+description: You want a job and companies want workers. Cool?
+showMoreState: false
+orderedBy: start_time
+priority: 1
+activityList:
+  - gm_career_fair
+  - tti_career_fair
