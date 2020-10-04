@@ -1,0 +1,6 @@
+name: Company Events
+id: expo
+orderedBy: none
+sets:
+  - beginner_bootcamp_set
+  - intermediate_bootcamp_set
