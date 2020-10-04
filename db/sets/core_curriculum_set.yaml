@@ -1,0 +1,11 @@
+name: TAMU Datathon Core Curriculum
+id: core_curriculum_set
+description: You suck and we want to help you!
+showMoreState: true
+orderedBy: start_time
+priority: 4
+activityList:
+  - data_wrangling
+  - data_viz
+  - ml_intro
+  - ml_classification

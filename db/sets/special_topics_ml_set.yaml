@@ -1,0 +1,11 @@
+name: Special Topics in Machine Learning
+id: special_topics_ml_set
+description: Oh look at the smart people in here.
+showMoreState: true
+orderedBy: start_time
+priority: 4
+activityList:
+  - td_nlp_intro
+  - td_model_interpretability
+  - intro_to_neural_nets
+  - reinforcement_learning

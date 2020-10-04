@@ -1,0 +1,7 @@
+name: Classes
+id: classes
+orderedBy: none
+sets:
+  - core_curriculum_set
+  - beginner_classes_set
+  - special_topics_ml_set
