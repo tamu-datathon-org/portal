@@ -8,13 +8,11 @@ duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/28347923874
 thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
-presenter: Jon Doe
-presenterAbout: Some information about Jon Doe
+presenter: null
+presenterAbout: null
 presenterSocials: null
 slackChannel: null
 slackChannelLink: null
 priority: 7
 relatedActivities: null
 ---
-
-DO THIS!!!
