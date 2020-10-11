@@ -2,26 +2,19 @@
 name: Mathworks Workshop
 id: mathworks_workshop
 eventId: 5efe2be0c7febf000306be94
-startTime: July 25, 2021 13:00:00-500
-endTime: July 25, 2021 13:45:00-500
+startTime: October 17, 2020 12:00:00-500
+endTime: October 17, 2020 13::00-500
 duration: 60
 mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/28347923874
+mediaLink: https://tamu.zoom.us/j/93733090278?pwd=cDNjeW1JMFd6UHg2c0FFUDczSVBQZz09
 thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
 presenter: Jon Doe
 presenterAbout: Some information about Jon Doe
-presenterSocials:
-  - type: Facebook
-    link: https://www.facebook.com/public/John-Doe
-  - type: LinkedIn
-    link: https://pl.linkedin.com/in/john-doe-3b8811140/en-us?trk=people-guest_people_search-card
-slackChannel: data-science-101
-slackChannelLink: "#data_science-101-link"
+presenterSocials: null
+slackChannel: null
+slackChannelLink: null
 priority: 7
-relatedActivities:
-  - data_science_202
-  - data_science_303
-  - data_science_404
+relatedActivities: null
 ---
 
 DO THIS!!!
