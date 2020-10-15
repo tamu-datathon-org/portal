@@ -46,7 +46,6 @@ export const Navbar: React.FC = () => {
           <UI.NavLink href="/events">Events</UI.NavLink>
           <UI.NavLink href="/schedule">Schedule</UI.NavLink>
           <UI.NavLink href="/challenges">Challenges</UI.NavLink>
-          <UI.NavLink href="/apply">Apply</UI.NavLink>
         </ReactNav>
         <span
           className="d-sm-none" // Hide above sm screens.
