@@ -7,7 +7,7 @@ endTime: October 18, 2020 16:00-500
 duration: 75
 mediaType: embed_url
 mediaLink: null
-thumbnail: https://pbs.twimg.com/media/EMmcm4vWsAUh7Q5?format=jpg&name=large
+thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/EXMinrxWAAcdJ0M.jpg?alt=media&token=619451d2-80db-4fdb-8016-a5ded44d42be
 presenter: Our TAMU Dathon Team!
 presenterAbout: ""
 presenterSocials: []
