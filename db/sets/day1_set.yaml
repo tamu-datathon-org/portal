@@ -1,7 +1,7 @@
 # for use on the day 1 page
 name: Day 1 Events
 id: day1_set
-description: Saturday Oct. 17th 2020
+description: Events on Saturday Oct. 17th 2020
 showMoreState: true
 orderBy: start_time
 priority: 4

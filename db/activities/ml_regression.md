@@ -7,7 +7,7 @@ duration: 75
 eventId: null
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/92276610615?pwd=bFZ1MWhiZy85L1p2VDhiL1FFQktBZz09
-thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/8d0a08a7-826f-4305-ac07-4b7907301372.jpg
+thumbnail: https://tamudatathon.com/static/img/team/josiah.jpg
 presenter: Josiah Coad
 presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is current a researching in reinforcement learning at Carnegie Mellon.
 presenterSocials:
