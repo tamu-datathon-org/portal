@@ -1,5 +1,5 @@
 ---
-name: "Machine Learning Regression"
+name: Machine Learning Regression
 id: ml_regression
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500

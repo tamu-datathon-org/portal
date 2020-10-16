@@ -31,4 +31,5 @@ Learning the technical skills for analysis is key, but arguably more critical is
 Our talk will include an example of how an analysis can influence a product, as well as open up a discussion to everyone in the audience to share their own experiences. Hope to see you there!
 
 #### Useful Links
+
 - [Watch the trailer for this class](https://www.youtube.com/watch?v=I2_h6xJ7kNQ)

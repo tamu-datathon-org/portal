@@ -1,5 +1,5 @@
 ---
-name: "Data Visualization"
+name: Data Visualization
 id: data_visualization
 startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500

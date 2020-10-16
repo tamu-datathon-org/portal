@@ -1,5 +1,5 @@
 ---
-name: "Data Wrangling"
+name: Data Wrangling
 id: data_wrangling
 startTime: October 17, 2020 17:00:00-500
 endTime: October 17, 2020 18:15:00-500

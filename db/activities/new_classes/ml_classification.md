@@ -1,5 +1,5 @@
 ---
-name: "Machine Learning Classification"
+name: Machine Learning Classification
 id: ml_classification
 startTime: October 17, 2020 21:30:00-500
 endTime: October 17, 2020 22:45:00-500

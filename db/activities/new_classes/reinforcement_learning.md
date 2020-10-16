@@ -12,6 +12,8 @@ presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is cu
 presenterSocials:
   - type: Josiah's Medium
     link: https://medium.com/@josiahcoad
+  - type: Josiah's Linkedin
+    link: https://www.linkedin.com/in/josiahcoad/
 priority: 7
 relatedActivities:
   - data_science_202
