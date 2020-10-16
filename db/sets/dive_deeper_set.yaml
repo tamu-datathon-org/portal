@@ -5,8 +5,8 @@ showMoreState: false
 orderBy: start_time
 priority: 4
 activityList:
-  - ml_classification
-  - ml_regression
   - intro_neural_nets
+  - intro_nlp
   - reinforcement_learning
   - reccomendation_engine
+  - model_interpretability
