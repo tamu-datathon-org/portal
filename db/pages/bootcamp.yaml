@@ -1,6 +1,0 @@
-name: Pre-recorded Classes
-id: bootcamp
-orderedBy: 0 # Keep this last
-sets:
-  - beginner_bootcamp_set
-  - intermediate_bootcamp_set

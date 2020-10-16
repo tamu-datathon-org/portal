@@ -1,0 +1,11 @@
+# for use on the day 1 page
+name: Day 2 Events
+id: day1_set
+description: Sunday Oct. 18th 2020
+showMoreState: true
+orderedBy: start_time
+priority: 4
+activityList:
+  - midnight_musings
+  - model_interpretability
+  - story_telling

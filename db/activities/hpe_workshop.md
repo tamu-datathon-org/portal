@@ -8,10 +8,12 @@ duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93584524759?pwd=Z1d4Vms4L2svWUhmRm1nQ2ZzNm1MUT09
 thumbnail: https://cdn1.channelpro.co.uk/sites/channelpro/files/2019/03/hpe.jpg
-presenter: Ryan Feenstra, IT Developer/Engineer – HPE Global IT 
-           Scott Faasse, Distinguished Technologist – HPE Compute
-presenterAbout: Ryan has been with HPE for 7 years since graduating from Chico State University. He is experienced with the use of APIs in mobile, web, and integration development.
-Scott has been with HPE for 20 years since graduating from Texas A&M University (Class of 2000!). Early in his career, he was the lead BIOS developer for the world's most popular selling server. More recently, his primary role is serving as senior architect for server firmware, power, and performance management for HPE’s Compute Business.  
+presenter: | 
+  Ryan Feenstra, IT Developer/Engineer – HPE Global IT 
+  Scott Faasse, Distinguished Technologist – HPE Compute
+presenterAbout: |
+  Ryan has been with HPE for 7 years since graduating from Chico State University. He is experienced with the use of APIs in mobile, web, and integration development.
+  Scott has been with HPE for 20 years since graduating from Texas A&M University (Class of 2000!). Early in his career, he was the lead BIOS developer for the world's most popular selling server. More recently, his primary role is serving as senior architect for server firmware, power, and performance management for HPE’s Compute Business.  
 presenterSocials:
 - type: Ryan's Linkedin
   link: https://www.linkedin.com/in/feenst/

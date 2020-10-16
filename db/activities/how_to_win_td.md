@@ -7,7 +7,7 @@ duration: 60
 eventId: null
 mediaType: meeting_url
 mediaLink: null
-thumbnail: null
+thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/competitor_1.jpg?alt=media&token=83994921-1653-431f-b5c7-63362f709230
 presenter: TD Winners
 presenterAbout: Learn from the winners of TAMU Datathon 2019!
 presenterSocials: null
