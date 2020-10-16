@@ -4,7 +4,7 @@ id: ml_regression
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
 duration: 75
-eventId: null
+eventId: 5f8a0afc33c190000312a9d1
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/92276610615?pwd=bFZ1MWhiZy85L1p2VDhiL1FFQktBZz09
 thumbnail: https://tamudatathon.com/static/img/team/josiah.jpg

@@ -4,7 +4,7 @@ id: story_telling
 startTime: October 18, 2020 14:00:00-500
 endTime: October 18, 2020 15:00:00-500
 duration: 75
-eventId: null
+eventId: 5f8a0d4133c190000312a9d6
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/98439398661?pwd=alRRVHFjRk5MNjF1cS9qcTFoUVNnUT09
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png

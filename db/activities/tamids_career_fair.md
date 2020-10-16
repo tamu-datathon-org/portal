@@ -1,7 +1,7 @@
 ---
 name: Texas A&M Institute of Data Science Q&A
 id: tamids_career_fair
-eventId: null
+eventId: 5f8a0da233c190000312a9d8
 startTime: Oct 17, 2020 22:30:00-500
 endTime: Oct 17, 2020 23:00:00-500
 duration: 60
