@@ -1,5 +1,5 @@
 ---
-name: DS Introduction Part 1/2: Wrangling
+name: "DS Introduction Part 1/2: Wrangling"
 id: ds_wrangling
 startTime: October 17, 2020 17:00:00-500
 endTime: October 17, 2020 18:15:00-500
