@@ -13,9 +13,6 @@ presenterAbout: ""
 presenterSocials: []
 priority: 7
 relatedActivities:
-  - data_science_202
-  - data_science_303
-  - data_science_404
 ---
 
 Take a break from the hacking with MLH!
