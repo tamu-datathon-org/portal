@@ -7,7 +7,7 @@ duration: 75
 eventId: null
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/98439398661?pwd=alRRVHFjRk5MNjF1cS9qcTFoUVNnUT09
-thumbnail: https://media-exp1.licdn.com/dms/image/C4D03AQF9gqt1SoEF3w/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=CtchsuNwPucK0cyKxZPinxWy5wE6-otvlTZEuKkbSR4
+thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png
 presenter: Isha Mehra and Shreya Punya
 presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon University Isha - Data Scientist at Facebook, Shreya - Data Scientist at Instagram Both were TAs for Computer Science classes at Carnegie Mellon University (Isha Intro to CS, Shreya Intro to ML)
 presenterSocials:

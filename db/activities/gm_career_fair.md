@@ -5,9 +5,9 @@ startTime: October 17, 2020 12:00:00-500
 endTime: October 17, 2020 1:00:00-500
 duration: 60
 eventId: 5f1bc1f719f52100035dd9ff
-mediaType: embed_url
-mediaLink: https://contactdetailswala.com/wp-content/uploads/2018/02/General-Motors-1.jpg
-thumbnail: https://firebasestorage.googleapis.com/v0/b/posana-org.appspot.com/o/uploaded_content%2Fimg.jpg?alt=media&token=65a7a595-fb45-4f29-8b10-6785337ee0cf
+mediaType: meeting_url
+mediaLink: https://tamu.zoom.us/j/93753012441?pwd=L0krRERQM0c0dWlzbjZsalVYVTV4dz09
+thumbnail: https://contactdetailswala.com/wp-content/uploads/2018/02/General-Motors-1.jpg
 presenter: Rohit
 presenterAbout: Rohit is the founder of Aggie Coding Club.
 presenterSocials:
