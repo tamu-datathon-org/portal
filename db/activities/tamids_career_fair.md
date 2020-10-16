@@ -8,11 +8,12 @@ duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/98712493622?pwd=RzRqSUVMcFJMK2toaVFwR0JtM25ndz09
 thumbnail: https://github.tamu.edu/allysonmking/td-thumbnails/blob/master/tamids_logo.png?raw=true
-presenter: TAMIDS
-presenterAbout: "The Texas A&M Institute of Data Science pursues new approaches to Data Science research, education, operations and partnership. These approaches cross college boundaries to connect elements of Data Science from engineering, technology, science and the humanities, and inform wider social challenges. Join for a chance to learn more about TAMIDS."
+presenter: 
+presenterAbout: ""
 presenterSocials: []
 slackChannel: null
 slackChannelLink: null
 priority: 7
 relatedActivities: null
 ---
+The Texas A&M Institute of Data Science pursues new approaches to Data Science research, education, operations and partnership. These approaches cross college boundaries to connect elements of Data Science from engineering, technology, science and the humanities, and inform wider social challenges. Join for a chance to learn more about TAMIDS.
