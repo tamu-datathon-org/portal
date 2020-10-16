@@ -13,6 +13,8 @@ activityList:
   - gm_career_fair
   - mathworks_workshop
   - how_to_win_td
+  - ml_regression
+  - ml_classification
   - walmart_workshop
   - tti_workshop
   - hpe_workshop
