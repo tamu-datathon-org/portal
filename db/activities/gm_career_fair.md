@@ -15,9 +15,6 @@ presenterSocials:
     link: https://www.linkedin.com/in/rohit-mucherla-a11286a4/
 priority: 7
 relatedActivities:
-  - data_science_202
-  - data_science_303
-  - data_science_404
 ---
 
 GM plans to bring several industry specialists to talk to you about DS/ML at GM. Next, we will
