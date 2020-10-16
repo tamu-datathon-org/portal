@@ -1,0 +1,8 @@
+name: Featured
+id: featured
+orderedBy: none
+sets:
+  - informational_set
+  - getting_started_set
+  - dive_deeper_set
+  - social_events_set

@@ -1,0 +1,12 @@
+name: Getting Started
+id: getting_started_set
+description: Learn the fundamentals of data science to get the ball rolling!
+showMoreState: false
+orderedBy: start_time
+priority: 4
+activityList:
+  - intro_python
+  - ds_visualization
+  - ds_wrangling
+  - stats_for_ds
+  - model_interpretability

@@ -1,6 +1,6 @@
 name: Company Workshops
 id: company_workshops_set
-description: Companies are great pls watch their workshops
+description: Learn from industry and see how these companies use DS/ML technologies in there day to day
 showMoreState: false
 orderedBy: start_time
 priority: 1

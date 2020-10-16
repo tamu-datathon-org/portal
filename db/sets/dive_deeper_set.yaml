@@ -1,0 +1,12 @@
+name: Dive Deeper
+id: dive_deeper_set
+description: Tackle advanced topics in DS/ML to get a deeper understanding!
+showMoreState: false
+orderedBy: start_time
+priority: 4
+activityList:
+  - ml_classification
+  - ml_regression
+  - intro_neural_nets
+  - reinforcement_learning
+  - reccomendation_engine

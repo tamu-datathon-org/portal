@@ -1,6 +1,6 @@
 name: Career Fair
 id: career_fair_set
-description: You want a job and companies want workers. Cool?
+description: Showcase yourself to company recruiters and industry professionals
 showMoreState: false
 orderedBy: start_time
 priority: 1
