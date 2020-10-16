@@ -1,8 +1,9 @@
 ---
 name: Data Wrangling
-id: data_wrangling
+id: ds_wrangling
 startTime: October 17, 2020 17:00:00-500
 endTime: October 17, 2020 18:15:00-500
+duration: 75
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/99719594565?pwd=R3dFSnNJZll4TDJoNWFTWW5udlNiQT09
@@ -22,8 +23,6 @@ relatedActivities:
 Howdy
 
 So. You're interested in data science, but you don't know where to start. I want to let you know; you've come to right place.
-
-My name is Seth Hamilton. I'm an Electrical Engineering and Computer Science double degree at Texas A&M University. The skills I'll be covering in this crash course are skill you can use in work, school, side projects, and (hopefully) your Datathon project. So let's go over what I'll be teaching you guys.
 
 Today, we'll dive into a process known as "data wrangling"... That word makes me think of cowboys for some reason. But seriously, finding good data and getting it into a pandas data-frame can actually be half the battle. I'll make sure you guys know how to find and load a dataset of your choice and do some quick analysis.
 

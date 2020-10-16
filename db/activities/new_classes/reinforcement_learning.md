@@ -21,4 +21,5 @@ relatedActivities:
   - data_science_404
 ---
 
-Insert Josiah - Basic RL schtick
+Beyond supervised and unsupervised learning, did you know there is another form of ML called reinforcement learning (RL)? RL is a rapidly developing field of ML that learns to maximize its reward by choosing actions in its environment. Reinforcement learning has been successful at playing complex games such as DOTA and even beating human experts.
+In this workshop, we’ll cover what you need to get started in reinforcement learning including some basic structure, theory and algorithms. We’ll finish by showing how reinforcement learning can be used for the stock prediction challenge!

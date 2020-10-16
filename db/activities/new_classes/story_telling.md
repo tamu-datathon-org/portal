@@ -22,9 +22,11 @@ relatedActivities:
   - data_science_404
 ---
 
-In this talk we'll be covering how to apply for a data science job this one could had to build projects for a data science portfolio, how to structure your resume, and how to reach out to people effectively.
+In this talk, we will describe how we use data collected at Facebook to inform product development. Including everything from ideas, experimentations, and launches.
 
-We will also talk about how to optimize your LinkedIn profile, and finally how to decide what data skills to learn. Most of this will center on how one can make projects and we'll show some quick examples on how to get interactive work online for a recruiter or someone that you're interviewing with to see.
+Learning the technical skills for analysis is key, but arguably more critical is asking the right research questions for the data you have available, and creating a story out of your findings.
+
+Our talk will include an example of how an analysis can influence a product, as well as open up a discussion to everyone in the audience to share their own experiences. Hope to see you there!
 
 #### Useful Links
 

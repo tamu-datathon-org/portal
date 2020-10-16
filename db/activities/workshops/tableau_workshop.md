@@ -7,7 +7,7 @@ endTime: Oct 17, 2020 17:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/91580110993?pwd=eTByb1kyN2xFenFITGpFdnNTVW1nUT09
-thumbnail: https://sybyl.com/wp-content/uploads/2019/11/Tableau-Logo-for-website.jpg
+thumbnail: https://dwglogo.com/wp-content/uploads/2016/07/1300px_Tableau_Software_logo.png
 presenter: Brian Russell
 presenterAbout: Brian is a Lead Solution Engineer at Tableau, where he has worked for nearly 5 years. He is a graduate of the University of Akron where he received a B.S. Corporate Financial Management.
 presenterSocials:

@@ -7,7 +7,7 @@ duration: 75
 eventId: null
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93514461626?pwd=T256dXBNZklGZGhuM1Y5cUYyMDhGQT09
-thumbnail: https://media-exp1.licdn.com/dms/image/C5603AQETpBHFT-3jyw/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=ycyU0Y0n_TqdzY_4qABOCKb_NyxSErmvrT4M3vpzaHY
+thumbnail: https://files.slack.com/files-pri/TQQTM4CP7-F01DEKEMXAL/image.png
 presenter: Nick Smart
 presenterAbout: null
 presenterSocials: null
@@ -18,6 +18,13 @@ relatedActivities:
   - data_science_404
 ---
 
-What is a neural net? Why is it important in data science and machine learning?
-
-In this workshop, we will learn the basics of neural networks and how they are used to solve problems.
+You’ll walk away from this workshop with the basics of neural networks. You’ll be able to get your hands dirty with some of the software tools that are used to build neural networks like sklearn/keras/tensorflow. Additionally, you’ll become comfortable with many commonly heard terms of machine learning at a high level (more concept, less math) such as:
+hidden layers, edges, nodes
+backwards propagation (optimization)
+forward propagation
+activation function
+loss function
+learning rate
+gradient decent
+minibatches
+epochs

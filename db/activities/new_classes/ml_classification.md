@@ -22,4 +22,5 @@ relatedActivities:
   - data_science_404
 ---
 
-In this workshop, we will learn about classification in machine learning. We will cover classification problems and classfication algorithms, from Random Forest, to Linear Classifiers, to Decision Trees.
+In this workshop we will take you though one of the most powerful ML algorithms: Decision Trees. We will follow that up with a form of bagging called Random Forests and then a form of boosting called XGBoost.
+Finally, we’ll teach how to avoid overfitting through cross validation, hyperparameter tuning and feature selection. All of this will be done in Python with sklearn. Looking forward to seeing you there!

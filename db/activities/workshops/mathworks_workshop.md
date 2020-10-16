@@ -7,7 +7,7 @@ endTime: October 17, 2020 13::00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93733090278?pwd=cDNjeW1JMFd6UHg2c0FFUDczSVBQZz09
-thumbnail: https://res-1.cloudinary.com/crunchbase-production/image/upload/c_lpad,f_auto,q_auto:eco/v1426005180/j7ytodfbs2synikmskfy.png
+thumbnail: https://fr.mathworks.com/brand/_jcr_content/mainParsys/band_1065211270_copy_44377276/mainParsys/columns_copy/3/image.adapt.full.high.svg/1590724058164.svg
 presenter: Connell D’Souza
 presenterAbout: null
 presenterSocials: null

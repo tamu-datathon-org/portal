@@ -1,6 +1,6 @@
 ---
 name: Getting started with python
-id: python
+id: intro_python
 startTime: October 17, 2020 10:30:00-500
 endTime: October 17, 2020 12:00:00-500
 duration: 90
@@ -15,6 +15,7 @@ presenterSocials:
     link: https://www.linkedin.com/in/aditya-pethe/
 priority: 7
 relatedActivities: null
+tags: for, loops, functions, while, logic, variables, data structures, syntax, types, beginner, python, languages
 ---
 
 Are you new to programming? Or do you want a refresher to brush up on what you know? No worries!

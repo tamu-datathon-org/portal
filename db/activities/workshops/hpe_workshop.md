@@ -7,7 +7,7 @@ endTime: October 17, 2020 16::00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93584524759?pwd=Z1d4Vms4L2svWUhmRm1nQ2ZzNm1MUT09
-thumbnail: https://tamudatathon.com/portal/db/img/ds101.png
+thumbnail: https://cdn1.channelpro.co.uk/sites/channelpro/files/2019/03/hpe.jpg
 presenter: Ryan Feenstra, IT Developer/Engineer – HPE Global IT 
            Scott Faasse, Distinguished Technologist – HPE Compute
 presenterAbout: Ryan has been with HPE for 7 years since graduating from Chico State University. He is experienced with the use of APIs in mobile, web, and integration development.
