@@ -9,7 +9,7 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/91580110993?pwd=eTByb1kyN2xFenFITGpFdnNTVW1nUT09
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%204.png?alt=media&token=0bf47564-22a1-44ca-9878-fe9a2796c0b9
 presenter: Josiah Coad & Allyson King
-presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is current a researching in reinforcement learning at Carnegie Mellon. Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI
+presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is currently researching in reinforcement learning at Carnegie Mellon. Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI.
 presenterSocials:
   - type: Allyson's Medium
     link: https://medium.com/@allysonmking
