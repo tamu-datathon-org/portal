@@ -18,4 +18,4 @@ relatedActivities:
 tags: statistics, confidence interval, testing, statistics, probability distributions, sampling bias, r
 ---
 
-In this talk, we will discuss some aspects of classical statistical inference that are used everyday to help guide decision making. Using a case study of running an experiment to inform website design, we discuss how to test which design is better and by how much, quantify our uncertainty about this conclusion, and decide how long we need to run the experiment in order to be confident in our results
+In this talk, we will discuss some aspects of classical statistical inference that are used everyday to help guide decision making. Using a case study of running an experiment to inform website design, we discuss how to test which design is better and by how much, quantify our uncertainty about this conclusion, and decide how long we need to run the experiment in order to be confident in our results.
