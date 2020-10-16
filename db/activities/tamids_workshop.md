@@ -7,7 +7,7 @@ endTime: Oct 17, 2020 24:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/91580110993?pwd=eTByb1kyN2xFenFITGpFdnNTVW1nUT09
-thumbnail: https://sybyl.com/wp-content/uploads/2019/11/Tableau-Logo-for-website.jpg
+thumbnail: https://tamids.tamu.edu/wp-content/themes/wp-tamids-theme/dist/img/TAM-BlockLogo-maroon.svg
 presenter: Josiah Coad & Allyson King
 presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is current a researching in reinforcement learning at Carnegie Mellon. Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI
 presenterSocials:
