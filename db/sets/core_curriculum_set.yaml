@@ -5,7 +5,7 @@ showMoreState: true
 orderedBy: start_time
 priority: 4
 activityList:
-  - data_wrangling
-  - data_viz
-  - ml_intro
+  - ds_wrangling
+  - ds_visualization
+  - ml_regression
   - ml_classification
