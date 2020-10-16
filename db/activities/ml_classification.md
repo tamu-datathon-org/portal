@@ -1,5 +1,5 @@
 ---
-name: ML Introduction Part 2/2: Applied
+name: "ML Introduction Part 2/2: Applied"
 id: ml_classification
 startTime: October 17, 2020 21:30:00-500
 endTime: October 17, 2020 22:45:00-500
