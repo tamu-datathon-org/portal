@@ -4,7 +4,7 @@ id: how_to_win_td
 startTime: October 17, 2020 13:00:00-500
 endTime: October 17, 2020 14:00:00-500
 duration: 60
-eventId: null
+eventId: 5f8a08e033c190000312a9cc
 mediaType: meeting_url
 mediaLink: null
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/competitor_1.jpg?alt=media&token=83994921-1653-431f-b5c7-63362f709230
