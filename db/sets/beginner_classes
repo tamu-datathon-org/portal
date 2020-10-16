@@ -1,6 +1,6 @@
 name: Beginner Classes
 id: beginner_classes_set
-description: You suck and we want to help you!
+description: Learn the fundamentals of data science to get the ball rolling!
 showMoreState: true
 orderedBy: start_time
 priority: 4
