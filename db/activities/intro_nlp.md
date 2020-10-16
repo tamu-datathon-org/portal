@@ -26,7 +26,6 @@ Interested in learning what Natural Language Processing is all about?
 
 This hour long course will teach you how to identify and separate words, extract topics, and conduct sentiment analysis. We will be using [Python](https://python.org) for this course, relying heavily on [the NLTK package](https://www.nltk.org/). By the end of the hour, you will be well-versed with the basics of NLP, the applications of which are endless.
 
-Identifying fake news and analyzing product reviews will be no trouble for you!
 
 #### Useful Links
 
