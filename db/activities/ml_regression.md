@@ -1,5 +1,5 @@
 ---
-name: ML Introduction Part 1/2: Theory
+name: "ML Introduction Part 1/2: Theory"
 id: ml_regression
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
