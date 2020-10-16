@@ -4,6 +4,8 @@ export interface ActivitySection {
   eventList: Array<ActivityCardProps>;
   sectionTitle: string;
   sectionDescription: string;
+  orderedBy?: string;
+  filteredBy?: string;
   defaultShowMoreState?: boolean;
 }
 

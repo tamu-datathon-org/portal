@@ -1,18 +1,16 @@
 ---
-name: "Storytelling with Data"
+name: Storytelling with Data
 id: story_telling
-startTime: July 25, 2020 20:00:00-500
-endTime: July 25, 2020 21:00:00-500
-eventId: 5f1bbcc919f52100035dd9fb
-duration: 60
-mediaType: embed_url
-mediaLink: https://www.youtube.com/embed/gMbzBYGdmcQ
+startTime: October 18, 2020 14:00:00-500
+endTime: October 18, 2020 15:00:00-500
+duration: 75
+eventId: null
+mediaType: meeting_url
+mediaLink: https://tamu.zoom.us/j/98439398661?pwd=alRRVHFjRk5MNjF1cS9qcTFoUVNnUT09
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png
 presenter: Isha Mehra and Shreya Punya
 presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon University Isha - Data Scientist at Facebook, Shreya - Data Scientist at Instagram Both were TAs for Computer Science classes at Carnegie Mellon University (Isha Intro to CS, Shreya Intro to ML)
 presenterSocials:
-  - type: Medium Article
-    link: https://medium.com/@ish_meh/ballmers-peak-tossing-a-cold-one-with-the-boys-8966e52c9930
   - type: Isha's LinkedIn
     link: https://www.linkedin.com/in/ishamehra
   - type: Shreya's LinkedIn
@@ -31,4 +29,5 @@ Learning the technical skills for analysis is key, but arguably more critical is
 Our talk will include an example of how an analysis can influence a product, as well as open up a discussion to everyone in the audience to share their own experiences. Hope to see you there!
 
 #### Useful Links
-- [Watch the trailer for this class](https://www.youtube.com/watch?v=I2_h6xJ7kNQ)
+
+- [Algorithmic Thinking](https://www.cs.cmu.edu/~112/notes/notes-algorithmic-thinking.html)

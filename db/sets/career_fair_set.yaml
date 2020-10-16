@@ -1,0 +1,10 @@
+name: Career Fair
+id: career_fair_set
+description: Showcase yourself to company recruiters and industry professionals
+showMoreState: true
+orderBy: start_time
+priority: 1
+activityList:
+  - gm_career_fair
+  - tti_career_fair
+  - tamids_career_fair

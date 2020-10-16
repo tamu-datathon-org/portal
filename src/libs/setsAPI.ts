@@ -20,7 +20,8 @@ export interface Set {
   id: string;
   description: string;
   showMoreState: boolean;
-  orderBy: "alphabetical" | "priority" | "start_time" | "none" | "";
+  orderBy: "alphabetical" | "priority" | "start_time" | "none" | "" | undefined;
+  filterBy: "happening_now" | undefined;
   priority: number;
   activityList: string[];
 }
@@ -87,6 +88,8 @@ export async function getPageSetsContent(
         eventList: activities,
         sectionTitle: set.name,
         sectionDescription: set.description,
+        orderedBy: set.orderBy || "",
+        filteredBy: set.filterBy || "",
         defaultShowMoreState: set.showMoreState,
       };
       return setObject;

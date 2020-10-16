@@ -1,0 +1,13 @@
+name: Company Workshops
+id: company_workshops_set
+description: Learn from industry and see how these companies use DS/ML technologies in there day to day.
+showMoreState: true
+orderedBy: start_time
+priority: 1
+activityList:
+  - walmart_workshop
+  - mathworks_workshop
+  - tti_workshop
+  - hpe_workshop
+  - tableau_workshop
+  - tamids_workshop

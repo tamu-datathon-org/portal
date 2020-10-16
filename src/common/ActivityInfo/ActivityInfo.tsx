@@ -141,7 +141,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   const channelLink = props.slackChannel ? (
     <>
       <br />
-      Check out this slack channel for discussions on this event:
+      Check out this discord channel for discussions on this event:
       <br />
       <a href={props.slackChannelLink}>
         <b>{props.slackChannel}</b>
@@ -200,19 +200,17 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
               <Card.Body>
                 <Card.Title>Join the Discussion:</Card.Title>
                 <Card.Text>
-                  Join our slack to discuss with presenters, mentors, and other
-                  TAMU Datathon 2020 attendees.
+                  Join our discord to discuss with presenters, mentors, and
+                  other TAMU Datathon 2020 attendees.
                   <br />
                   {channelLink}
                 </Card.Text>
                 <Button
-                  href={
-                    "https://join.slack.com/t/tamudatathon2020/shared_invite/zt-fnyi8tdv-Tm1ArAaznmVd9cXDaglq9Q"
-                  }
+                  href={"https://discord.gg/ADYhDjW"}
                   variant={"outline-primary"}
                   block
                 >
-                  Join our Slack!
+                  Join our Discord!
                 </Button>
               </Card.Body>
             </Card>
