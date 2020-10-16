@@ -13,9 +13,6 @@ presenterAbout: Learn from the winners of TAMU Datathon 2019!
 presenterSocials: []
 priority: 7
 relatedActivities:
-  - data_science_202
-  - data_science_303
-  - data_science_404
 ---
 
 Get tips & tricks on how to create a winning TAMU Datathon project from last year's winners.
