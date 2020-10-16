@@ -20,6 +20,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: presenting, impact, business, data science
 ---
 
 In this talk, we will describe how we use data collected at Facebook to inform product development. Including everything from ideas, experimentations, and launches.

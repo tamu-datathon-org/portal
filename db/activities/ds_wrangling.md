@@ -18,6 +18,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: jupyter notebook, pandas, import, packages, data science, wrangling, datasets, clean, start, introduction, mining, beginners
 ---
 
 Howdy

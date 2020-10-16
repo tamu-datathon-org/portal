@@ -19,6 +19,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: RL, stock, trading, games, robotics, deep learning, advanced, machine learning, neural networks, policy
 ---
 
 Beyond supervised and unsupervised learning, did you know there is another form of ML called reinforcement learning (RL)? RL is a rapidly developing field of ML that learns to maximize its reward by choosing actions in its environment. Reinforcement learning has been successful at playing complex games such as DOTA and even beating human experts.

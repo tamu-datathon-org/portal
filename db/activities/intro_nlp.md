@@ -20,6 +20,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: sklearn, gensim, nltk, tfidf, TfidfVectorizer, bag of words, CountVectorizer, word embeddings, Word2Vec, naive bayes, lemmatization, part of speech tags, named entity recognition, tokenization, word clouds
 ---
 
 Interested in learning what Natural Language Processing is all about?

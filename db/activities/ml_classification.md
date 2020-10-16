@@ -20,6 +20,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: applied, random forests, decision trees, xgboost, boosting, hyperparameter tuning, sklearn, evaluation, feature selection, test train split, machine learning
 ---
 
 In this workshop we will take you though one of the most powerful ML algorithms: Decision Trees. We will follow that up with a form of bagging called Random Forests and then a form of boosting called XGBoost.

@@ -18,6 +18,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: optimization, math, theory, machine learning, linear regression, neural network, parameters, model fitting, sklearn
 ---
 
 Before you dive into some of the hot ML algorithms, it’s important for you to know the basics of whats going underneath the hood — ML is really just fancy optimization.

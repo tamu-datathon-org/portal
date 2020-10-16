@@ -16,6 +16,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: information retrieval, recommendation engine, netflix
 ---
 
 Reccommendation engines drive much of our online decision-making. From Netflix to Youtube to Tik Tok, platforms utilize reccommendation engines to provide the most relevant content possible to users.

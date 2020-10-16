@@ -18,6 +18,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: viz, visualization, seaborn, matplotlib, plots, charts, plotly express
 ---
 
 Howdy

@@ -16,6 +16,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: win, advice, datathon, hackathon
 ---
 
 Get tips & tricks on how to create a winning TAMU Datathon project from last year's winners.
