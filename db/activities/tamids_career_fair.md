@@ -7,7 +7,7 @@ endTime: Oct 17, 2020 23:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/98712493622?pwd=RzRqSUVMcFJMK2toaVFwR0JtM25ndz09
-thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%203.png?alt=media&token=0da207e1-c529-49d6-b8a8-b2738cf35e60
+thumbnail: https://github.tamu.edu/allysonmking/td-thumbnails/blob/master/tamids_logo.png?raw=true
 presenter: null
 presenterAbout: ""
 presenterSocials: []
