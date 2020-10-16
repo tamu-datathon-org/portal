@@ -1,5 +1,5 @@
 ---
-name: General Motors
+name: General Motors Career Fair
 id: gm_career_fair
 startTime: October 17, 2020 12:00:00-500
 endTime: October 17, 2020 1:00:00-500
