@@ -2,7 +2,7 @@ name: Dive Deeper
 id: dive_deeper_set
 description: Tackle advanced topics in DS/ML to get a deeper understanding!
 showMoreState: false
-orderedBy: start_time
+orderBy: start_time
 priority: 4
 activityList:
   - ml_classification

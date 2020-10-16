@@ -1,9 +1,9 @@
-# for use on the day 1 page
-name: Day 1 Events
-id: day1_set
-description: Saturday Oct. 17th 2020
-showMoreState: true
+name: Happening Now
+id: happening_now_set
+description: These events are starting soon or are ongoing. Join before it's too late!
+showMoreState: false
 orderBy: start_time
+filterBy: happening_now
 priority: 4
 activityList:
   - opening_ceremony
@@ -26,3 +26,7 @@ activityList:
   - intro_neural_nets
   - reinforcement_learning
   - midnight_musings
+  - midnight_musings
+  - model_interpretability
+  - closing_ceremony
+  - story_telling

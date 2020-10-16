@@ -2,7 +2,7 @@ name: Perfect for Beginners
 id: beginner_bootcamp_set
 description: New to Data Science or Machine Learning? These events should help you understand what makes it great!
 showMoreState: true
-orderedBy: start_time
+orderBy: start_time
 priority: 4
 activityList:
   - getting_a_job

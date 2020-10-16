@@ -24,7 +24,9 @@ IndexPage.propTypes = {
 export default IndexPage;
 
 export const getStaticProps: GetStaticProps = async () => {
-  const tabs = await getAllPages();
+  const tabs = (await getAllPages()).sort(
+    (a, b) => (a.priority || -1) - (b.priority || -1)
+  );
   const tabSets = await getPageSets(tabs[0].id);
   const allSets = await getPageSetsContent(tabSets);
 

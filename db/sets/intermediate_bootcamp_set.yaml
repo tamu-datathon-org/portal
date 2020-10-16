@@ -2,7 +2,7 @@ name: Perfect for Intermediates
 id: intermediate_bootcamp_set
 description: Experienced with Data Science or Machine Learning? These events will dive into exciting applications of your skills.
 showMoreState: true
-orderedBy: start_time
+orderBy: start_time
 priority: 4
 activityList:
   - hacking_clustering

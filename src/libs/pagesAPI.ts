@@ -14,6 +14,7 @@ export async function getPageNames(): Promise<string[]> {
 export interface Page {
   name: string;
   id: string;
+  priority?: number;
   orderedBy: "alphabetical" | "priority" | "start_time" | "none" | "";
   sets: string[];
 }

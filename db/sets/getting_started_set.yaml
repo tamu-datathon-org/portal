@@ -2,7 +2,7 @@ name: Getting Started
 id: getting_started_set
 description: Learn the fundamentals of data science to get the ball rolling!
 showMoreState: false
-orderedBy: start_time
+orderBy: start_time
 priority: 4
 activityList:
   - intro_python

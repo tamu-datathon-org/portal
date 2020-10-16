@@ -1,7 +1,9 @@
 name: Featured
 id: featured
 orderedBy: none
+priority: 0
 sets:
+  - happening_now_set
   - informational_set
   - getting_started_set
   - dive_deeper_set

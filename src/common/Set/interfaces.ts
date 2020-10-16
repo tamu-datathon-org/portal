@@ -5,6 +5,7 @@ export interface ActivitySection {
   sectionTitle: string;
   sectionDescription: string;
   orderedBy?: string;
+  filteredBy?: string;
   defaultShowMoreState?: boolean;
 }
 

@@ -3,9 +3,10 @@ name: Day 2 Events
 id: day1_set
 description: Sunday Oct. 18th 2020
 showMoreState: true
-orderedBy: start_time
+orderBy: start_time
 priority: 4
 activityList:
   - midnight_musings
   - model_interpretability
+  - closing_ceremony
   - story_telling

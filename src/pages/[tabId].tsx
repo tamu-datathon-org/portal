@@ -82,7 +82,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   const page = await getPageByName(tabId);
 
   // get all tabs
-  const allPages = await getAllPages();
+  const allPages = (await getAllPages()).sort(
+    (a, b) => (a.priority || -1) - (b.priority || -1)
+  );
 
   // all the sets in this tab
   const tabSets = await getPageSets(tabId);
