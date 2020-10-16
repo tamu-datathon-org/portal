@@ -8,8 +8,8 @@ mediaType: embed_url
 mediaLink:
 thumbnail: https://pbs.twimg.com/media/EMmcm4vWsAUh7Q5?format=jpg&name=large
 presenter: Our TAMU Dathon Team!
-presenterAbout:
-presenterSocials:
+presenterAbout: ""
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

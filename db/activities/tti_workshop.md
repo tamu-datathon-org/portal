@@ -11,7 +11,7 @@ thumbnail: https://tti.tamu.edu/wp-content/uploads/2017/12/cropped-tti-square-wi
 presenter: Gargi Singh
 presenterAbout: Singh is an Assistant Research Scientist and has four years of experience in data analytics and transportation planning. Gargi’s role heavily involves the use of big data skills and spatial analysis to analyze and visualize travel behavior using GPS passive data and travel survey data. Her interests primarily lie in the application of passive data in the field of transportation. Her skills pertaining to data analytics, cloud computing, and spatial analysis have assisted her in this path. She has experience working in SQL, R, SparkSQL, Scala, PostGIS, Python, and AWS. Additionally, she is well versed in software pertaining to planning (ArcMap, ArcGIS Pro, QGIS, and AutoCAD) and design (InDesign, Illustrator, SketchUp).
 
-presenterSocials: null
+presenterSocials: []
 slackChannel: null
 slackChannelLink: null
 priority: 7

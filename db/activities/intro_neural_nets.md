@@ -1,6 +1,6 @@
 ---
 name: Intro to Neural Nets
-id: intro_to_neural_nets
+id: intro_neural_nets
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
 duration: 75
@@ -9,8 +9,8 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93514461626?pwd=T256dXBNZklGZGhuM1Y5cUYyMDhGQT09
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/image%20(5).png?alt=media&token=f4fc131a-8e0c-4b81-9e6e-3c7992a18167
 presenter: Nick Smart
-presenterAbout: null
-presenterSocials: null
+presenterAbout: ""
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

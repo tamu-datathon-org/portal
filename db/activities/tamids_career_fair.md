@@ -9,8 +9,8 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/98712493622?pwd=RzRqSUVMcFJMK2toaVFwR0JtM25ndz09
 thumbnail: https://tamids.tamu.edu/wp-content/themes/wp-tamids-theme/dist/img/TAM-BlockLogo-maroon.svg
 presenter: null
-presenterAbout: null
-presenterSocials: null
+presenterAbout: ""
+presenterSocials: []
 slackChannel: null
 slackChannelLink: null
 priority: 7

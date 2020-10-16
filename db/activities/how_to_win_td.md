@@ -1,6 +1,6 @@
 ---
 name: How to win TAMU Datathon
-id: how_to_win
+id: how_to_win_td
 startTime: October 17, 2020 13:00:00-500
 endTime: October 17, 2020 14:00:00-500
 duration: 60
@@ -10,7 +10,7 @@ mediaLink: null
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/competitor_1.jpg?alt=media&token=83994921-1653-431f-b5c7-63362f709230
 presenter: TD Winners
 presenterAbout: Learn from the winners of TAMU Datathon 2019!
-presenterSocials: null
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

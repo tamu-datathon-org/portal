@@ -9,8 +9,8 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/99672807444?pwd=dkJJY3EwNzk2M0hidmJVYmpJc3g4Zz09
 thumbnail: https://tti.tamu.edu/wp-content/uploads/2017/12/cropped-tti-square-with-sailboat-and-block-620-transparent.png
 presenter: null
-presenterAbout: null
-presenterSocials: null
+presenterAbout: ""
+presenterSocials: []
 priority: 7
 relatedActivities: null
 ---

@@ -1,6 +1,6 @@
 ---
 name: "Reccommendation Engines"
-id: reccommendation_engine
+id: reccomendation_engine
 startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500
 eventId: null
@@ -10,7 +10,7 @@ mediaLink: https://tamu.zoom.us/j/95491744146?pwd=aW1zclpIVklidlRVMjkxdlRHeUpsQT
 thumbnail: https://media-exp1.licdn.com/dms/image/C5603AQEzBPYhBkA46w/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=nnpH5W0l6nEzf50dqmHRPlIEcCX2XMkdjy3m5TKCcuE
 presenter: James Caverlee
 presenterAbout: Dr. James Caverlee is a Professor of Computer Science and Engineering at Texas A & M University. Prior to teaching, Dr. Caverlee recieved a Ph.D. in computer science from Georgia Tech University, and an M.S. in Computer Science from Stanford
-presenterSocials: null
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

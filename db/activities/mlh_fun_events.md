@@ -9,8 +9,8 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/97227990111#success
 thumbnail: https://mlh.io/assets/logos/mlh-facebook-ae6144c0a3605f15992ee2970616db8d.jpg
 presenter:
-presenterAbout:
-presenterSocials:
+presenterAbout: ""
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

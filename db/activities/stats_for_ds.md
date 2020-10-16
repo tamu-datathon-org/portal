@@ -9,7 +9,7 @@ mediaLink: https://tamu.zoom.us/j/95772272332?pwd=Y2l3ekFIV2tZSGM3Um1ZMkp0S1ZnZz
 thumbnail: https://darrenho.github.io/darrenPic.jpg
 presenter: Darren Homrighausen
 presenterAbout: Dr. Homrighausen is an Associate Professor of Statistics at Texas A & M University. Prior to teaching, Dr. Homrighausen recieved a Ph.D and M.S in statistics from Carnegie Mellon University
-presenterSocials: null
+presenterSocials: []
 priority: 7
 relatedActivities:
   - data_science_202

@@ -9,8 +9,8 @@ mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/93733090278?pwd=cDNjeW1JMFd6UHg2c0FFUDczSVBQZz09
 thumbnail: https://fr.mathworks.com/brand/_jcr_content/mainParsys/band_1065211270_copy_44377276/mainParsys/columns_copy/3/image.adapt.full.high.svg/1590724058164.svg
 presenter: Connell D’Souza
-presenterAbout: null
-presenterSocials: null
+presenterAbout: ""
+presenterSocials: []
 slackChannel: null
 slackChannelLink: null
 priority: 7
