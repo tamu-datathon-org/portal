@@ -1,6 +1,6 @@
 ---
-name: Getting a Job in Data Science
-id: resume_tips
+name: Storytelling with Data
+id: story_telling
 startTime: October 18, 2020 14:00:00-500
 endTime: October 18, 2020 15:00:00-500
 duration: 75
