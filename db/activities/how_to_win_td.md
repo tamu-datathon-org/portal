@@ -1,5 +1,5 @@
 ---
-name: How to win TAMU Datathon
+name: How to Win TAMU Datathon
 id: how_to_win_td
 startTime: October 17, 2020 13:00:00-500
 endTime: October 17, 2020 14:00:00-500
@@ -18,4 +18,4 @@ relatedActivities:
   - data_science_404
 ---
 
-Learn how to win at TAMU Datathon from last years winners! Get tips & tricks from winning teams to succeed at our event.
+Get tips & tricks on how to create a winning TAMU Datathon project from last year's winners.
