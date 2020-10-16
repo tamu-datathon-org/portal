@@ -6,7 +6,7 @@ orderBy: start_time
 priority: 4
 activityList:
   - intro_python
-  - ds_visualization
-  - ds_wrangling
   - stats_for_ds
-  - model_interpretability
+  - how_to_win_td
+  - getting_a_job
+  - story_telling
