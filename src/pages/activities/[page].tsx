@@ -11,7 +11,7 @@ import { useActiveUser } from "../../common/UserProvider";
 
 interface PageInterface {
   mediaLink: string;
-  mediaType: "embed_url" | "meeting_url" | "embed_url_require_auth";
+  mediaType: "embed_url" | "meeting_url";
   name: string;
   content: string;
   startTime: Date;
@@ -69,9 +69,6 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
       </Head>
       <Navbar />
       <BackBtn url={"/"}></BackBtn>
-      { page.mediaType === "embed_url_require_auth" && user.status !== "LoggedIn" ? (
-
-      )}
       <Media
         link={
           page.mediaType === "meeting_url"
