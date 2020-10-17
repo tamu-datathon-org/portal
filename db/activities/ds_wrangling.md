@@ -7,7 +7,7 @@ duration: 75
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/99719594565?pwd=R3dFSnNJZll4TDJoNWFTWW5udlNiQT09
-thumbnail: https://tamudatathon.com/static/img/team/seth.jpg
+thumbnail: https://media-exp1.licdn.com/dms/image/C4E03AQE9zzxG6l8gDQ/profile-displayphoto-shrink_200_200/0?e=1607558400&v=beta&t=gPfFh1HVwiMzdfj_a3VbwgVuAubTaTBS_W38LG6eQD8
 presenter: Seth Hamilton
 presenterAbout: Seth has traded stocks using machine learning, used data science skills/tools in school labs for years, and is a Datathon 2019 competitor.
 presenterSocials:
