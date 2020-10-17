@@ -14,3 +14,20 @@ presenterSocials: []
 priority: 7
 relatedActivities:
 ---
+
+WELCOME!! At this event, we will kickoff TAMU Datathon and give you all the info you need for participating :D 
+
+We will be covering:
+- Intro
+- Sponsors
+- Schedule
+- Giveaways
+- TD Challenges
+- Sponsor Challenges
+- Project Submission
+- Mentors
+- Classes
+- Fun Events
+- Swag
+- Sponsor Remarks
+- MLH
