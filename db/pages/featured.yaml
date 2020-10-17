@@ -5,6 +5,7 @@ priority: 0
 sets:
   - happening_now_set
   - informational_set
+  - beginner_classes_set
   - core_curriculum_set
   - dive_deeper_set
   - social_events_set
