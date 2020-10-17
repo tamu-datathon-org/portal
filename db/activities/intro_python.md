@@ -6,7 +6,7 @@ endTime: October 17, 2020 12:00:00-500
 duration: 90
 eventId: 5f8a09bf33c190000312a9ce
 mediaType: embed_url
-mediaLink: https://youtu.be/x4XCQJ9MxHo
+mediaLink: https://www.youtube.com/embed/x4XCQJ9MxHo
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/image%20(7).png?alt=media&token=6291f630-1b3b-4391-a9d5-5c290a1c1b32
 presenter: Aditya Pethe
 presenterAbout: Aditya is a logistics director at TAMU Datathon, a BS Applied Mathematics and Computer Science, and has experience building predictive models at Deephaven Data Labs.
