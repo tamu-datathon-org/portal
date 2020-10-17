@@ -16,4 +16,11 @@ slackChannelLink: null
 priority: 7
 relatedActivities: null
 ---
+### ABOUT TAMIDS
 The Texas A&M Institute of Data Science pursues new approaches to Data Science research, education, operations and partnership. These approaches cross college boundaries to connect elements of Data Science from engineering, technology, science and the humanities, and inform wider social challenges. Join for a chance to learn more about TAMIDS.
+
+### WEBSITE
+https://tamids.tamu.edu/
+
+### VIDEO
+https://youtu.be/_fAuhcfopWk
