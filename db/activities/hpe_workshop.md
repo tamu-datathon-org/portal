@@ -5,8 +5,8 @@ eventId: 5efe2be0c7febf000306be94
 startTime: October 17, 2020 15:00:00-500
 endTime: October 17, 2020 16:00:00-500
 duration: 60
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/93584524759?pwd=Z1d4Vms4L2svWUhmRm1nQ2ZzNm1MUT09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/0Y0ovLtaIas
 thumbnail: https://cdn1.channelpro.co.uk/sites/channelpro/files/2019/03/hpe.jpg
 presenter: | 
   Ryan Feenstra, IT Developer/Engineer – HPE Global IT 
