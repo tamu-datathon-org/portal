@@ -1,5 +1,5 @@
 ---
-name: Closing Ceremony
+name: Award Ceremony
 id: closing_ceremony
 eventId: 5f8a084933c190000312a9cb
 startTime: October 18, 2020 15:00:00-500
@@ -17,3 +17,5 @@ relatedActivities:
   - data_science_303
   - data_science_404
 ---
+
+Here, we will announce winners of all challenges!
