@@ -7,5 +7,5 @@ priority: 4
 activityList:
   - how_to_win_td
   - intro_python
-  - td_ds_getting_a_job
-  - stats_for_data_scientists
+  - story_telling
+  - stats_for_ds
