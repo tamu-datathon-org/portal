@@ -6,7 +6,7 @@ startTime: October 17, 2020 9:30:00-500
 endTime: October 17, 2020 10:30-500
 duration: 60
 mediaType: embed_url
-mediaLink: https://tamudatathon.com/twitch
+mediaLink: https://www.youtube.com/embed/CWBjWHudTM4
 thumbnail: https://pbs.twimg.com/media/EMmcm4vWsAUh7Q5?format=jpg&name=large
 presenter: The TAMU Datathon Team!
 presenterAbout: ""
