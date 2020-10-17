@@ -2,8 +2,8 @@
 name: Texas A&M Institute of Data Science Workshop
 id: tamids_workshop
 eventId: 5f8a0de433c190000312a9d9
-startTime: Oct 17, 2020 23:00:00-500
-endTime: Oct 17, 2020 24:00:00-500
+startTime: Oct 17, 2020 11:00:00-500
+endTime: Oct 17, 2020 12:00:00-500
 duration: 60
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/91580110993?pwd=eTByb1kyN2xFenFITGpFdnNTVW1nUT09
