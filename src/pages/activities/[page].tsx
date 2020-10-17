@@ -7,10 +7,11 @@ import { BackBtn } from "../../common/BackBtn";
 import { Media, CallStatus } from "../../common/Media";
 import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
+import { useActiveUser } from "../../common/UserProvider";
 
 interface PageInterface {
   mediaLink: string;
-  mediaType: "embed_url" | "meeting_url";
+  mediaType: "embed_url" | "meeting_url" | "embed_url_require_auth";
   name: string;
   content: string;
   startTime: Date;
@@ -43,6 +44,7 @@ function stripHtmlTags(str: any) {
 const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
   // add an ellipsis if longer than 100 characters
   const desc = stripHtmlTags(page.content);
+  const user = useActiveUser();
   const trimDesc = desc.length > 100 ? `${desc.substring(0, 100)}...` : desc;
   const pageURL = `https://tamudatathon.com/events/activities/${page.id}`;
 
@@ -67,6 +69,9 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
       </Head>
       <Navbar />
       <BackBtn url={"/"}></BackBtn>
+      { page.mediaType === "embed_url_require_auth" && user.status !== "LoggedIn" ? (
+
+      )}
       <Media
         link={
           page.mediaType === "meeting_url"
