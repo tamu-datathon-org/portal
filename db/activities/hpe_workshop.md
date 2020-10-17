@@ -27,3 +27,7 @@ relatedActivities: null
 ---
 
 Join us for an introduction into APIs and how to leverage them in your next data analytics project. We’ll discuss what APIs are, how and why they are useful for ML/AI projects/products, and explore some common API types you will encounter working with both public and private service/data providers. Our speakers will also walk through a live demonstration of interacting with some public APIs via Postman, JavaScript, and Python as well as illustrate how easy it is to develop your own private/public APIs.
+
+
+### Resources:
+- [Public APIs you can use!](https://github.com/public-apis/public-apis)
