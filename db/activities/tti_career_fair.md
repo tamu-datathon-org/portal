@@ -2,7 +2,7 @@
 name: Texas Transportation Institute Career Fair
 id: tti_career_fair
 startTime: October 17, 2020 15:00:00-500
-endTime: October 17, 2020 16::00-500
+endTime: October 17, 2020 16:00:00-500
 duration: 60
 eventId: 5f1bc1f719f52100035dd9ff
 mediaType: meeting_url
