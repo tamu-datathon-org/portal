@@ -7,7 +7,7 @@ duration: 90
 eventId: 5f8a09bf33c190000312a9ce
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/95509184853?pwd=K1R6WVdlWlRFQ3ZBYUlWRjlFL3JOdz09
-thumbnail: https://drive.google.com/file/d/1Ufyf-aHlvkOkfDk7EcOE_-jOuNxADSOY/view
+thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/image%20(7).png?alt=media&token=6291f630-1b3b-4391-a9d5-5c290a1c1b32
 presenter: Aditya Pethe
 presenterAbout: Aditya is a logistics director at TAMU Datathon, a BS Applied Mathematics and Computer Science, and has experience building predictive models at Deephaven Data Labs.
 presenterSocials:
