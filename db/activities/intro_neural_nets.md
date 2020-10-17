@@ -16,6 +16,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: neural networks, machine learning, introduction, deep learning, TensorFlow, Keras, numpy, Optimizer, Loss Function, Python
 ---
 
 You’ll walk away from this workshop with the basics of neural networks. You’ll be able to get your hands dirty with some of the software tools that are used to build neural networks like sklearn/keras/tensorflow. Additionally, you’ll become comfortable with many commonly heard terms of machine learning at a high level (more concept, less math) such as:
@@ -28,3 +29,7 @@ learning rate
 gradient decent
 minibatches
 epochs
+
+---
+
+- tags: neural networks, machine learning, introduction, deep learning, TensorFlow, Keras, numpy, Optimizer, Loss Function, Python

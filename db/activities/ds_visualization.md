@@ -18,6 +18,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: viz, visualization, seaborn, matplotlib, plots, charts, plotly express
 ---
 
 Howdy
@@ -27,3 +28,7 @@ So. You're interested in data science, but you don't know where to start. I want
 Today, we'll cover data visualization and the basics of seaborne. Yeah... we gotta start with the basics. But trust me; with the basics of this tool under your belt, you'll look like a data science wizard since you'll be able to visualize most, if not all, of the data sets you encounter.
 
 I'm thrilled to jump into the world of data visualization with you. Let's get started.
+
+---
+
+- tags: viz, visualization, seaborn, matplotlib, plots, charts, plotly express

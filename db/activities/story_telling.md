@@ -20,6 +20,7 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: presenting, impact, business, data science
 ---
 
 In this talk, we will describe how we use data collected at Facebook to inform product development. Including everything from ideas, experimentations, and launches.
@@ -31,3 +32,7 @@ Our talk will include an example of how an analysis can influence a product, as 
 #### Useful Links
 
 - [Algorithmic Thinking](https://www.cs.cmu.edu/~112/notes/notes-algorithmic-thinking.html)
+
+---
+
+- tags: presenting, impact, business, data science

@@ -20,14 +20,18 @@ relatedActivities:
   - data_science_202
   - data_science_303
   - data_science_404
+tags: sklearn, gensim, nltk, tfidf, TfidfVectorizer, bag of words, CountVectorizer, word embeddings, Word2Vec, naive bayes, lemmatization, part of speech tags, named entity recognition, tokenization, word clouds
 ---
 
 Interested in learning what Natural Language Processing is all about?
 
 This hour long course will teach you how to identify and separate words, extract topics, and conduct sentiment analysis. We will be using [Python](https://python.org) for this course, relying heavily on [the NLTK package](https://www.nltk.org/). By the end of the hour, you will be well-versed with the basics of NLP, the applications of which are endless.
 
-
 #### Useful Links
 
 - [Watch the trailer for this class](https://www.youtube.com/watch?v=YrnxaV5itXo)
 - [Notebooks, Resources, and Datasets](https://drive.google.com/drive/folders/1gmayusAJkwke3XPVlA2RT1DOEEYYBTxv)
+
+---
+
+- tags: sklearn, gensim, nltk, tfidf, TfidfVectorizer, bag of words, CountVectorizer, word embeddings, Word2Vec, naive bayes, lemmatization, part of speech tags, named entity recognition, tokenization, word clouds
