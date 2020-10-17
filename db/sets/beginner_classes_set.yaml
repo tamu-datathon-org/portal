@@ -1,0 +1,11 @@
+name: Beginner Classes
+id: beginner_classes_set
+description: Get started with classes that require no prior knowledge!
+showMoreState: true
+orderedBy: start_time
+priority: 4
+activityList:
+  - how_to_win_td
+  - intro_python
+  - td_ds_getting_a_job
+  - stats_for_data_scientists

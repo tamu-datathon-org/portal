@@ -1,15 +1,15 @@
 ---
-name: Machine Learning - Theory
+name: "ML Introduction Part 1/2: Theory"
 id: ml_regression
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
 duration: 75
-eventId: null
+eventId: 5f8a0afc33c190000312a9d1
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/92276610615?pwd=bFZ1MWhiZy85L1p2VDhiL1FFQktBZz09
 thumbnail: https://tamudatathon.com/static/img/team/josiah.jpg
 presenter: Josiah Coad
-presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is current a researching in reinforcement learning at Carnegie Mellon.
+presenterAbout: Josiah has interned at Facebook, Microsoft and the CIA. He is currently researching in reinforcement learning at Carnegie Mellon.
 presenterSocials:
   - type: Josiah's Medium
     link: https://medium.com/@josiahcoad

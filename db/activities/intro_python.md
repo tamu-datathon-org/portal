@@ -4,7 +4,7 @@ id: intro_python
 startTime: October 17, 2020 10:30:00-500
 endTime: October 17, 2020 12:00:00-500
 duration: 90
-eventId: null
+eventId: 5f8a09bf33c190000312a9ce
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/95509184853?pwd=K1R6WVdlWlRFQ3ZBYUlWRjlFL3JOdz09
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/image%20(6).png?alt=media&token=d1aa1789-c503-4e81-84d8-1ef236bd8306

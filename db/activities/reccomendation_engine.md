@@ -1,9 +1,9 @@
 ---
-name: "Reccommendation Engines"
+name: "Recommendation Engines"
 id: reccomendation_engine
 startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500
-eventId: null
+eventId: 5f8a0bb033c190000312a9d3
 duration: 75
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/95491744146?pwd=aW1zclpIVklidlRVMjkxdlRHeUpsQT09
