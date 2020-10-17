@@ -32,3 +32,7 @@ I'm thrilled to jump into the world of data wrangling with you. Let's get starte
 ---
 
 - tags: jupyter notebook, pandas, import, packages, data science, wrangling, datasets, clean, start, introduction, mining, beginners
+
+
+### Resources:
+- [Seth's Jupyter Notebook](https://drive.google.com/file/d/1YmPwqDQwCLmuh1B8YxJgaGB0aLBgGD4O/view?usp=sharing)
