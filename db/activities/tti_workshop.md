@@ -5,8 +5,8 @@ eventId: 5efe2be0c7febf000306be94
 startTime: Oct 17, 2020 14:00:00-500
 endTime: Oct 17, 2020 15:00:00-500
 duration: 60
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/98672473419
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/MgRoJ2ucogU
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%202.png?alt=media&token=8a544068-8813-4e9a-a4e5-aa3be761060d
 presenter: Gargi Singh
 presenterAbout: Singh is an Assistant Research Scientist and has four years of experience in data analytics and transportation planning. Gargi’s role heavily involves the use of big data skills and spatial analysis to analyze and visualize travel behavior using GPS passive data and travel survey data. Her interests primarily lie in the application of passive data in the field of transportation. Her skills pertaining to data analytics, cloud computing, and spatial analysis have assisted her in this path. She has experience working in SQL, R, SparkSQL, Scala, PostGIS, Python, and AWS. Additionally, she is well versed in software pertaining to planning (ArcMap, ArcGIS Pro, QGIS, and AutoCAD) and design (InDesign, Illustrator, SketchUp).
