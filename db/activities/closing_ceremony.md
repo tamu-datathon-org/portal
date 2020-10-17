@@ -6,7 +6,7 @@ startTime: October 18, 2020 15:00:00-500
 endTime: October 18, 2020 16:00-500
 duration: 75
 mediaType: embed_url
-mediaLink: null
+mediaLink: https://tamudatathon.com/twitch
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/EXMinrxWAAcdJ0M.jpg?alt=media&token=619451d2-80db-4fdb-8016-a5ded44d42be
 presenter: Our TAMU Dathon Team!
 presenterAbout: ""
