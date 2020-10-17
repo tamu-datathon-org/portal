@@ -16,3 +16,7 @@ relatedActivities:
 ---
 
 Get tips & tricks on how to create a winning TAMU Datathon project from last year's winners.
+- Goldman Sachs Competitor: Sola Babatunde, Victoria Catlett, Evan Meade
+- Walmart 1st: Zachary Summers, Alexander Labbane,Ian Matson
+- Facebook, Conocophillips 2nd: Prakhar Mohan, Sukanto Guha, Shubham Sanghavi, Dhruv Sandesara
+- Goldman Sachs Learner: Marshall Allen, Brandon Merrill, Jack Grooms
