@@ -3,10 +3,10 @@ name: Walmart Workshop
 id: walmart_workshop
 eventId: 5efe2be0c7febf000306be94
 startTime: October 17, 2020 13:00:00-500
-endTime: October 17, 2020 14::00-500
+endTime: October 17, 2020 14:00:00-500
 duration: 60
 mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/98672473419
+mediaLink: https://tamu.zoom.us/j/97228224320?pwd=amtJZU1zczMwaVprTE9xQVRmb3RIQT09
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%205%20(1).png?alt=media&token=5a9933fa-3612-4108-895c-33c66a23ff4d
 presenter: Neelabh Pant
 presenterAbout: Neelabh is a data Scientist with a demonstrated history of working in the business analysis and higher education industry. He is skilled in Time Series Analysis/Prediction, Python, Deep Learning, Artificial Neural Networks, Hidden Markov Models and other Machine Learning and state of the art AI. He is a strong research professional with a Ph.D. in Geospatial analytics, Machine Learning and ANNs (CS) from The University of Texas at Arlington.
