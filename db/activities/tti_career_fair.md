@@ -14,4 +14,11 @@ presenterSocials: []
 priority: 7
 relatedActivities: null
 ---
+### ABOUT TTI
 The Texas A&M Transportation Institute (TTI) is honored to once again sponsor the Texas A&M Datathon. The amazing and energetic student organizers have risen to the challenge of a virtual Datathon and I expect that it will be even more successful than last year! We are always looking for talented data scientists who want to help solve real-world transportation problems with data.
+
+### WEBSITE
+https://tti.tamu.edu/
+
+### VIDEO
+https://vimeo.com/255088698
