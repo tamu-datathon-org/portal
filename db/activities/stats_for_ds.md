@@ -6,7 +6,7 @@ endTime: October 17, 2020 17:00:00-500
 duration: 75
 eventId: 5f8a0d1033c190000312a9d5
 mediaLink: https://tamu.zoom.us/j/95772272332?pwd=Y2l3ekFIV2tZSGM3Um1ZMkp0S1ZnZz09
-thumbnail: https://online.stat.tamu.edu/wp-content/uploads/2020/02/49091557906_2144888f8b_c-201x300.jpg
+thumbnail: https://drive.google.com/uc?id=1FS-4ueRagrWd6ax2n6e6mOrUfMLTT7G8
 presenter: Darren Homrighausen
 presenterAbout: Dr. Homrighausen is an Associate Professor of Statistics at Texas A & M University. Prior to teaching, Dr. Homrighausen recieved a Ph.D and M.S in statistics from Carnegie Mellon University
 presenterSocials: []
