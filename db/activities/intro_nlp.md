@@ -5,8 +5,8 @@ startTime: October 17, 2020 17:00:00-500
 endTime: October 17, 2020 18:15:00-500
 duration: 75
 eventId: 5f1bc40e19f52100035dda01
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/94695122601?pwd=S1JGOFE0TDdzZ3pKL2N1dzlCVWhJZz09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/j2-LugkbfFY
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/0dd3d528-a1b1-481c-8ccf-01e7913ae268.jpeg
 presenter: Allyson King
 presenterAbout: Allyson is the VP of TAMU Datathon, a BS Statistics and (almost) Computer Science, and has worked at AT&T and TTI
