@@ -32,3 +32,7 @@ Our talk will include an example of how an analysis can influence a product, as 
 #### Useful Links
 
 - [Algorithmic Thinking](https://www.cs.cmu.edu/~112/notes/notes-algorithmic-thinking.html)
+
+---
+
+- tags: presenting, impact, business, data science

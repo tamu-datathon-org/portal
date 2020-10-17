@@ -23,3 +23,7 @@ tags: optimization, math, theory, machine learning, linear regression, neural ne
 
 Before you dive into some of the hot ML algorithms, it’s important for you to know the basics of whats going underneath the hood — ML is really just fancy optimization.
 We will start with a refresher on linear regression and represent regression as an “optimization” problem. Next, we’ll show how machine learning is a fancy term for model fitting. A model is a function with parameters and variables. “Fitting” is the process of picking the right parameter values. I’ll show you how sklearn can be used to fit a model. Next, I’ll introduce Neural Networks and how we can represent linear regression as a NN.
+
+---
+
+- tags: optimization, math, theory, machine learning, linear regression, neural network, parameters, model fitting, sklearn

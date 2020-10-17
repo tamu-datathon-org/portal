@@ -28,3 +28,7 @@ So. You're interested in data science, but you don't know where to start. I want
 Today, we'll dive into a process known as "data wrangling"... That word makes me think of cowboys for some reason. But seriously, finding good data and getting it into a pandas data-frame can actually be half the battle. I'll make sure you guys know how to find and load a dataset of your choice and do some quick analysis.
 
 I'm thrilled to jump into the world of data wrangling with you. Let's get started.
+
+---
+
+- tags: jupyter notebook, pandas, import, packages, data science, wrangling, datasets, clean, start, introduction, mining, beginners

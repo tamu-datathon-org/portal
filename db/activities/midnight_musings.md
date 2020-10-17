@@ -13,7 +13,7 @@ presenterAbout: Aditya is a logistics director at TAMU Datathon, a BS Applied Ma
 presenterSocials: []
 priority: 7
 relatedActivities: null
-tags:
+tags: null
 ---
 
 Data or data? GIF or JIF? Should house elves be paid? In a state of late-night delirium, help Datathon answer some of our most pressing questions.

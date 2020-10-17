@@ -29,3 +29,7 @@ learning rate
 gradient decent
 minibatches
 epochs
+
+---
+
+- tags: neural networks, machine learning, introduction, deep learning, TensorFlow, Keras, numpy, Optimizer, Loss Function, Python

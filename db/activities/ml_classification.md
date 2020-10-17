@@ -25,3 +25,7 @@ tags: applied, random forests, decision trees, xgboost, boosting, hyperparameter
 
 In this workshop we will take you though one of the most powerful ML algorithms: Decision Trees. We will follow that up with a form of bagging called Random Forests and then a form of boosting called XGBoost.
 Finally, we’ll teach how to avoid overfitting through cross validation, hyperparameter tuning and feature selection. All of this will be done in Python with sklearn. Looking forward to seeing you there!
+
+---
+
+- tags: applied, random forests, decision trees, xgboost, boosting, hyperparameter tuning, sklearn, evaluation, feature selection, test train split, machine learning

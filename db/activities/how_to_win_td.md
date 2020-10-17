@@ -20,3 +20,7 @@ tags: win, advice, datathon, hackathon
 ---
 
 Get tips & tricks on how to create a winning TAMU Datathon project from last year's winners.
+
+---
+
+- tags: win, advice, datathon, hackathon

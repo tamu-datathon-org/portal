@@ -22,3 +22,7 @@ tags: information retrieval, recommendation engine, netflix
 Reccommendation engines drive much of our online decision-making. From Netflix to Youtube to Tik Tok, platforms utilize reccommendation engines to provide the most relevant content possible to users.
 
 In this workshop, we will cover the basics of reccommendation engine design and development, and the algorithms that drive them. Take a deep dive into an important,and increasingly relevant field of data science!
+
+---
+
+- tags: information retrieval, recommendation engine, netflix

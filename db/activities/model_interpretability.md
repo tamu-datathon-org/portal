@@ -19,3 +19,7 @@ tags: explainability, partial dependence, LIME, conditional expectation, SHAP
 ---
 
 How do we interpret the results from our models? As we develop newer and better machine learning models, they grow more and more difficult to draw results from. In this workshop, we will go over techniques for making contemporary models easier to interpret.
+
+---
+
+- tags: explainability, partial dependence, LIME, conditional expectation, SHAP

@@ -21,3 +21,7 @@ tags: for loops, functions, while loops, logic, variables, data structures, synt
 Are you new to programming? Or do you want a refresher to brush up on what you know? No worries!
 
 In this class, we will learn the fundamentals of Python. From variables, to data types, to loops, we will cover the basics of the most widely used programming language in data science!
+
+---
+
+- tags: for loops, functions, while loops, logic, variables, data structures, syntax, types, beginner, python, languages
