@@ -5,8 +5,8 @@ startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
 duration: 75
 eventId: 5f8a099b33c190000312a9cd
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/98392231674?pwd=TGR1czdldGRSR0VpS3N3ZjA5YTdFUT09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/Hyyf3Ba5lqE
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/image%20(5).png?alt=media&token=f4fc131a-8e0c-4b81-9e6e-3c7992a18167
 presenter: Nick Smart
 presenterAbout: "Nick is a GIS Developer at Chevron and an Aggie 2018 grad."
