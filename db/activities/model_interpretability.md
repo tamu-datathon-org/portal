@@ -5,7 +5,7 @@ startTime: October 18, 2020 12:00:00-500
 endTime: October 18, 2020 13:15:00-500
 duration: 75
 mediaType: meeting_url
-eventId: 5f1bc49319f52100035dda03
+eventId: 5f8c69cb9bc04c0003f53a7c
 mediaLink: https://tamu.zoom.us/j/94695038191
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%206.png?alt=media&token=6197430c-42e9-4db0-b342-95490a63426f
 presenter: Alan Feder
