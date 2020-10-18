@@ -5,8 +5,8 @@ startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500
 duration: 75
 eventId: 5f1bbd0819f52100035dd9fc
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/92871407243?pwd=Uy81U1BEQ2ZSTFJCckNucm9nWFpmdz09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/gf4D_AoM4VI
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/1268a546-810c-4e7e-a427-c1dfcc4eda76.jpg
 presenter: Seth Hamilton
 presenterAbout: Seth has traded stocks using machine learning, used data science skills/tools in school labs for years, and is a Datathon 2019 competitor.
