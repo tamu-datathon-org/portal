@@ -5,8 +5,8 @@ startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500
 eventId: 5f8a0bb033c190000312a9d3
 duration: 75
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/95491744146?pwd=aW1zclpIVklidlRVMjkxdlRHeUpsQT09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/embed/Z429CViP_SY
 thumbnail: https://media-exp1.licdn.com/dms/image/C5603AQEzBPYhBkA46w/profile-displayphoto-shrink_800_800/0?e=1608163200&v=beta&t=nnpH5W0l6nEzf50dqmHRPlIEcCX2XMkdjy3m5TKCcuE
 presenter: James Caverlee
 presenterAbout: Dr. James Caverlee is a Professor of Computer Science and Engineering at Texas A & M University. Prior to teaching, Dr. Caverlee recieved a Ph.D. in computer science from Georgia Tech University, and an M.S. in Computer Science from Stanford
