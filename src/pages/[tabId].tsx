@@ -20,6 +20,7 @@ import {
 
 import { getAllPages, getPageByName, Page } from "../libs/pagesAPI";
 import { getPageSets, getPageSetsContent } from "../libs/setsAPI";
+import { Footer } from "../common/Footer";
 
 interface IndexPageProps {
   page?: Page;
@@ -63,6 +64,8 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
           </Container>
         ))}
       </EventsBlueWrapper>
+
+      <Footer />
     </>
   );
 };
