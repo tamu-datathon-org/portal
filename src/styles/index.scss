@@ -58,6 +58,7 @@ $splash-light-blue: #3f5aaa;
 
 // Import Bootstrap and its default variables
 @import "bootstrap/scss/bootstrap.scss";
+@import "./footer.scss";
 // optional TODO: optimize all bootstrap imports like here:
 // https://github.com/tamu-datathon-org/gigabowser/blob/master/scss/custom.scss
 

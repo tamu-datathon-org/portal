@@ -8,6 +8,7 @@ import { Media, CallStatus } from "../../common/Media";
 import { ActivityInfo, SocialInfo } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 import { useActiveUser } from "../../common/UserProvider";
+import { Footer } from "../../common/Footer";
 
 interface PageInterface {
   mediaLink: string;
@@ -92,6 +93,7 @@ const ActivityPage: React.FC<ActivityProps> = ({ page }: ActivityProps) => {
         slackChannel={page.slackChannel}
         slackChannelLink={page.slackChannelLink}
       ></ActivityInfo>
+      <Footer />
     </>
   );
 };
