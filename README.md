@@ -22,10 +22,6 @@ Now these points of data make a beautiful line. We'll be out of beta, and we're 
 
 <p align="center">
   <a href="https://vercel.com?utm_source=tamu-datathon&utm_campaign=oss">
-<<<<<<< HEAD
     TAMU Datathon is powered by </br><img src="https://tamudatathon.com/static/img/sponsors/vercel_dark.svg" height="24px" alt="Vercel" />
-=======
-    TAMU Datathon is powered by </br><img src="/static/img/sponsors/vercel_dark.svg" height="24px" alt="Vercel" />
->>>>>>> 3399933c5dfb694d0af93da9f0fac03ebd131416
   </a>
 </p>
