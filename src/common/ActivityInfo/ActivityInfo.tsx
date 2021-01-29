@@ -156,7 +156,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
       <Container className="mt-4 mb-5">
         <h2 className="pb-3">{props.title}</h2>
         <Row>
-          <Col>
+          <Col className="min-vh-100 mb-5">
             <ReactMarkdown
               linkTarget="_blank"
               escapeHtml={false}
@@ -200,8 +200,8 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
               <Card.Body>
                 <Card.Title>Join the Discussion:</Card.Title>
                 <Card.Text>
-                  Join our discord to discuss with presenters, mentors, and
-                  other TAMU Datathon 2020 attendees.
+                  Join our Discord community and talk with TD organizers and
+                  like minded DS/ML enthusiasts!
                   <br />
                   {channelLink}
                 </Card.Text>

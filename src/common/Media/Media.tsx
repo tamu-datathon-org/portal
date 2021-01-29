@@ -38,17 +38,16 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
     let joinBtn;
     let recordingDisclaimer = (
       <>
-        <UI.RecordingDisclaimer>
+        {/* <UI.RecordingDisclaimer>
           <strong>By joining the call, you agree to being recorded.</strong>
-        </UI.RecordingDisclaimer>
+        </UI.RecordingDisclaimer> */}
       </>
     );
 
     if (props.callStatus == CallStatus.NOT_STARTED) {
       callDescription = (
         <div>
-          Come back here later to join this meeting. Can&apos;t make it?
-          Don&apos;t worry, the recording will show up here afterwards.
+          Come back here later to join this meeting.
           <br />
           {status === UserCurrentStatus.LoggedOut && (
             <b>
@@ -90,8 +89,8 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
     } else {
       callDescription = (
         <div>
-          This meeting has ended. We&apos;ll be posting the recording for it
-          soon, come back later to check it out!
+          This meeting has ended. A recording for it might be posted later, come
+          back later to check it out!
         </div>
       );
       recordingDisclaimer = <></>;
