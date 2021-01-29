@@ -2,8 +2,8 @@
 name: TAMU Datathon Org Informational
 id: informational
 startTime: February 4, 2021 20:00:00-600
-endTime: February 4, 2021 22:00:00-600
-duration: 120
+endTime: February 4, 2021 21:00:00-600
+duration: 60
 eventId: 324n23kj43242343243
 mediaType: meeting_url
 mediaLink: https://tamu.zoom.us/j/123456789
