@@ -206,7 +206,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
                   {channelLink}
                 </Card.Text>
                 <Button
-                  href={"https://discord.gg/ADYhDjW"}
+                  href={"https://tamudatathon.com/discord"}
                   variant={"outline-primary"}
                   block
                 >
