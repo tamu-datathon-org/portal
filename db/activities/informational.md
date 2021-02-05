@@ -6,7 +6,7 @@ endTime: February 4, 2021 21:00:00-600
 duration: 60
 eventId: 324n23kj43242343243
 mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/123456789
+mediaLink: https://tamu.zoom.us/j/92776530876
 thumbnail: https://i.imgur.com/DX4qtpp.png
 presenter: TAMU Datathon Organizers
 presenterSocials:
