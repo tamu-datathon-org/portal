@@ -1,6 +1,5 @@
 ---
 name: string (Data Science 101)
-id: file_name_without_extension (data_science_101)
 eventId: event_id_in_gatekeeper (mongo_db_id)
 startTime: Month Date, Year hh:mm:ss (June 20, 2020 10:30:00)
 endTime: Month Date, Year hh:mm:ss (June 20, 2020 11:30:00)

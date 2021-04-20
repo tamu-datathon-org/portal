@@ -1,6 +1,5 @@
 ---
 name: "Machine Learning: Start Here"
-id: ml_start_here
 startTime: July 25, 2020 19:00:00-500
 endTime: July 25, 2020 21:00:00-500
 duration: 120

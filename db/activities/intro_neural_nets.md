@@ -1,6 +1,5 @@
 ---
 name: Intro to Neural Nets
-id: intro_neural_nets
 startTime: October 17, 2020 20:00:00-500
 endTime: October 17, 2020 21:15:00-500
 duration: 75

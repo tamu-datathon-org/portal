@@ -1,6 +1,5 @@
 ---
 name: "Data Science: Start Here"
-id: start_here_sh
 startTime: June 20, 2020 10:30:00
 endTime: June 20, 2020 11:30:00
 eventId: 5f1bbd0819f52100035dd9fc
