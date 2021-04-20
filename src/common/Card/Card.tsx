@@ -32,19 +32,20 @@ export const formatTime = (time: Date, duration: number): string => {
  * Card component
  */
 export const Card: React.FC<ActivityCardProps> = ({ event }) => {
+  const startTime = new Date(event.startTime);
   return (
     <UI.StyledCard>
       <UI.EventImgContainer>
         <UI.EventImg src={event.thumbnail} alt="" />
         <Reminder
-          startTime={new Date(event.startTime)}
+          startTime={startTime}
           duration={event.duration}
         />
       </UI.EventImgContainer>
       <UI.EventInfo>
         <h5>{event.name}</h5>
         <UI.EventTime>
-          {formatTime(new Date(event.startTime), event.duration)}
+          {formatTime(startTime, event.duration)}
         </UI.EventTime>
         <UI.EventInfoLinkContainer>
           <UI.EventInfoLink href={event.mediaLink ? `/events/activities/${event.id}` : "#"}>

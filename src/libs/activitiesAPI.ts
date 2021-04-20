@@ -23,7 +23,7 @@ export async function getActivityByName(page: string): Promise<ActivityInfoProps
   const fileContents = await fs.promises.readFile(fullPath, "utf8");
   const { data, content } = matter(fileContents);
 
-  return { ...data, content } as ActivityInfoProps;
+  return { ...data, content, id: realPage } as ActivityInfoProps;
 }
 
 /**

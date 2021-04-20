@@ -15,23 +15,23 @@ const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
 export const Set: React.FC<SetProps> = ({ info }) => {
   const currentTime = useCurrentTime();
   const [eventList, setEventList] = useState(
-    info.eventList.slice(
+    info.activityListPopulated.slice(
       0,
-      !info.defaultShowMoreState ? 4 : info.eventList.length
+      !info.showMoreState ? 4 : info.activityListPopulated.length
     )
   );
-  const [showMore, setShowMore] = useState(info.defaultShowMoreState);
+  const [showMore, setShowMore] = useState(info.showMoreState);
   const [btnText, setBtnText] = useState(
-    !info.defaultShowMoreState ? "Show More" : "Show Less"
+    !info.showMoreState ? "Show More" : "Show Less"
   );
 
   /* Updates the set component if when the show more status has been changed */
   useEffect(() => {
     if (showMore) {
-      setEventList(info.eventList);
+      setEventList(info.activityListPopulated);
       setBtnText("Show Less");
     } else {
-      setEventList(info.eventList.slice(0, 4));
+      setEventList(info.activityListPopulated.slice(0, 4));
       setBtnText("Show More");
     }
   }, [showMore]);
@@ -46,11 +46,11 @@ export const Set: React.FC<SetProps> = ({ info }) => {
   /** Applies all filters and sorts if specified */
   const transformedEventList = React.useMemo(() => {
     let currArr = eventList;
-    if (info.orderedBy === "alphabetical") {
+    if (info.orderBy === "alphabetical") {
       currArr = currArr.sort((a, b) =>
         a.event.name.localeCompare(b.event.name)
       );
-    } else if (info.orderedBy === "start_time") {
+    } else if (info.orderBy === "start_time") {
       currArr = currArr.sort(
         (a, b) =>
           new Date(a.event.startTime).getTime() -
@@ -58,7 +58,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
       );
     }
 
-    if (info.filteredBy === "happening_now") {
+    if (info.filterBy === "happening_now") {
       // this is dumb af, i know
       currArr = currArr.filter(
         (item) =>
@@ -75,7 +75,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
     }
 
     return currArr;
-  }, [eventList, info.orderedBy, info.filteredBy, currentTime]);
+  }, [eventList, info.orderBy, info.filterBy, currentTime]);
 
   /* Toggles whether the set is displayed fully or partially */
   const toggleEventsDisplay = () => {
@@ -89,8 +89,8 @@ export const Set: React.FC<SetProps> = ({ info }) => {
   return (
     <>
       <UI.SectionInfo>
-        <h4>{info.sectionTitle}</h4>
-        <p>{info.sectionDescription}</p>
+        <h4>{info.name}</h4>
+        <p>{info.description}</p>
       </UI.SectionInfo>
       <UI.CardsContainer>
         {transformedEventList.map((card) => (
@@ -100,7 +100,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
           />
         ))}
       </UI.CardsContainer>
-      {info.eventList.length > 4 ? (
+      {info.activityListPopulated.length > 4 ? (
         <UI.ShowBtnContainer>
           <UI.Hr />
           <UI.ShowBtn onClick={toggleEventsDisplay}>{btnText}</UI.ShowBtn>

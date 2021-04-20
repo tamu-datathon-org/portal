@@ -71,7 +71,9 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoPro
   // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
   const curTime = new Date();
-  const minsToEvent = new Date(props.startTime).getTime() - curTime.getTime();
+  const startTime = new Date(props.startTime);
+  const endTime = new Date(props.endTime);
+  const minsToEvent = startTime.getTime() - curTime.getTime();
 
   // const handleClick = () => {
   //   setInterested(!interested);
@@ -127,7 +129,7 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoPro
                 `https://www.google.com/calendar/render?` +
                 `action=TEMPLATE&` +
                 `text=${props.name}&` +
-                `dates=${formatGoogleTime(new Date(props.startTime), new Date(props.endTime))}&` +
+                `dates=${formatGoogleTime(startTime, endTime)}&` +
                 `details=Attend Here: tamudatathon.com/events/activities/${props.id}&` +
                 `ctz=America/Chicago`
               }
@@ -185,7 +187,7 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoPro
               <Card.Body>
                 <Card.Title>When:</Card.Title>
                 <Card.Text>
-                  {formatTime(new Date(props.startTime), new Date(props.endTime))}
+                  {formatTime(startTime, endTime)}
                 </Card.Text>
                 <Card.Title>Presented By:</Card.Title>
                 <Card.Text>{props.presenter}</Card.Text>

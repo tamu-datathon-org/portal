@@ -30,7 +30,7 @@ export async function getPageByName(pageName: string): Promise<Page> {
   const fileContents = await fs.promises.readFile(fullPath, "utf8");
   const data = yaml.safeLoad(fileContents);
 
-  return data as Page;
+  return {...(data as object), id: realPage} as Page;
 }
 
 /**
