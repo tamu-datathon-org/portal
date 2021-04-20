@@ -7,7 +7,7 @@ import { BackBtn } from "../../common/BackBtn";
 import { Media, CallStatus } from "../../common/Media";
 import { ActivityInfo, ActivityInfoProps } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
-import { useActiveUser } from "../../common/UserProvider";
+// import { useActiveUser } from "../../common/UserProvider";
 import { Footer } from "../../common/Footer";
 
 // This works but a little janky for now.
@@ -21,16 +21,19 @@ function stripHtmlTags(str: any) {
   return str.replace(/<[^>]*>/g, "").replace(/^\s+|\s+$/g, "");
 }
 
-const ActivityPage: React.FC<ActivityInfoProps> = ({...ActivityInfoProps}) => {
+const ActivityPage: React.FC<ActivityInfoProps> = ({
+  ...ActivityInfoProps
+}) => {
   // add an ellipsis if longer than 100 characters
   const desc = stripHtmlTags(ActivityInfoProps.content);
-  const user = useActiveUser();
+  // const user = useActiveUser();
   const trimDesc = desc.length > 100 ? `${desc.substring(0, 100)}...` : desc;
   const pageURL = `https://tamudatathon.com/events/activities/${ActivityInfoProps.id}`;
 
   let callStatus = CallStatus.NOT_STARTED;
   if (
-    new Date().getTime() >= new Date(ActivityInfoProps.startTime).getTime() - 900000 &&
+    new Date().getTime() >=
+      new Date(ActivityInfoProps.startTime).getTime() - 900000 &&
     new Date().getTime() <= new Date(ActivityInfoProps.endTime).getTime()
   ) {
     callStatus = CallStatus.ONGOING;
@@ -81,7 +84,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
   const pages = await getAllActivities();
 
   return {
-    paths: pages.map(page => ({
+    paths: pages.map((page) => ({
       params: {
         page: page.id,
       },

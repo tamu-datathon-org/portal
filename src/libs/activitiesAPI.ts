@@ -17,7 +17,9 @@ export async function getActivityNames(): Promise<string[]> {
  * @param {string} page ID of the activity (filename without .md)
  * @returns {Promise<Activity>}
  */
-export async function getActivityByName(page: string): Promise<ActivityInfoProps> {
+export async function getActivityByName(
+  page: string
+): Promise<ActivityInfoProps> {
   const realPage = page.replace(/\.md$/, "");
   const fullPath = join(activityDirectory, `${realPage}.md`);
   const fileContents = await fs.promises.readFile(fullPath, "utf8");

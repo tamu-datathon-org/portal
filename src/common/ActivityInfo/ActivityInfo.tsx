@@ -23,7 +23,7 @@ export interface SocialInfo {
 export interface ActivityInfoProps {
   name: string;
   id: string;
-  eventId: string,
+  eventId: string;
   startTime: string;
   endTime: string;
   duration: number;
@@ -67,7 +67,9 @@ export const formatGoogleTime = (startTime: Date, endTime: Date): string => {
   );
 };
 
-export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoProps) => {
+export const ActivityInfo: React.FC<ActivityInfoProps> = (
+  props: ActivityInfoProps
+) => {
   // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
   const curTime = new Date();
@@ -186,9 +188,7 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoPro
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
-                <Card.Text>
-                  {formatTime(startTime, endTime)}
-                </Card.Text>
+                <Card.Text>{formatTime(startTime, endTime)}</Card.Text>
                 <Card.Title>Presented By:</Card.Title>
                 <Card.Text>{props.presenter}</Card.Text>
                 <Card.Title>About the Speaker(s):</Card.Title>
@@ -196,11 +196,12 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (props: ActivityInfoPro
                   {props.presenterAbout}
                 </Card.Text>
                 <ul>
-                  {props.presenterSocials && props.presenterSocials.map((social: SocialInfo) => (
-                    <li key={social.type + "_" + social.link}>
-                      <Card.Link href={social.link}>{social.type}</Card.Link>
-                    </li>
-                  ))}
+                  {props.presenterSocials &&
+                    props.presenterSocials.map((social: SocialInfo) => (
+                      <li key={social.type + "_" + social.link}>
+                        <Card.Link href={social.link}>{social.type}</Card.Link>
+                      </li>
+                    ))}
                 </ul>
               </Card.Body>
             </Card>

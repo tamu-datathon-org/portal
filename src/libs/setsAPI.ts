@@ -26,7 +26,7 @@ export async function getSetByName(setName: string): Promise<ActivitySection> {
   const fileContents = await fs.promises.readFile(fullPath, "utf8");
   const data = yaml.safeLoad(fileContents);
 
-  return {...(data as object), id: realSet} as ActivitySection;
+  return { ...(data as ActivitySection), id: realSet } as ActivitySection;
 }
 
 /**
@@ -42,7 +42,9 @@ export async function getAllSets(): Promise<ActivitySection[]> {
  * @param {string} pageName Name of the page you want the sets for.
  * @returns {Promise<Set[]>} list of contents of the sets listed in the page yaml
  */
-export async function getPageSets(pageName: string): Promise<ActivitySection[]> {
+export async function getPageSets(
+  pageName: string
+): Promise<ActivitySection[]> {
   const pageData = await getPageByName(pageName);
   const sets = pageData.sets.map((set) => getSetByName(set));
 

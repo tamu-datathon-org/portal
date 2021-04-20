@@ -37,18 +37,15 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
     <UI.StyledCard>
       <UI.EventImgContainer>
         <UI.EventImg src={event.thumbnail} alt="" />
-        <Reminder
-          startTime={startTime}
-          duration={event.duration}
-        />
+        <Reminder startTime={startTime} duration={event.duration} />
       </UI.EventImgContainer>
       <UI.EventInfo>
         <h5>{event.name}</h5>
-        <UI.EventTime>
-          {formatTime(startTime, event.duration)}
-        </UI.EventTime>
+        <UI.EventTime>{formatTime(startTime, event.duration)}</UI.EventTime>
         <UI.EventInfoLinkContainer>
-          <UI.EventInfoLink href={event.mediaLink ? `/events/activities/${event.id}` : "#"}>
+          <UI.EventInfoLink
+            href={event.mediaLink ? `/events/activities/${event.id}` : "#"}
+          >
             Learn more <FontAwesomeIcon icon={faArrowRight} />
           </UI.EventInfoLink>
         </UI.EventInfoLinkContainer>

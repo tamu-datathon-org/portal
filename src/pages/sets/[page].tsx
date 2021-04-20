@@ -28,7 +28,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export const getStaticPaths: GetStaticPaths = async () => {
   const sets = await getAllSets();
   return {
-    paths: sets.map(set => ({
+    paths: sets.map((set) => ({
       params: {
         page: set.id,
       },
