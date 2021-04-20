@@ -1,14 +1,7 @@
-export interface Activity {
-  imgUrl: string;
-  title: string;
-  startTime: string;
-  endTime?: string;
-  duration: number;
-  infoUrl: string;
-}
+import { ActivityInfoProps } from "../ActivityInfo";
 
 export interface ActivityCardProps {
-  event: Activity;
+  event: ActivityInfoProps;
 }
 
 export interface ReminderProps {

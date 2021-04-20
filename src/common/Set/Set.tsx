@@ -48,7 +48,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
     let currArr = eventList;
     if (info.orderedBy === "alphabetical") {
       currArr = currArr.sort((a, b) =>
-        a.event.title.localeCompare(b.event.title)
+        a.event.name.localeCompare(b.event.name)
       );
     } else if (info.orderedBy === "start_time") {
       currArr = currArr.sort(
@@ -95,7 +95,7 @@ export const Set: React.FC<SetProps> = ({ info }) => {
       <UI.CardsContainer>
         {transformedEventList.map((card) => (
           <Card
-            key={card.event.title + card.event.startTime + card.event.duration}
+            key={card.event.name + card.event.startTime + card.event.duration}
             event={card.event}
           />
         ))}

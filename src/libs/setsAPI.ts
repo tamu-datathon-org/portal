@@ -3,7 +3,7 @@ import { join } from "path";
 import yaml from "js-yaml";
 import { getPageByName } from "./pagesAPI";
 import { ActivitySection } from "../common/Set/interfaces";
-import { Activity, ActivityCardProps } from "../common/Card/interfaces";
+import { ActivityCardProps } from "../common/Card/interfaces";
 import { getActivityByName } from "../libs/activitiesAPI";
 
 const setDirectory = join(process.cwd(), "db/sets");
@@ -73,15 +73,7 @@ export async function getPageSetsContent(
       const activities: Array<ActivityCardProps> = await Promise.all(
         set.activityList.map(async (activity) => {
           const activityFileContent = await getActivityByName(activity);
-          const activityContent: Activity = {
-            imgUrl: activityFileContent.thumbnail,
-            title: activityFileContent.name,
-            startTime: activityFileContent.startTime,
-            endTime: activityFileContent.endTime,
-            duration: activityFileContent.duration,
-            infoUrl: `/events/activities/${activityFileContent.id}`,
-          };
-          return { event: activityContent };
+          return { event: activityFileContent };
         })
       );
       const setObject: ActivitySection = {
