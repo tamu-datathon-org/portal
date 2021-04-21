@@ -58,7 +58,7 @@ const TabPage: React.FC<IndexPageProps> = ({ page, allPages, allSets }) => {
         {allSets?.map((p, index) => (
           <Container
             className="pt-4"
-            key={p.sectionTitle + "_" + p.eventList.length + "_" + index}
+            key={p.activityList + "_" + p.activityList.length + "_" + index}
           >
             <Set info={p}></Set>
           </Container>

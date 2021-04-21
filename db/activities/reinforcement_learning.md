@@ -1,6 +1,5 @@
 ---
 name: "Reinforcement Learning"
-id: reinforcement_learning
 startTime: October 17, 2020 21:30:00-500
 endTime: October 17, 2020 22:45:00-500
 duration: 75

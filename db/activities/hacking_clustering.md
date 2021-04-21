@@ -1,6 +1,5 @@
 ---
 name: "Hacking Unsupervised Clustering Algorithms"
-id: hacking_clustering
 startTime: July 25, 2020 16:00:00-500
 endTime: July 25, 2020 17:00:00-500
 duration: 60

@@ -1,6 +1,5 @@
 ---
 name: How to Win TAMU Datathon
-id: how_to_win_td
 startTime: October 17, 2020 13:00:00-500
 endTime: October 17, 2020 14:00:00-500
 duration: 60

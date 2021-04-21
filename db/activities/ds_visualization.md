@@ -1,6 +1,5 @@
 ---
 name: "DS Introduction Part 2/2: Visualization"
-id: ds_visualization
 startTime: October 17, 2020 18:30:00-500
 endTime: October 17, 2020 19:45:00-500
 duration: 75
