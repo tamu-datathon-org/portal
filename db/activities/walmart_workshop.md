@@ -1,6 +1,5 @@
 ---
 name: Walmart Workshop
-id: walmart_workshop
 eventId: 5efe2be0c7febf000306be94
 startTime: October 17, 2020 13:00:00-500
 endTime: October 17, 2020 14:00:00-500

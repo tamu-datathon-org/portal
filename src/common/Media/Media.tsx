@@ -10,7 +10,7 @@ export enum CallStatus {
 }
 
 export interface MediaProps {
-  type: "embed_url" | "meeting_url";
+  type: "embed_url" | "meeting_url" | "embed_url_require_auth";
   link: string;
   callStatus?: CallStatus;
 }

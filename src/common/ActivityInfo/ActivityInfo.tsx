@@ -20,18 +20,25 @@ export interface SocialInfo {
   link: string;
 }
 
-export interface InfoProps {
-  title: string;
+export interface ActivityInfoProps {
+  name: string;
   id: string;
-  description: string;
-  startTime: Date;
-  endTime: Date;
-  speakerName: string;
-  speakerAbout: string;
-  speakerSocials: SocialInfo[];
-  relatedActivities?: string[];
+  eventId: string;
+  startTime: string;
+  endTime: string;
+  duration: number;
+  mediaType: "embed_url" | "meeting_url" | "embed_url_require_auth";
+  mediaLink: string;
+  thumbnail: string;
+  presenter: string;
+  presenterAbout: string;
+  presenterSocials: SocialInfo[];
   slackChannel?: string;
   slackChannelLink?: string;
+  priority: number;
+  relatedActivities?: string[];
+  tabs: string;
+  content: string;
 }
 
 /**
@@ -60,11 +67,15 @@ export const formatGoogleTime = (startTime: Date, endTime: Date): string => {
   );
 };
 
-export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
+export const ActivityInfo: React.FC<ActivityInfoProps> = (
+  props: ActivityInfoProps
+) => {
   // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
   const curTime = new Date();
-  const minsToEvent = props.startTime.getTime() - curTime.getTime();
+  const startTime = new Date(props.startTime);
+  const endTime = new Date(props.endTime);
+  const minsToEvent = startTime.getTime() - curTime.getTime();
 
   // const handleClick = () => {
   //   setInterested(!interested);
@@ -88,7 +99,7 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
     const event = {
       start: startTimeArr as ics.DateArray,
       end: endTimeArr as ics.DateArray,
-      title: props.title,
+      title: props.name,
       description: `Attend Here: tamudatathon.com/events/activities/${props.id}`,
       url: `https://tamudatathon.com/events/activities/${props.id}`,
     };
@@ -119,8 +130,8 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
               href={
                 `https://www.google.com/calendar/render?` +
                 `action=TEMPLATE&` +
-                `text=${props.title}&` +
-                `dates=${formatGoogleTime(props.startTime, props.endTime)}&` +
+                `text=${props.name}&` +
+                `dates=${formatGoogleTime(startTime, endTime)}&` +
                 `details=Attend Here: tamudatathon.com/events/activities/${props.id}&` +
                 `ctz=America/Chicago`
               }
@@ -154,13 +165,13 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
   return (
     <>
       <Container className="mt-4 mb-5">
-        <h2 className="pb-3">{props.title}</h2>
+        <h2 className="pb-3">{props.name}</h2>
         <Row>
           <Col className="min-vh-100 mb-5">
             <ReactMarkdown
               linkTarget="_blank"
               escapeHtml={false}
-              source={props.description}
+              source={props.content}
             />
           </Col>
           <Col lg={4} md={12}>
@@ -177,21 +188,20 @@ export const ActivityInfo: React.FC<InfoProps> = (props: InfoProps) => {
             <Card>
               <Card.Body>
                 <Card.Title>When:</Card.Title>
-                <Card.Text>
-                  {formatTime(props.startTime, props.endTime)}
-                </Card.Text>
+                <Card.Text>{formatTime(startTime, endTime)}</Card.Text>
                 <Card.Title>Presented By:</Card.Title>
-                <Card.Text>{props.speakerName}</Card.Text>
+                <Card.Text>{props.presenter}</Card.Text>
                 <Card.Title>About the Speaker(s):</Card.Title>
                 <Card.Text style={{ marginTop: "0.75rem" }}>
-                  {props.speakerAbout}
+                  {props.presenterAbout}
                 </Card.Text>
                 <ul>
-                  {props.speakerSocials.map((social: SocialInfo) => (
-                    <li key={social.type + "_" + social.link}>
-                      <Card.Link href={social.link}>{social.type}</Card.Link>
-                    </li>
-                  ))}
+                  {props.presenterSocials &&
+                    props.presenterSocials.map((social: SocialInfo) => (
+                      <li key={social.type + "_" + social.link}>
+                        <Card.Link href={social.link}>{social.type}</Card.Link>
+                      </li>
+                    ))}
                 </ul>
               </Card.Body>
             </Card>

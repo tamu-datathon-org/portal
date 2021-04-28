@@ -1,6 +1,5 @@
 ---
 name: Getting a Job in Data Science
-id: getting_a_job
 startTime: July 25, 2020 16:00:00-500
 endTime: July 25, 2020 17:00:00-500
 duration: 60

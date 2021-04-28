@@ -1,6 +1,5 @@
 ---
 name: "Stats for Data Science"
-id: stats_for_ds
 startTime: October 17, 2020 16:00:00-500
 endTime: October 17, 2020 17:00:00-500
 duration: 75

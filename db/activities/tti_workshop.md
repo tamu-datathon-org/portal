@@ -1,6 +1,5 @@
 ---
 name: Texas Transporation Institute Workshop
-id: tti_workshop
 eventId: 5efe2be0c7febf000306be94
 startTime: Oct 17, 2020 14:00:00-500
 endTime: Oct 17, 2020 15:00:00-500

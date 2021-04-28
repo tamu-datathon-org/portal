@@ -1,6 +1,5 @@
 ---
 name: Convolutional Neural Networks & Semantic Segmentation
-id: deep_learning
 startTime: July 25, 2020 18:00:00-500
 endTime: July 25, 2020 19:00:00-500
 duration: 60

@@ -1,9 +1,9 @@
 ---
 name: string (Data Science 101)
-id: file_name_without_extension (data_science_101)
 eventId: event_id_in_gatekeeper (mongo_db_id)
 startTime: Month Date, Year hh:mm:ss (June 20, 2020 10:30:00)
-endTime: Month Date, Year hh:mm:ss (June 20, 2020 10:30:00)
+endTime: Month Date, Year hh:mm:ss (June 20, 2020 11:30:00)
+duration: number of minutes (60)
 mediaType: "meeting_url" or "embed_url" (one or the other)
 mediaLink: url_string (https://tamu.zoom.us/j/28347923874)
 thumbnail: string (https://tamudatathon.com/portal/db/img/ds101.png)
@@ -21,6 +21,7 @@ relatedActivities:
   - activity_file_name (data_science_202)
   - activity_file_name (data_science_303)
   - activity_file_name (data_science_404)
+tabs: comma separated list of strings (python, c++, javascript)
 ---
 
 The activity body goes here

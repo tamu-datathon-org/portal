@@ -1,5 +1,4 @@
 name: Fun Events
-id: social_events_set
 description: Take a break and have some fun
 showMoreState: false
 orderBy: start_time

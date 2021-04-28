@@ -1,5 +1,4 @@
 name: Informational Events
-id: informational_set
 description: Join these to get key information about the event.
 showMoreState: false
 orderBy: start_time

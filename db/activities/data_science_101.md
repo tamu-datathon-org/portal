@@ -1,6 +1,5 @@
 ---
 name: Data Science 101
-id: data_science_101
 eventId: 5efe2be0c7febf000306be94
 startTime: July 25, 2021 13:00:00-500
 endTime: July 25, 2021 13:45:00-500

@@ -1,6 +1,5 @@
 ---
 name: Team Building
-id: team_building
 eventId: 5f8b0d28f825fcca1859d3a2
 startTime: October 17, 2020 10:30:00-500
 endTime: October 17, 2020 12:00:00-500

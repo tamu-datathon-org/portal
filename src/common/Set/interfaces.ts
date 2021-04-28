@@ -1,12 +1,15 @@
 import { ActivityCardProps } from "../Card";
 
 export interface ActivitySection {
-  eventList: Array<ActivityCardProps>;
-  sectionTitle: string;
-  sectionDescription: string;
-  orderedBy?: string;
-  filteredBy?: string;
-  defaultShowMoreState?: boolean;
+  name: string;
+  id: string;
+  description: string;
+  showMoreState: boolean;
+  orderBy: "alphabetical" | "priority" | "start_time" | "none" | "" | undefined;
+  filterBy: "happening_now" | undefined;
+  priority: number;
+  activityList: Array<string>;
+  activityListPopulated: Array<ActivityCardProps>;
 }
 
 export interface SetProps {
