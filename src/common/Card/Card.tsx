@@ -6,6 +6,7 @@ import { ActivityCardProps } from "./interfaces";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import moment from "moment-timezone";
+import Link from "next/link";
 
 /**
  * Formats date to a string for the start and end time.
@@ -46,11 +47,7 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
         <UI.EventTime>
           {formatTime(new Date(event.startTime), event.duration)}
         </UI.EventTime>
-        <UI.EventInfoLinkContainer>
-          <UI.EventInfoLink href={event.infoUrl || "#"}>
-            Learn more <FontAwesomeIcon icon={faArrowRight} />
-          </UI.EventInfoLink>
-        </UI.EventInfoLinkContainer>
+        <UI.LinkPeelCover href={event.infoUrl || "#"}> </UI.LinkPeelCover>
       </UI.EventInfo>
     </UI.StyledCard>
   );
