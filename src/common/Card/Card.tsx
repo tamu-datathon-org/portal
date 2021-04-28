@@ -44,10 +44,9 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
         </UI.EventTime>
       </UI.EventInfo>
       <UI.PeelLinkContainer>
-        {/* mediaLink here has to be changed to eventLink after next issue */}
-        <UI.LinkArrow href={event.mediaLink || "#"}></UI.LinkArrow>
+        <UI.LinkArrow href={`/events/activities/${event.id}` || "#"}></UI.LinkArrow>
         <UI.LinkPeelCover></UI.LinkPeelCover>
-        <UI.PeelEffect href={event.mediaLink || "#"}></UI.PeelEffect>
+        <UI.PeelEffect href={`/events/activities/${event.id}` || "#"}></UI.PeelEffect>
       </UI.PeelLinkContainer>
     </UI.StyledCard>
   );
