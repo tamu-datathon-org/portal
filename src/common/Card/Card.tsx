@@ -44,9 +44,13 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
         </UI.EventTime>
       </UI.EventInfo>
       <UI.PeelLinkContainer>
-        <UI.LinkArrow href={`/events/activities/${event.id}` || "#"}></UI.LinkArrow>
+        <UI.LinkArrow
+          href={`/events/activities/${event.id}` || "#"}
+        ></UI.LinkArrow>
         <UI.LinkPeelCover></UI.LinkPeelCover>
-        <UI.PeelEffect href={`/events/activities/${event.id}` || "#"}></UI.PeelEffect>
+        <UI.PeelEffect
+          href={`/events/activities/${event.id}` || "#"}
+        ></UI.PeelEffect>
       </UI.PeelLinkContainer>
     </UI.StyledCard>
   );
