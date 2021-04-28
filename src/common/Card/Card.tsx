@@ -3,10 +3,7 @@ import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 import { ActivityCardProps } from "./interfaces";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import moment from "moment-timezone";
-import Link from "next/link";
 
 /**
  * Formats date to a string for the start and end time.
@@ -47,9 +44,10 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
         </UI.EventTime>
       </UI.EventInfo>
       <UI.PeelLinkContainer>
-        <UI.LinkArrow href={event.infoUrl || "#"}></UI.LinkArrow>
+        {/* mediaLink here has to be changed to eventLink after next issue */}
+        <UI.LinkArrow href={event.mediaLink || "#"}></UI.LinkArrow>
         <UI.LinkPeelCover></UI.LinkPeelCover>
-        <UI.PeelEffect href={event.infoUrl || "#"}></UI.PeelEffect>
+        <UI.PeelEffect href={event.mediaLink || "#"}></UI.PeelEffect>
       </UI.PeelLinkContainer>
     </UI.StyledCard>
   );
