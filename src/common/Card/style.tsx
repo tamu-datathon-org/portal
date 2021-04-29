@@ -86,6 +86,7 @@ export const EventTitle = styled.h4`
 export const EventTime = styled.p`
   font-weight: 300;
   flex: 1;
+  margin-bottom: 0px;
 `;
 
 export const PeelLinkContainer = styled.div`
