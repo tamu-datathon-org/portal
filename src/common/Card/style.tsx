@@ -1,38 +1,5 @@
 import styled, { keyframes } from "styled-components";
 
-const peelAnimation = keyframes`
-  0% {
-    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%);
-  }
-  100% {
-    clip-path: polygon(100% 0, 100% 0, 0 100%, 0% 100%);
-  }
-`;
-const peelAnimationUndo = keyframes`
-  0% {
-    clip-path: polygon(100% 0, 100% 0, 0 100%, 0% 100%);
-  }
-  100% {
-    clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0 100%);
-  }
-`;
-const peelAnimationShow = keyframes`
-  0% {
-    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
-  }
-  100% {
-    clip-path: polygon(0 0, 0 0, 100% 1%, 1% 100%);
-  }
-`;
-const peelAnimationShowUndo = keyframes`
-  0% {
-    clip-path: polygon(0 0, 0 0, 100% 1%, 1% 100%);
-  }
-  100% {
-    clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
-  }
-`;
-
 export const StyledCard = styled.div`
   background-color: white;
   border: 5px solid ${(props) => props.theme.colors.theme_dark_purple};
@@ -47,11 +14,14 @@ export const StyledCard = styled.div`
     margin: 0.5em;
   }
 
-  --peel-effect-animation-hide: ${peelAnimationUndo};
-  --peel-effect-animation-show: ${peelAnimationShowUndo};
+  --transition-speed: 200ms;
+  --cover-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  --peel-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
+  --arrow-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
   &:hover {
-    --peel-effect-animation-hide: ${peelAnimation};
-    --peel-effect-animation-show: ${peelAnimationShow};
+    --cover-clip-path: polygon(100% 0, 0% 100%, 50% 50%);
+    --peel-clip-path: polygon(100% 1%, 1% 100%, 0 0);
+    --arrow-clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
 `;
 
@@ -97,15 +67,16 @@ export const PeelLinkContainer = styled.div`
 `;
 
 export const LinkArrow = styled.a`
-  clip-path: polygon(100% 100%, 100% 100%, 100% 1%, 1% 100%);
+  clip-path: var(--arrow-clip-path);
   background-image: url("/events/static/img/effects/learn_more_arrow.png");
   background-size: 100%;
   width: 40px;
   height: 40px;
+  transition: var(--transition-speed);
 `;
 
 export const LinkPeelCover = styled.div`
-  clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  clip-path: var(--cover-clip-path);
   background-color: #ebebeb;
   position: absolute;
   bottom: 0;
@@ -113,14 +84,11 @@ export const LinkPeelCover = styled.div`
   width: 40px;
   height: 40px;
   z-index: 2;
-  animation-name: var(--peel-effect-animation-hide);
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  transition: var(--transition-speed);
 `;
 
 export const PeelEffect = styled.a`
-  clip-path: polygon(100% 100%, 100% 100%, 100% 100%, 100% 100%);
+  clip-path: var(--peel-clip-path);
   background-color: ${(props) => props.theme.colors.theme_light_purple};
   position: absolute;
   bottom: 0;
@@ -128,10 +96,7 @@ export const PeelEffect = styled.a`
   width: 40px;
   height: 40px;
   z-index: 2;
-  animation-name: var(--peel-effect-animation-show);
-  animation-duration: 0.2s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease-out;
+  transition: var(--transition-speed);
 `;
 
 export const EventInfoLink = styled.a`
