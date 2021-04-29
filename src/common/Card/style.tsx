@@ -113,7 +113,7 @@ export const LinkPeelCover = styled.div`
   height: 40px;
   z-index: 2;
   animation-name: var(--peel-effect-animation-hide);
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 `;
@@ -128,7 +128,7 @@ export const PeelEffect = styled.a`
   height: 40px;
   z-index: 2;
   animation-name: var(--peel-effect-animation-show);
-  animation-duration: 0.5s;
+  animation-duration: 0.2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 `;
