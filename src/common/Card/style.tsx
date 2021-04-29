@@ -15,11 +15,11 @@ export const StyledCard = styled.div`
   }
 
   --transition-speed: 200ms;
-  --cover-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+  --cover-clip-path: polygon(100% 0, 100% 100%, 100% 100%, 0% 100%);
   --peel-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
   --arrow-clip-path: polygon(100% 100%, 100% 100%, 100% 100%);
   &:hover {
-    --cover-clip-path: polygon(100% 0, 0% 100%, 50% 50%);
+    --cover-clip-path: polygon(100% 0, 100% 0, 0 100%, 0% 100%);
     --peel-clip-path: polygon(100% 1%, 1% 100%, 0 0);
     --arrow-clip-path: polygon(100% 0, 0 100%, 100% 100%);
   }
