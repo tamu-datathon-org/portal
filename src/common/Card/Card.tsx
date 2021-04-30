@@ -3,8 +3,6 @@ import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 import { ActivityCardProps } from "./interfaces";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import moment from "moment-timezone";
 
 /**
@@ -41,15 +39,19 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
       </UI.EventImgContainer>
       <UI.EventInfo>
         <h5>{event.name}</h5>
-        <UI.EventTime>{formatTime(startTime, event.duration)}</UI.EventTime>
-        <UI.EventInfoLinkContainer>
-          <UI.EventInfoLink
-            href={event.mediaLink ? `/events/activities/${event.id}` : "#"}
-          >
-            Learn more <FontAwesomeIcon icon={faArrowRight} />
-          </UI.EventInfoLink>
-        </UI.EventInfoLinkContainer>
+        <UI.EventTime>
+          {formatTime(new Date(event.startTime), event.duration)}
+        </UI.EventTime>
       </UI.EventInfo>
+      <UI.PeelLinkContainer>
+        <UI.LinkArrow
+          href={`/events/activities/${event.id}` || "#"}
+        ></UI.LinkArrow>
+        <UI.LinkPeelCover></UI.LinkPeelCover>
+        <UI.PeelEffect
+          href={`/events/activities/${event.id}` || "#"}
+        ></UI.PeelEffect>
+      </UI.PeelLinkContainer>
     </UI.StyledCard>
   );
 };

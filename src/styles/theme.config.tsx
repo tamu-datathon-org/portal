@@ -46,6 +46,10 @@ export class THEMES {
       theme_lighter_blue: "#F8FAFD",
       splash_light_purple: "#7c408a",
       splash_light_blue: "#3f5aaa",
+
+      // TD 2021 Theme Colors
+      theme_dark_purple: "#632ed2",
+      theme_light_purple: "#B88DFF",
     },
   };
 }
