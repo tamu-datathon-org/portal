@@ -63,7 +63,7 @@ export const PeelLinkContainer = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
 `;
 
 export const LinkArrow = styled.a`
