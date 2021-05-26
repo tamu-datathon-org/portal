@@ -63,12 +63,16 @@ export const PeelLinkContainer = styled.div`
   position: relative;
   width: 100%;
   display: flex;
-  justify-content: right;
+  justify-content: flex-end;
+  height: 40px;
 `;
 
 export const LinkArrow = styled.a`
   clip-path: var(--arrow-clip-path);
   background-image: url("/events/static/img/effects/learn_more_arrow.png");
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
   background-size: 100%;
   width: 40px;
   height: 40px;
@@ -79,8 +83,8 @@ export const LinkPeelCover = styled.div`
   clip-path: var(--cover-clip-path);
   background-color: #ebebeb;
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
   width: 40px;
   height: 40px;
   z-index: 2;
@@ -91,8 +95,8 @@ export const PeelEffect = styled.a`
   clip-path: var(--peel-clip-path);
   background-color: ${(props) => props.theme.colors.theme_light_purple};
   position: absolute;
-  bottom: 0;
-  right: 0;
+  bottom: -1px;
+  right: -1px;
   width: 40px;
   height: 40px;
   z-index: 2;
