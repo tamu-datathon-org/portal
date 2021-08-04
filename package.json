@@ -7,7 +7,8 @@
     "lint": "eslint src/",
     "fix": "eslint src/ --fix",
     "build": "TZ=America/Chicago next build",
-    "start": "next start"
+    "start": "next start",
+    "forestry:preview": "npm run build && npm run dev"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
