@@ -8,7 +8,7 @@
     "fix": "eslint src/ --fix",
     "build": "TZ=America/Chicago next build",
     "start": "next start",
-    "forestry:preview": "next"
+    "forestry:preview": "next . -p 8080 -H 0.0.0.0"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.29",
