@@ -1,0 +1,50 @@
+---
+label: Event Template
+hide_body: false
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: startTime
+  label: startTime
+- type: text
+  name: endTime
+  label: endTime
+- type: number
+  name: duration
+  label: duration
+- type: text
+  name: eventId
+  label: eventId
+- type: text
+  name: mediaType
+  label: mediaType
+- type: text
+  name: mediaLink
+  label: mediaLink
+- type: file
+  name: thumbnail
+  label: thumbnail
+- type: text
+  name: presenter
+  label: presenter
+- type: textarea
+  name: presenterAbout
+  label: presenterAbout
+- type: field_group_list
+  name: presenterSocials
+  label: presenterSocials
+  fields:
+  - type: text
+    name: type
+    label: type
+  - type: text
+    name: link
+    label: link
+- type: number
+  name: priority
+  label: priority
+- type: list
+  name: relatedActivities
+  label: relatedActivities
