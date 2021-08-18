@@ -5,7 +5,7 @@ startTime: Oct 17, 2020 10:30:00-500
 endTime: Oct 17, 2020 11:00:00-500
 duration: "30"
 mediaType: embed_url
-mediaLink: https://www.youtube.com/embed/dQw4w9WgXcQ
+mediaLink: https://www.youtube.com/embed/53lWESqEkmg
 thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/Frame%204.png?alt=media&token=0bf47564-22a1-44ca-9878-fe9a2796c0b9
 presenter: 
 presenterAbout: ''
