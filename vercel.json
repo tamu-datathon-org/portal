@@ -3,8 +3,5 @@
     "api/**": {
       "includeFiles": "db/**"
     }
-  },
-  "routes": [
-    { "src": "/events/api(.*)", "dest": "/api/$1" }
-  ]
+  }
 }

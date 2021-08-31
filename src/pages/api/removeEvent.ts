@@ -1,7 +1,7 @@
 import { NowRequest, NowResponse } from "@vercel/node";
-import { authenticatedRoute } from "../src/libs/middleware";
-import { getFirestoreDB } from "../src/libs/firestoreDB";
-import { User } from "../src/common/UserProvider";
+import { authenticatedRoute } from "../../libs/middleware";
+import { getFirestoreDB } from "../../libs/firestoreDB";
+import { User } from "../../common/UserProvider";
 import md5 from "md5";
 
 /**
