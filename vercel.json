@@ -1,6 +1,6 @@
 {
   "functions": {
-    "json/**": {
+    "pages/api/json/**": {
       "includeFiles": "db/**"
     }
   }
