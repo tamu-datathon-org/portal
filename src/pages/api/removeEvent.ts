@@ -14,8 +14,11 @@ const removeEventHandler = async (
   user: User
 ): Promise<void> => {
   const db = getFirestoreDB();
-  await db.collection('ScheduledEvents').doc(md5(req.query.eventId+user.authId)).delete();
-  
+  await db
+    .collection("ScheduledEvents")
+    .doc(md5(req.query.eventId + user.authId))
+    .delete();
+
   res.status(200).send("Removed Event");
 };
 
