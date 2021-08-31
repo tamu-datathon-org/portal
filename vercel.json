@@ -1,6 +1,6 @@
 {
   "functions": {
-    "api/json/**": {
+    "events/api/json/**": {
       "includeFiles": "db/**"
     }
   }
