@@ -5,6 +5,6 @@
     }
   },
   "rewrites": [
-    { "source": "/events/api", "destination": "/api" }
+    { "source": "/events/api/json", "destination": "/api/json" }
   ]
 }
