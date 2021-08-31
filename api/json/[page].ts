@@ -1,5 +1,5 @@
 import { NowRequest, NowResponse } from "@vercel/node";
-import { getActivityByName } from "../../../libs/activitiesAPI";
+import { getActivityByName } from "../../src/libs/activitiesAPI";
 
 /**
  * Return JSON of a specififc activity from /db/activities/{name_of_activity}
