@@ -22,4 +22,6 @@ npm install
 npm run dev
 ```
 
+Visit http://localhost:3000/events on your browser.
+
 Now these points of data make a beautiful line. We'll be out of beta, and we're releasing on time! So we're GLaD we got burned. Think of all the things we learned (for the people who are still alive)

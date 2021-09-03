@@ -4,7 +4,9 @@
       "includeFiles": "db/**"
     }
   },
-  "routes": [
-    { "src": "/events/api(.*)", "dest": "/api/$1" }
+  "rewrites": [
+    { "source": "/events/api/json", "destination": "/api/json/" },
+    { "source": "/events/api/json/(.*)", "destination": "/api/json/$1" },
+    { "source": "/events/api/(.*)", "destination": "/api/$1" }
   ]
 }
