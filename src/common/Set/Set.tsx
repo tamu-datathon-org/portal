@@ -5,6 +5,7 @@ import { SetProps } from "./interfaces";
 import * as UI from "./style";
 import { useCurrentTime } from "../hooks";
 import PropTypes from "prop-types";
+import { genEndTime } from "../../libs/utils";
 
 // Time constants for clarity
 const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
@@ -60,18 +61,18 @@ export const Set: React.FC<SetProps> = ({ info }) => {
 
     if (info.filterBy === "happening_now") {
       // this is dumb af, i know
-      currArr = currArr.filter(
-        (item) =>
+      // yes it is, please replace "a" and "b" with descriptive names
+      currArr = currArr.filter((item) => {
+        const startTimeDate = new Date(item.event.startTime);
+        const durationMinutes = item.event.duration;
+        const a =
           currentTime.getTime() >
-            new Date(item.event.startTime).getTime() -
-              TIME_BEFORE_SHOW_BADGE_MS &&
+          new Date(startTimeDate).getTime() - TIME_BEFORE_SHOW_BADGE_MS;
+        const b =
           currentTime.getTime() <
-            new Date(
-              item.event.endTime ||
-                new Date(item.event.startTime).getTime() +
-                  item.event.duration * 60 * 1000
-            ).getTime()
-      );
+          genEndTime(startTimeDate, durationMinutes).getTime();
+        return a && b;
+      });
     }
 
     return currArr;

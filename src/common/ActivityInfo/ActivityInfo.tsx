@@ -14,6 +14,7 @@ import ReactMarkdown from "react-markdown";
 import { useActiveUser } from "../UserProvider";
 import * as ics from "ics";
 import * as FileSaver from "file-saver";
+import { genEndTime } from "../../libs/utils";
 
 export interface SocialInfo {
   type: string;
@@ -25,7 +26,6 @@ export interface ActivityInfoProps {
   id: string;
   eventId: string;
   startTime: string;
-  endTime: string;
   duration: number;
   mediaType: "embed_url" | "meeting_url" | "embed_url_require_auth";
   mediaLink: string;
@@ -74,7 +74,7 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (
   const { user } = useActiveUser();
   const curTime = new Date();
   const startTime = new Date(props.startTime);
-  const endTime = new Date(props.endTime);
+  const endTime = genEndTime(startTime, props.duration);
   const minsToEvent = startTime.getTime() - curTime.getTime();
 
   // const handleClick = () => {
@@ -92,7 +92,8 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (
       .tz(moment.tz.guess())
       .format("YYYY-MM-DD-HH-mm");
     const startTimeArr = startTimeString.split("-").map(Number);
-    const endTimeString = moment(props.endTime)
+    const startTimeDate = new Date(props.startTime);
+    const endTimeString = moment(genEndTime(startTimeDate, props.duration))
       .tz(moment.tz.guess())
       .format("YYYY-MM-DD-HH-mm");
     const endTimeArr = endTimeString.split("-").map(Number);

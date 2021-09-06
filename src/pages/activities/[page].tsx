@@ -9,6 +9,7 @@ import { ActivityInfo, ActivityInfoProps } from "../../common/ActivityInfo";
 import { getActivityByName, getAllActivities } from "../../libs/activitiesAPI";
 // import { useActiveUser } from "../../common/UserProvider";
 import { Footer } from "../../common/Footer";
+import { genEndTime } from "../../libs/utils";
 
 // This works but a little janky for now.
 // https://www.w3resource.com/javascript-exercises/javascript-string-exercise-35.php
@@ -31,14 +32,15 @@ const ActivityPage: React.FC<ActivityInfoProps> = ({
   const pageURL = `https://tamudatathon.com/events/activities/${ActivityInfoProps.id}`;
 
   let callStatus = CallStatus.NOT_STARTED;
+  const startTimeDate = new Date(ActivityInfoProps.startTime);
+  const endTime = genEndTime(startTimeDate, ActivityInfoProps.duration);
   if (
-    new Date().getTime() >=
-      new Date(ActivityInfoProps.startTime).getTime() - 900000 &&
-    new Date().getTime() <= new Date(ActivityInfoProps.endTime).getTime()
+    new Date().getTime() >= startTimeDate.getTime() - 900000 &&
+    new Date().getTime() <= endTime.getTime()
   ) {
     callStatus = CallStatus.ONGOING;
   }
-  if (new Date().getTime() > new Date(ActivityInfoProps.endTime).getTime()) {
+  if (new Date().getTime() > endTime.getTime()) {
     callStatus = CallStatus.FINISHED;
   }
   return (
