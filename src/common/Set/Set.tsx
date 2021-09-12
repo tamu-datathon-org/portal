@@ -7,8 +7,7 @@ import { useCurrentTime } from "../hooks";
 import PropTypes from "prop-types";
 import { genEndTime } from "../../libs/utils";
 
-// Time constants for clarity - 15 min
-const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
+import { TIME_BEFORE_SHOW_BADGE_MS } from "../../constants";
 
 /**
  * Set component
