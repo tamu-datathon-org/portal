@@ -7,7 +7,7 @@ import { useCurrentTime } from "../hooks";
 import PropTypes from "prop-types";
 import { genEndTime } from "../../libs/utils";
 
-// Time constants for clarity
+// Time constants for clarity - 15 min
 const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
 
 /**
@@ -63,15 +63,16 @@ export const Set: React.FC<SetProps> = ({ info }) => {
       // this is dumb af, i know
       // yes it is, please replace "a" and "b" with descriptive names
       currArr = currArr.filter((item) => {
-        const startTimeDate = new Date(item.event.startTime);
+        const startTime = new Date(item.event.startTime);
         const durationMinutes = item.event.duration;
-        const a =
+        // a --> is within 15 min of start or beyond?
+        const afterStartBuffer =
           currentTime.getTime() >
-          new Date(startTimeDate).getTime() - TIME_BEFORE_SHOW_BADGE_MS;
-        const b =
+          startTime.getTime() - TIME_BEFORE_SHOW_BADGE_MS;
+        const beforeEventEnd =
           currentTime.getTime() <
-          genEndTime(startTimeDate, durationMinutes).getTime();
-        return a && b;
+          genEndTime(startTime, durationMinutes).getTime();
+        return afterStartBuffer && beforeEventEnd;
       });
     }
 

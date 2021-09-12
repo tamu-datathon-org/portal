@@ -5,7 +5,9 @@ import * as UI from "./style";
 import PropTypes from "prop-types";
 
 // Time constants for clarity
-const TIME_UNTIL_HIDE_BADGE_MS = 1440 * 60000;
+// 24 hrs
+const TIME_UNTIL_HIDE_BADGE_MS = 1440 * 60000; 
+// 15 min
 const TIME_BEFORE_SHOW_BADGE_MS = 15 * 60000;
 
 const minutesSinceStartMemo = (a: Date, b: Date) => {
@@ -36,14 +38,14 @@ export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
 
   /* Displays the reminder status if start time is less than 15 minutes away */
   if (startTime.getTime() - currentTime.getTime() < TIME_BEFORE_SHOW_BADGE_MS) {
-    let message = `Starts in ${minutesUntilStart.toString()} minutes`;
+    let message = `Starts in ${minutesUntilStart} minutes`;
     // value is negative if the event is ongoing or past
     if (minutesUntilStart < 0) {
       // if minsUntilStart is negative then adding duration (minutes) should make the sum positive
       if (duration + minutesUntilStart > 0) {
-        message = "Ongoing";
+        message = "Happening Now";
       } else if (millisecondsSinceEnded < TIME_UNTIL_HIDE_BADGE_MS) {
-        // if we're within 1 day of event ending, show the "Ended" badge
+        // show ended badge if endTime < 24 hours ago
         message = "Ended";
         return <UI.StyledExpiredReminder>{message}</UI.StyledExpiredReminder>;
       } else {
