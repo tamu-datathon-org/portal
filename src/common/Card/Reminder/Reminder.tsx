@@ -4,7 +4,10 @@ import { ReminderProps } from "../interfaces";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 
-import { TIME_UNTIL_HIDE_BADGE_MS, TIME_BEFORE_SHOW_BADGE_MS } from "../../../constants";
+import {
+  TIME_UNTIL_HIDE_BADGE_MS,
+  TIME_BEFORE_SHOW_BADGE_MS,
+} from "../../../constants";
 
 const minutesSinceStartMemo = (a: Date, b: Date) => {
   return Math.ceil((a.getTime() - b.getTime()) / 60000);
