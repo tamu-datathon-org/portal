@@ -1,5 +1,5 @@
 ---
-startTime: 0000-12-31T23:54:24Z
+startTime: 2019-03-20T13:00:00Z
 duration: 60
 presenterAbout: tell me about this presenter...
 name: 11pm copied event
