@@ -15,7 +15,8 @@ fields:
     required: true
     date_format: 
     time_format: 
-    display_utc: true
+    display_utc: false
+    export_format: ''
   default: now
 - type: number
   name: duration
