@@ -5,33 +5,54 @@ fields:
 - type: text
   name: name
   label: name
-- type: text
-  name: startTime
+  config:
+    required: true
+- name: startTime
+  type: datetime
   label: startTime
-- type: text
-  name: endTime
-  label: endTime
+  description: When does the event begin?
+  config:
+    required: true
+    date_format: 
+    time_format: 
+    display_utc: true
+  default: now
 - type: number
   name: duration
   label: duration
+  description: How long is the event in minutes? INTEGER ONLY!
+  config:
+    required: true
+    min: 1
+    max: 5000
+    step: 1
+  default: 60
 - type: text
   name: eventId
   label: eventId
+  config:
+    required: true
 - type: text
   name: mediaType
   label: mediaType
+  config:
+    required: true
 - type: text
   name: mediaLink
   label: mediaLink
-- type: file
-  name: thumbnail
+- name: thumbnail
+  type: text
+  config:
+    required: false
   label: thumbnail
+  description: Image url here
 - type: text
   name: presenter
   label: presenter
 - type: textarea
   name: presenterAbout
   label: presenterAbout
+  default: tell me about this presenter...
 - type: field_group_list
   name: presenterSocials
   label: presenterSocials
@@ -48,3 +69,5 @@ fields:
 - type: list
   name: relatedActivities
   label: relatedActivities
+pages:
+- db/activities/11pm_test.md
