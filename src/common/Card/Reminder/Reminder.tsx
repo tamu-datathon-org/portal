@@ -42,7 +42,7 @@ export const Reminder: React.FC<ReminderProps> = ({ startTime, duration }) => {
     if (minutesUntilStart < 0) {
       // if minsUntilStart is negative then adding duration (minutes) should make the sum positive
       if (duration + minutesUntilStart > 0) {
-        message = "Happening Now";
+        message = "LIVE";
       } else if (millisecondsSinceEnded < TIME_UNTIL_HIDE_BADGE_MS) {
         // show ended badge if endTime < 24 hours ago
         message = "Ended";
