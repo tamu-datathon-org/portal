@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
       <UI.NavbarSpan>
         <ReactNavbar.Toggle aria-controls="navbar-responsive-dropdown" />
         <UI.NavbarLogo
-          src="/events/static/img/logos/main.png"
+          src="/events/static/img/logos/main.svg"
           className="d-none d-sm-block" // Hide icon below sm screens.
         ></UI.NavbarLogo>
       </UI.NavbarSpan>
@@ -46,6 +46,7 @@ export const Navbar: React.FC = () => {
           <UI.NavLink href="/events">Events</UI.NavLink>
           <UI.NavLink href="/schedule">Schedule</UI.NavLink>
           <UI.NavLink href="/challenges">Challenges</UI.NavLink>
+          <UI.NavLink href="/apply">Apply</UI.NavLink>
         </ReactNav>
         <span
           className="d-sm-none" // Hide above sm screens.

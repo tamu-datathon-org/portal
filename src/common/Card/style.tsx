@@ -67,7 +67,7 @@ export const PeelLinkContainer = styled.div`
   height: 40px;
 `;
 
-export const LinkArrow = styled.a`
+export const LinkArrow = styled.span`
   clip-path: var(--arrow-clip-path);
   background-image: url("/events/static/img/effects/learn_more_arrow.png");
   position: absolute;
@@ -91,7 +91,7 @@ export const LinkPeelCover = styled.div`
   transition: var(--transition-speed);
 `;
 
-export const PeelEffect = styled.a`
+export const PeelEffect = styled.span`
   clip-path: var(--peel-clip-path);
   background-color: ${(props) => props.theme.colors.theme_light_purple};
   position: absolute;
@@ -103,12 +103,12 @@ export const PeelEffect = styled.a`
   transition: var(--transition-speed);
 `;
 
-export const EventInfoLink = styled.a`
+export const EventInfoLink = styled.span`
   text-decoration: none;
   font-weight: 700;
   background-image: linear-gradient(
-    ${(props) => props.theme.colors.highlight_blue} 0%,
-    ${(props) => props.theme.colors.highlight_blue} 100%
+    ${(props) => props.theme.colors.highlight_purple} 0%,
+    ${(props) => props.theme.colors.highlight_purple} 100%
   );
   background-size: 100% 0.8em;
   background-repeat: no-repeat;

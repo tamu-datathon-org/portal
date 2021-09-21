@@ -28,7 +28,7 @@ export class THEMES {
       teal: "#86eace",
       cyan: "#17a2b8",
 
-      primary: "#4740af",
+      primary: "#632ed2",
       secondary: "#6c757d",
       success: "#28a745",
       info: "#4286f3",
@@ -50,6 +50,7 @@ export class THEMES {
       // TD 2021 Theme Colors
       theme_dark_purple: "#632ed2",
       theme_light_purple: "#B88DFF",
+      highlight_purple: "#632ed21c",
     },
   };
 }

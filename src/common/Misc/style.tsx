@@ -16,7 +16,7 @@ export const CustomHeader = styled.h1`
 `;
 
 export const ColorSpan = styled.span`
-  color: ${(props) => props.theme.colors.indigo};
+  color: ${(props) => props.theme.colors.theme_dark_purple};
   font-weight: bold;
   box-shadow: 0 -0.5em 0 0 ${(props) => props.theme.colors.theme_lighter_blue} inset;
 `;
@@ -30,9 +30,9 @@ export const EventsBlueWrapper = styled.div`
 export const _NavItem = styled(Nav.Item)`
   margin: 0 0.5rem;
   .active {
-    color: ${(props) => props.theme.colors.indigo} !important;
+    color: ${(props) => props.theme.colors.theme_dark_purple} !important;
     background-color: ${(props) =>
-      props.theme.colors.highlight_blue} !important;
+      props.theme.colors.highlight_purple} !important;
   }
 `;
 
