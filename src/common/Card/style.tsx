@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledCard = styled.div`
+export const StyledCard = styled.a`
   background-color: white;
   border: 5px solid ${(props) => props.theme.colors.theme_dark_purple};
   box-shadow: 5px 5px 0px ${(props) => props.theme.colors.theme_light_purple};
