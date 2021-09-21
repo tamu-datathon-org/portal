@@ -32,7 +32,7 @@ export const formatTime = (time: Date, duration: number): string => {
 export const Card: React.FC<ActivityCardProps> = ({ event }) => {
   const startTime = new Date(event.startTime);
   return (
-  <UI.StyledCard href={`/events/activities/${event.id}` || "#"}>
+    <UI.StyledCard href={`/events/activities/${event.id}` || "#"}>
       <UI.EventImgContainer>
         <UI.EventImg src={event.thumbnail} alt="" />
         <Reminder startTime={startTime} duration={event.duration} />

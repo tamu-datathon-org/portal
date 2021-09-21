@@ -10,7 +10,8 @@ export const MediaWrapper = styled.div`
 `;
 
 export const MeetingWrapper = styled.div`
-  background-color: ${(props) => props.theme.colors.highlight_purple} !important;
+  background-color: ${(props) =>
+    props.theme.colors.highlight_purple} !important;
   color: #00109b;
   padding: 2em 0em;
 `;
