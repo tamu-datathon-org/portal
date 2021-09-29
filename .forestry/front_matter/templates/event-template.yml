@@ -70,3 +70,5 @@ fields:
 - type: list
   name: relatedActivities
   label: relatedActivities
+pages:
+- db/activities/testevent.md
