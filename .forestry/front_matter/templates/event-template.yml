@@ -8,14 +8,16 @@ fields:
   config:
     required: true
 - name: startTime
-  type: text
+  type: datetime
+  label: startTime
+  description: when is the event? use central time ofc
   config:
     required: true
-  label: startTime
-  hidden: false
-  description: date &amp; time in text - FOLLOW STRICT FORMAT (example is July 25,
-    2020 at 4pm!)
-  default: July 25, 2020 16:00:00-500
+    date_format: 
+    time_format: 
+    display_utc: false
+    export_format: YYYY-MM-DD h:mm
+  default: now
 - type: number
   name: duration
   label: duration
