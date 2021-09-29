@@ -1,7 +1,6 @@
 ---
 name: "Recommendation Engines"
 startTime: October 17, 2020 18:30:00-500
-endTime: October 17, 2020 19:45:00-500
 eventId: 5f8a0bb033c190000312a9d3
 duration: 75
 mediaType: embed_url

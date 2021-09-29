@@ -1,7 +1,6 @@
 ---
 name: "Model Interpretability"
 startTime: October 18, 2020 12:00:00-500
-endTime: October 18, 2020 13:15:00-500
 duration: 75
 mediaType: meeting_url
 eventId: 5f8c69cb9bc04c0003f53a7c

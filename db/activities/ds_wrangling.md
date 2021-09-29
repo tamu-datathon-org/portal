@@ -1,7 +1,6 @@
 ---
 name: "DS Introduction Part 1/2: Wrangling"
 startTime: October 17, 2020 17:00:00-500
-endTime: October 17, 2020 18:15:00-500
 duration: 75
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: embed_url

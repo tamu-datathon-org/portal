@@ -1,7 +1,6 @@
 ---
 name: "DS Introduction Part 2/2: Visualization"
 startTime: October 17, 2020 18:30:00-500
-endTime: October 17, 2020 19:45:00-500
 duration: 75
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: embed_url

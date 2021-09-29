@@ -1,7 +1,6 @@
 ---
 name: Storytelling with Data
 startTime: October 18, 2020 14:00:00-500
-endTime: October 18, 2020 15:00:00-500
 duration: 75
 eventId: 5f8a0d4133c190000312a9d6
 mediaType: meeting_url

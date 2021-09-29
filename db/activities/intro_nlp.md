@@ -1,7 +1,6 @@
 ---
 name: Intro to Natural Language Processing
 startTime: October 17, 2020 17:00:00-500
-endTime: October 17, 2020 18:15:00-500
 duration: 75
 eventId: 5f1bc40e19f52100035dda01
 mediaType: embed_url

@@ -1,7 +1,6 @@
 ---
 name: "ML Introduction Part 1/2: Theory"
 startTime: October 17, 2020 20:00:00-500
-endTime: October 17, 2020 21:15:00-500
 duration: 75
 eventId: 5f8a0afc33c190000312a9d1
 mediaType: meeting_url

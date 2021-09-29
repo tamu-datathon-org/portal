@@ -2,7 +2,6 @@
 name: Texas A&M Institute of Data Science Workshop
 eventId: 5f8a0de433c190000312a9d9
 startTime: Oct 17, 2020 11:00:00-500
-endTime: Oct 17, 2020 12:00:00-500
 duration: 60
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/VXilIrf9Qz0

@@ -2,7 +2,6 @@
 name: Tableau Workshop
 eventId: 5f8a0d7033c190000312a9d7
 startTime: Oct 17, 2020 16:00:00-500
-endTime: Oct 17, 2020 17:00:00-500
 duration: 60
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/rMljDNxJZSg

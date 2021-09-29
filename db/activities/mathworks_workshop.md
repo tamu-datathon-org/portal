@@ -2,7 +2,6 @@
 name: Mathworks Workshop
 eventId: 5efe2be0c7febf000306be94
 startTime: October 17, 2020 12:00:00-500
-endTime: October 17, 2020 13:00:00-500
 duration: 60
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/M_pNoFnMLdc

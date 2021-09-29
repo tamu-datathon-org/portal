@@ -1,7 +1,6 @@
 ---
 name: MLH Fun Events
 startTime: October 17, 2020 15:00:00-500
-endTime: October 17, 2020 16:15:00-500
 duration: 60
 eventId: 5f8a0b3133c190000312a9d2
 mediaType: meeting_url

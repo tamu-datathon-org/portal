@@ -1,7 +1,6 @@
 ---
 name: "Data Science: Start Here"
 startTime: June 20, 2020 10:30:00
-endTime: June 20, 2020 11:30:00
 eventId: 5f1bbd0819f52100035dd9fc
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/ysfoSauXpq0
