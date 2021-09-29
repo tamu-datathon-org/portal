@@ -1,7 +1,6 @@
 ---
 name: Convolutional Neural Networks & Semantic Segmentation
 startTime: July 25, 2020 18:00:00-500
-endTime: July 25, 2020 19:00:00-500
 duration: 60
 eventId: 5f1bbf4119f52100035dd9fd
 mediaType: embed_url

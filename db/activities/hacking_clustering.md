@@ -1,7 +1,6 @@
 ---
 name: "Hacking Unsupervised Clustering Algorithms"
 startTime: July 25, 2020 16:00:00-500
-endTime: July 25, 2020 17:00:00-500
 duration: 60
 eventId: 5f1bc35419f52100035dda00
 mediaType: embed_url

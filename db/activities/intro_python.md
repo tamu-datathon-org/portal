@@ -1,7 +1,6 @@
 ---
 name: Intro to Python
 startTime: October 17, 2020 10:30:00-500
-endTime: October 17, 2020 12:00:00-500
 duration: 90
 eventId: 5f8a09bf33c190000312a9ce
 mediaType: embed_url

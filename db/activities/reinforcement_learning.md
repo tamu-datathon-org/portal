@@ -1,7 +1,6 @@
 ---
 name: "Reinforcement Learning"
 startTime: October 17, 2020 21:30:00-500
-endTime: October 17, 2020 22:45:00-500
 duration: 75
 eventId: 5f8a0cc833c190000312a9d4
 mediaType: embed_url

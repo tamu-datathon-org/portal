@@ -1,7 +1,6 @@
 ---
 name: Midnight Musings
 startTime: October 17, 2020 23:30:00-500
-endTime: October 18, 2020 0:30:00-500
 duration: 60
 eventId: 5f8a0a7233c190000312a9cf
 mediaType: meeting_url

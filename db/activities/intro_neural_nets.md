@@ -1,7 +1,6 @@
 ---
 name: Intro to Neural Nets
 startTime: October 17, 2020 20:00:00-500
-endTime: October 17, 2020 21:15:00-500
 duration: 75
 eventId: 5f8a099b33c190000312a9cd
 mediaType: embed_url

@@ -1,7 +1,6 @@
 ---
 name: "Stats for Data Science"
 startTime: October 17, 2020 16:00:00-500
-endTime: October 17, 2020 17:00:00-500
 duration: 75
 eventId: 5f8a0d1033c190000312a9d5
 mediaType: embed_url
