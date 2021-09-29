@@ -1,4 +1,4 @@
-name: Featured
+name: 2020 Events
 orderedBy: none
 priority: 0
 sets:
@@ -8,3 +8,5 @@ sets:
   - core_curriculum_set
   - dive_deeper_set
   - social_events_set
+  - career_fair_set
+  - company_workshops_set
