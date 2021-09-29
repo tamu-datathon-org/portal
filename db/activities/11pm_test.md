@@ -1,5 +1,5 @@
 ---
-startTime: 2021-09-14T23:53:00Z
+startTime: July 25, 2020 16:00:00-500
 duration: 60
 presenterAbout: tell me about this presenter...
 name: 11pm copied event
