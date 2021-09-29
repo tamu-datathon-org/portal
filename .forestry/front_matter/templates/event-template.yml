@@ -8,16 +8,14 @@ fields:
   config:
     required: true
 - name: startTime
-  type: datetime
-  label: startTime
-  description: When does the event begin?
+  type: text
   config:
     required: true
-    date_format: 
-    time_format: 
-    display_utc: false
-    export_format: ''
-  default: now
+  label: startTime
+  hidden: false
+  description: date &amp; time in text - FOLLOW STRICT FORMAT (example is July 25,
+    2020 at 4pm!)
+  default: July 25, 2020 16:00:00-500
 - type: number
   name: duration
   label: duration
