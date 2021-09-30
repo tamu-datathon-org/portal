@@ -4,13 +4,13 @@ hide_body: false
 fields:
 - type: text
   name: name
-  label: name
   config:
     required: true
+  label: Name
 - name: startTime
   type: datetime
-  label: startTime
-  description: when is the event? use central time ofc
+  label: Start Date/Time
+  description: when is the event? use central time
   config:
     required: true
     date_format: 
@@ -20,7 +20,7 @@ fields:
   default: now
 - type: number
   name: duration
-  label: duration
+  label: Duration
   description: How long is the event in minutes? INTEGER ONLY!
   config:
     required: true
@@ -30,43 +30,46 @@ fields:
   default: 60
 - type: text
   name: eventId
-  label: eventId
+  label: Event ID
   config:
     required: true
+  description: Get this from gatekeeper
 - type: text
   name: mediaType
-  label: mediaType
+  label: Media Type
   config:
     required: true
   default: embed_url
-  description: 'ex: embed_url'
+  description: '"embed_url" if it''s a Youtube stream or something, or "meeting'
 - type: text
   name: mediaLink
-  label: mediaLink
-  description: https://www.youtube.com/embed/...
+  label: Media Link
+  description: https://www.youtube.com/embed/...<br>or <br>https://zoom.us/join/...
 - name: thumbnail
   type: text
   config:
     required: false
-  label: thumbnail
+  label: Thumbnail Image URL
   description: image url here! for the preview
 - type: text
   name: presenter
-  label: presenter
+  label: Presenter Name(s)
 - type: textarea
   name: presenterAbout
-  label: presenterAbout
+  label: Presenter Bio
   default: tell me about this presenter...
 - type: field_group_list
   name: presenterSocials
-  label: presenterSocials
+  label: Presenter(s) Social Media
   fields:
   - type: text
     name: type
-    label: type
+    label: Title
+    description: Enter the social media platform name
   - type: text
     name: link
-    label: link
+    label: Link
+    description: Enter the link to the site
 - type: number
   name: priority
   label: priority
