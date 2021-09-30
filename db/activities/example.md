@@ -16,8 +16,6 @@ priority: 1
 relatedActivities: []
 
 ---
-## Here is an example workshop
-
 You can add a description here to give more information on what exactly your workshop is about. This is a **markdown** area, so you can put whatever kind of content here.
 
 For example, adding links to code samples or your slides is a great way to let attendees prepare before hand or provide information after the workshop.
@@ -29,6 +27,6 @@ For example, adding links to code samples or your slides is a great way to let a
 
 Images and embeds can be added here as well. The video above is an embed from youtube. We often use video embeds as a nice trailer for a workshop.
 
-![TAMU Datathon 2020 Dev Team](/uploads/screen-shot-2021-02-02-at-9-33-25-pm.png "TAMU Datathon 2020 Dev Team")
+![](/events/uploads/screen-shot-2021-02-02-at-9-33-25-pm.png)
 
 Above is a picture of the TAMU Datathon development team from last year. They are pretty cool
