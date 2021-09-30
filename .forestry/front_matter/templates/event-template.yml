@@ -74,4 +74,5 @@ fields:
   name: relatedActivities
   label: relatedActivities
 pages:
+- db/activities/example.md
 - db/activities/testevent.md
