@@ -3,7 +3,7 @@ import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 import { ActivityCardProps } from "./interfaces";
-import { ResponsiveEmbed } from "react-bootstrap"
+import { ResponsiveEmbed } from "react-bootstrap";
 import moment from "moment-timezone";
 
 /**
