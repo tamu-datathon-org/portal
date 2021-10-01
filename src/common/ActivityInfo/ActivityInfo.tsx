@@ -73,7 +73,12 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (
   // const [interested, setInterested] = useState(false);
   const { user } = useActiveUser();
   const curTime = new Date();
-  const startTime = new Date(props.startTime);
+
+  // check if using forestry.io or previous year's format
+  const momentTest = moment(props.startTime, "YYYY-MM-DD hh:mm A");
+  const startTime = momentTest.isValid()
+    ? momentTest.toDate()
+    : new Date(props.startTime);
   const endTime = genEndTime(startTime, props.duration);
   const minsToEvent = startTime.getTime() - curTime.getTime();
 
