@@ -1,26 +1,29 @@
 ---
 name: Storytelling with Data
 startTime: October 18, 2020 14:00:00-500
-duration: 75
+duration: "75"
 eventId: 5f8a0d4133c190000312a9d6
-mediaType: meeting_url
-mediaLink: https://tamu.zoom.us/j/98439398661?pwd=alRRVHFjRk5MNjF1cS9qcTFoUVNnUT09
+mediaType: embed_url
+mediaLink: https://www.youtube.com/watch?v=gMbzBYGdmcQ
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png
 presenter: Isha Mehra and Shreya Punya
-presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon University Isha - Data Scientist at Facebook, Shreya - Data Scientist at Instagram Both were TAs for Computer Science classes at Carnegie Mellon University (Isha Intro to CS, Shreya Intro to ML)
+presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon
+  University Isha - Data Scientist at Facebook, Shreya - Data Scientist at Instagram
+  Both were TAs for Computer Science classes at Carnegie Mellon University (Isha Intro
+  to CS, Shreya Intro to ML)
 presenterSocials:
-  - type: Isha's LinkedIn
-    link: https://www.linkedin.com/in/ishamehra
-  - type: Shreya's LinkedIn
-    link: https://www.linkedin.com/in/shreyapunya/
-priority: 7
+- type: Isha's LinkedIn
+  link: https://www.linkedin.com/in/ishamehra
+- type: Shreya's LinkedIn
+  link: https://www.linkedin.com/in/shreyapunya/
+priority: "7"
 relatedActivities:
-  - data_science_202
-  - data_science_303
-  - data_science_404
+- data_science_202
+- data_science_303
+- data_science_404
 tags: presenting, impact, business, data science
----
 
+---
 In this talk, we will describe how we use data collected at Facebook to inform product development. Including everything from ideas, experimentations, and launches.
 
 Learning the technical skills for analysis is key, but arguably more critical is asking the right research questions for the data you have available, and creating a story out of your findings.
