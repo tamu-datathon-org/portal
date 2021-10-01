@@ -35,7 +35,7 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
   return (
     <UI.StyledCard href={`/events/activities/${event.id}` || "#"}>
       <UI.EventImgContainer>
-        <ResponsiveEmbed>
+        <ResponsiveEmbed aspectRatio="16by9">
           <UI.EventImg src={event.thumbnail} alt="" />
         </ResponsiveEmbed>
         <Reminder startTime={startTime} duration={event.duration} />
