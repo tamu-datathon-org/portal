@@ -4,7 +4,7 @@ startTime: October 18, 2020 14:00:00-500
 duration: "75"
 eventId: 5f8a0d4133c190000312a9d6
 mediaType: embed_url
-mediaLink: https://www.youtube.com/watch?v=gMbzBYGdmcQ
+mediaLink: https://www.youtube.com/embed/gMbzBYGdmcQ
 thumbnail: https://mcusercontent.com/36d73585139760aa245837bb2/images/025376e3-0c77-469a-839f-ead1ea159fc4.png
 presenter: Isha Mehra and Shreya Punya
 presenterAbout: Both have B. S. Statistics and Machine Learning at Carnegie Mellon
