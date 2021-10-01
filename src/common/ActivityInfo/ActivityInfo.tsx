@@ -172,6 +172,7 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (
             <ReactMarkdown
               linkTarget="_blank"
               escapeHtml={false}
+              className="activity-content"
               source={props.content}
             />
           </Col>
