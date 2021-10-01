@@ -78,4 +78,3 @@ fields:
   label: relatedActivities
 pages:
 - db/activities/example.md
-- db/activities/testevent.md
