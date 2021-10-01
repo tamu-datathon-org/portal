@@ -3,6 +3,7 @@ import { Reminder } from "./Reminder";
 import * as UI from "./style";
 import PropTypes from "prop-types";
 import { ActivityCardProps } from "./interfaces";
+import { ResponsiveEmbed } from "react-bootstrap"
 import moment from "moment-timezone";
 
 /**
@@ -34,7 +35,9 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
   return (
     <UI.StyledCard href={`/events/activities/${event.id}` || "#"}>
       <UI.EventImgContainer>
-        <UI.EventImg src={event.thumbnail} alt="" />
+        <ResponsiveEmbed>
+          <UI.EventImg src={event.thumbnail} alt="" />
+        </ResponsiveEmbed>
         <Reminder startTime={startTime} duration={event.duration} />
       </UI.EventImgContainer>
       <UI.EventInfo>
