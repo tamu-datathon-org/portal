@@ -10,6 +10,8 @@ mediaLink: ''
 thumbnail: https://tamudatathon.com/static/img/team/george.jpg
 presenter: George Thayamkery
 presenterSocials:
+- type: George's Website
+  link: https://geooot.com
 - link: https://www.linkedin.com/in/georgebt/
   type: LinkedIn
 priority: 1
