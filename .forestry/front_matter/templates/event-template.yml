@@ -78,3 +78,4 @@ fields:
   label: relatedActivities
 pages:
 - db/activities/example.md
+- db/activities/goldman_sachs_2021.md
