@@ -2,7 +2,6 @@ name: 2020 Events
 orderedBy: none
 priority: 1
 sets:
-  - happening_now_set
   - informational_set
   - beginner_classes_set
   - core_curriculum_set

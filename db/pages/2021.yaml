@@ -4,4 +4,5 @@ priority: 0
 sets:
   - happening_now_set
   - informational_set_2021
+  - classes_2021
   - company_workshops_2021
