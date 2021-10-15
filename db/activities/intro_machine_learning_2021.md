@@ -8,7 +8,7 @@ presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics 
 name: Intro to Machine Learning
 eventId: 6169c2e68f9dfe0003cb966c
 mediaLink: ''
-thumbnail: ''
+thumbnail: https://i.ytimg.com/vi/VGJcylKttCc/mqdefault.jpg
 presenter: Allyson King
 presenterSocials:
 - type: Allyson's LinkedIn
