@@ -6,26 +6,9 @@ filterBy: happening_now
 priority: 4
 activityList:
   - opening_ceremony
-  - tamids_career_fair
-  - intro_python
-  - tamids_workshop
-  - gm_career_fair
-  - mathworks_workshop
-  - how_to_win_td
-  - walmart_workshop
-  - tti_workshop
-  - hpe_workshop
-  - tti_career_fair
-  - stats_for_ds
-  - tableau_workshop
-  - ds_wrangling
-  - intro_nlp
-  - ds_visualization
-  - reccomendation_engine
-  - intro_neural_nets
-  - reinforcement_learning
-  - midnight_musings
-  - midnight_musings
-  - model_interpretability
+  - intro_data_science_2021
+  - intro_machine_learning_2021
+  - clustering_2021
+  - gm_dremio_2021
+  - goldman_sachs_2021
   - closing_ceremony
-  - story_telling

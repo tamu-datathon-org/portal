@@ -1,6 +1,6 @@
 name: 2020 Events
 orderedBy: none
-priority: 1
+priority: 0
 sets:
   - happening_now_set
   - informational_set

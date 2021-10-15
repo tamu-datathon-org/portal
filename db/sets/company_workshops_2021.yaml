@@ -1,0 +1,8 @@
+name: Company Workshops
+description: Learn from industry and see how these companies use DS/ML technologies in their day to day. Also, gain tips on how to solve company challenges!
+showMoreState: false
+orderedBy: start_time
+priority: 1
+activityList:
+  - gm_dremio_2021
+  - goldman_sachs_2021
