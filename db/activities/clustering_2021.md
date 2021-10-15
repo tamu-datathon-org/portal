@@ -8,7 +8,7 @@ presenterAbout: Shanina is an Instructional Assistant Professor in Statistics, g
 name: Group data with Clustering Algorithms
 eventId: 6169c2fe8f9dfe0003cb9670
 mediaLink: ''
-thumbnail: https://i.ytimg.com/vi/gsfDVH2id-U/maxresdefault.jpg
+thumbnail: https://i.ytimg.com/vi/gsfDVH2id-U/mqdefault.jpg
 presenter: Shahina Rahman
 presenterSocials:
 - type: Shanina's LinkedIn
