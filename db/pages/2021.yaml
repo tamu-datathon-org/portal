@@ -3,10 +3,5 @@ orderedBy: none
 priority: 0
 sets:
   - happening_now_set
-  - informational_set
-  - beginner_classes_set
-  - core_curriculum_set
-  - dive_deeper_set
-  - social_events_set
-  - career_fair_set
-  - company_workshops_set
+  - informational_set_2021
+  - company_workshops_2021
