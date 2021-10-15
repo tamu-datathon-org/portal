@@ -2,13 +2,19 @@
 startTime: 2021-10-16 1:00 PM
 duration: 45
 mediaType: meeting_url
-presenterAbout: tell me about this presenter...
+presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics and
+  (almost) Computer Science. She currently works as a Software Engineer at Capital
+  One. Previously, She worked at AT&T and TTI.
 name: Intro to Data Science
 eventId: 6169c2c38f9dfe0003cb9668
 mediaLink: ''
 thumbnail: ''
-presenter: ''
-presenterSocials: []
+presenter: Allyson King
+presenterSocials:
+- type: Allyson's LinkedIn
+  link: https://www.linkedin.com/in/allysonmking
+- type: Allyson's Medium
+  link: https://medium.com/@allysonmking
 priority: 
 relatedActivities: []
 
