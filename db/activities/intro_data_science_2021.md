@@ -8,7 +8,7 @@ presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics 
 name: Intro to Data Science
 eventId: 6169c2c38f9dfe0003cb9668
 mediaLink: ''
-thumbnail: ''
+thumbnail: https://i.ytimg.com/vi/z7FgdE59TW0/mqdefault.jpg
 presenter: Allyson King
 presenterSocials:
 - type: Allyson's LinkedIn
