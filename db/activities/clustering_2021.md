@@ -8,7 +8,7 @@ presenterAbout: Shanina is an Instructional Assistant Professor in Statistics, g
 name: Group data with Clustering Algorithms
 eventId: 6169c2fe8f9dfe0003cb9670
 mediaLink: ''
-thumbnail: ''
+thumbnail: https://i.ytimg.com/vi/gsfDVH2id-U/maxresdefault.jpg
 presenter: Shahina Rahman
 presenterSocials:
 - type: Shanina's LinkedIn
@@ -23,4 +23,4 @@ relatedActivities: []
 
 In this workshop, Shanina is going to take you to the fascinating journey into unsupervised clustering algorithms.
 
-In particular, Shanina will be showcasing what's new in clustering algorithms and how it impacts the realm of unsupervised machine learning. 
+In particular, Shanina will be showcasing what's new in clustering algorithms and how it impacts the realm of unsupervised machine learning.
