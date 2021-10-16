@@ -1,7 +1,7 @@
 ---
 startTime: 2021-10-16 1:00 PM
 duration: 45
-mediaType: embed_utl
+mediaType: embed_url
 presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics and
   Computer Science. She currently works as a Software Engineer at Capital One. Previously,
   She worked at AT&T and TTI.
