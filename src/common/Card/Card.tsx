@@ -45,9 +45,7 @@ export const Card: React.FC<ActivityCardProps> = ({ event }) => {
       </UI.EventImgContainer>
       <UI.EventInfo>
         <h5>{event.name}</h5>
-        <UI.EventTime>
-          {formatTime(new Date(event.startTime), event.duration)}
-        </UI.EventTime>
+        <UI.EventTime>{formatTime(startTime, event.duration)}</UI.EventTime>
       </UI.EventInfo>
       <UI.PeelLinkContainer>
         <UI.LinkArrow></UI.LinkArrow>
