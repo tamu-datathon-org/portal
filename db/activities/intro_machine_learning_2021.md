@@ -2,12 +2,13 @@
 startTime: 2021-10-16 2:00 PM
 duration: 45
 mediaType: meeting_url
-presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics and Computer Science. She currently works as a Software Engineer at Capital
-  One. Previously, She worked at AT&T and TTI.
+presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics and
+  Computer Science. She currently works as a Software Engineer at Capital One. Previously,
+  She worked at AT&T and TTI.
 name: Intro to Machine Learning
 eventId: 6169c2e68f9dfe0003cb966c
 mediaLink: ''
-thumbnail: https://i.ytimg.com/vi/VGJcylKttCc/mqdefault.jpg
+thumbnail: "/events/uploads/intro_ml.jpg"
 presenter: Allyson King
 presenterSocials:
 - type: Allyson's LinkedIn
