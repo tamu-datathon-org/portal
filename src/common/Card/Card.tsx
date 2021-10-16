@@ -31,7 +31,10 @@ export const formatTime = (time: Date, duration: number): string => {
  * Card component
  */
 export const Card: React.FC<ActivityCardProps> = ({ event }) => {
-  const startTime = new Date(event.startTime);
+  const momentTest = moment(event.startTime, "YYYY-MM-DD hh:mm A");
+  const startTime = momentTest.isValid()
+    ? momentTest.toDate()
+    : new Date(event.startTime);
   return (
     <UI.StyledCard href={`/events/activities/${event.id}` || "#"}>
       <UI.EventImgContainer>
