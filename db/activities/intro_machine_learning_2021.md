@@ -25,3 +25,5 @@ relatedActivities: []
 
 
 In the Intro to ML course, we will begin by introducing the random forest algorithm, which can help solve both classification and regression problems. We’ll walk through an example use case using python’s sklearn package. We’ll also discuss ways to avoid overfitting our model - namely cross validation, hyperparameter tuning & feature importance
+
+https://colab.research.google.com/drive/1J4wdQJRbrKnNSByq1CRtWtDuPE7xxuWR?usp=sharing
