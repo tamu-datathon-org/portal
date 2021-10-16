@@ -1,5 +1,5 @@
 ---
-startTime: Oct 16, 2020 17:00:00-500
+startTime: 2021-10-16 5:00 PM
 duration: 45
 mediaType: meeting_url
 mediaLink: 'https://youtu.be/8aV8cRPz_FY'
