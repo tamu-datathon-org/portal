@@ -1,7 +1,7 @@
 ---
 name: Opening Ceremony
 eventId: 5efe2be0c7febf000306be94
-startTime: Oct 16, 2020 10:00:00-50
+startTime: 2021-10-16T10:00:00-05:00
 duration: "60"
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/BmAnveCcJjE

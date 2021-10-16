@@ -1,5 +1,5 @@
 ---
-startTime: Oct 16, 2020 15:00:00-500
+startTime: 2021-10-16 3:00 PM
 duration: 45
 mediaType: meeting_url
 presenterAbout: Shanina is an Instructional Assistant Professor in Statistics, got

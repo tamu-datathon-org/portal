@@ -1,7 +1,7 @@
 ---
 name: Award Ceremony
 eventId: 5f8a084933c190000312a9cb
-startTime: Oct 17, 2020 15:00:00-500
+startTime: 2021-10-17T15:00:00-05:00
 duration: "75"
 mediaType: embed_url
 mediaLink: https://youtube.com/embed/4Edvuv_rNV4

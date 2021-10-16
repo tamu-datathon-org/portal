@@ -1,5 +1,5 @@
 ---
-startTime: Oct 16, 2020 13:00:00-500
+startTime: 2021-10-16 1:00 PM
 duration: 45
 mediaType: meeting_url
 presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics and
