@@ -5,9 +5,9 @@ mediaType: meeting_url
 presenterAbout: Shanina is an Instructional Assistant Professor in Statistics, got
   first place in Distinguished Postdoctoral Flash Talks, and has worked as a postdoc
   in Germany.
-name: Group data with Clustering Algorithms
+name: "[Canceled] Group data with Clustering Algorithms"
 eventId: 6169c2fe8f9dfe0003cb9670
-mediaLink: 'https://youtu.be/TalCScCxRlc'
+mediaLink: https://youtu.be/TalCScCxRlc
 thumbnail: https://i.ytimg.com/vi/gsfDVH2id-U/mqdefault.jpg
 presenter: Shahina Rahman
 presenterSocials:
