@@ -1,5 +1,5 @@
 ---
-startTime: 2021-10-16 4:00 PM
+startTime: Oct 16, 2020 16:00:00-500
 duration: 45
 mediaType: meeting_url
 presenterAbout: 'Rohit is a former Aggie, original founder of the Aggie Coding Club,
