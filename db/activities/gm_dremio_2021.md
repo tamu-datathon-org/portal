@@ -6,8 +6,8 @@ presenterAbout: 'Rohit is a former Aggie, original founder of the Aggie Coding C
   and a Software Developer for General Motors. '
 name: 'General Motors: How to effectively organize your data with Dremio'
 eventId: 6169c30c8f9dfe0003cb9674
-mediaLink: ''
-thumbnail: ''
+mediaLink: 'https://youtu.be/l79JCfkWpk0'
+thumbnail: 'https://contactdetailswala.com/wp-content/uploads/2018/02/General-Motors-1.jpg'
 presenter: Rohit Mucherla - General Motors
 presenterSocials:
 - type: Rohit's LinkedIn

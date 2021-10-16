@@ -47,11 +47,11 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
     if (props.callStatus == CallStatus.NOT_STARTED) {
       callDescription = (
         <div>
-          Come back here later to join this meeting.
+          Come back here later to join this workshop.
           <br />
           {status === UserCurrentStatus.LoggedOut && (
             <b>
-              Heads Up! You&apos;ll need an account to join the meeting. Click
+              Heads Up! You&apos;ll need an account to watch the workshop live. Click
               &quot;Login/Signup&quot; in the top navbar to make one if you
               haven&apos;t already.
             </b>
@@ -60,10 +60,10 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
       );
       joinBtn = <></>;
     } else if (props.callStatus == CallStatus.ONGOING) {
-      callStatus = <>The meeting has started</>;
+      callStatus = <>The workshop has started</>;
       callDescription = (
         <>
-          Click Join to join in on the discussion. Can&apos;t make it?
+          Click Join to join the workshop. Can&apos;t make it?
           Don&apos;t worry, a recording will show up here afterwards.
         </>
       );
@@ -81,7 +81,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
               className="py-lg-3 my-3"
               block
             >
-              Join Now
+              Join
             </Button>
           </a>
         </Col>
@@ -89,7 +89,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
     } else {
       callDescription = (
         <div>
-          This meeting has ended. A recording for it might be posted later, come
+          This workshop has ended. A recording for it might be posted later, come
           back later to check it out!
         </div>
       );

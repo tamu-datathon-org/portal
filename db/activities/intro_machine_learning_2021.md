@@ -7,7 +7,7 @@ presenterAbout: Allyson is a former Aggie that graduated with a B.S. Statistics 
   She worked at AT&T and TTI.
 name: Intro to Machine Learning
 eventId: 6169c2e68f9dfe0003cb966c
-mediaLink: ''
+mediaLink: 'https://youtu.be/j75mkz80zjQ'
 thumbnail: "/events/uploads/intro_ml.jpg"
 presenter: Allyson King
 presenterSocials:
