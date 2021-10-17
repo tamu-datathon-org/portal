@@ -1,9 +1,12 @@
+---
 name: Learn the fundamentals.
-description: Learn the fundamentals of data science and machine learning to get the ball rolling on your projects!
+description: Learn the fundamentals of data science and machine learning to get the
+  ball rolling on your projects!
 showMoreState: true
 orderedBy: start_time
-priority: 4
+priority: "4"
 activityList:
-  - intro_data_science_2021
-  - intro_machine_learning_2021
-  - clustering_2021
+- intern_panel_2021
+- intro_data_science_2021
+- intro_machine_learning_2021
+- clustering_2021
