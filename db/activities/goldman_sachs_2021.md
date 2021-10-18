@@ -1,12 +1,12 @@
 ---
 startTime: 2021-10-16 5:00 PM
 duration: 45
-mediaType: meeting_url
-mediaLink: 'https://youtu.be/8aV8cRPz_FY'
-presenterAbout: 'Managing Director, Cloud Native Engineering'
+mediaType: embed_url
+mediaLink: https://youtube.com/embed/8aV8cRPz_FY
+presenterAbout: Managing Director, Cloud Native Engineering
 name: Using Public Cloud to Drive Agility, Innovation and Growth at Goldman Sachs
 eventId: 6169c31d8f9dfe0003cb9678
-thumbnail: 'https://cdn.gobankingrates.com/wp-content/uploads/2017/03/goldman-sachs-logo.jpg'
+thumbnail: https://cdn.gobankingrates.com/wp-content/uploads/2017/03/goldman-sachs-logo.jpg
 presenter: Suresh Thumma - Goldman Sachs
 presenterSocials:
 - type: Goldman Careers
@@ -15,7 +15,6 @@ priority: 1
 relatedActivities: []
 
 ---
-
 <div class="embed-responsive embed-responsive-16by9">
   <iframe src="https://youtube.com/embed/1i8gOU5tl_M" title="Trailer" allowfullscreen class="embed-responsive-item"></iframe>
 </div>
