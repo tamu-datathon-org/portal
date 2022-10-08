@@ -1,7 +1,7 @@
 ---
 name: Opening Ceremony
 eventId: 5efe2be0c7febf000306be94
-startTime: 2022-10-7 10:00 PM
+startTime: 2022-10-7 9:22 PM
 duration: "60"
 mediaType: embed_url
 mediaLink: ''
