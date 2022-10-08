@@ -1,0 +1,14 @@
+name: Workshops
+description: All the workshops in one!
+showMoreState: false
+orderedBy: start_time
+priority: 1
+activityList:
+  - gm_workshop2022
+  - bh_beginner2022
+  - data_analytics2022
+  - bh_second2022
+  - cbre_workshop2022
+  - splunk_workshop2022
+  - streamlit_workshop2022
+  - celonis_workshop2022
