@@ -1,7 +1,7 @@
 ---
 name: Closing Ceremony
 eventId: 5efe2be0c7febf000306be94
-startTime: 2022-10-9 4:30 PM
+startTime: 2022-10-9 3:30 PM
 duration: 75
 mediaType: embed_url
 mediaLink: https://www.youtube.com/embed/-t_V89WqBC4
