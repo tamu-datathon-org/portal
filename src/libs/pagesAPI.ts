@@ -28,7 +28,7 @@ export async function getPageByName(pageName: string): Promise<Page> {
   const realPage = pageName.replace(/\.yaml$/, "");
   const fullPath = join(pageDirectory, `${realPage}.yaml`);
   const fileContents = await fs.promises.readFile(fullPath, "utf8");
-  const data = yaml.safeLoad(fileContents);
+  const data = yaml.load(fileContents);
 
   return { ...(data as Page), id: realPage } as Page;
 }

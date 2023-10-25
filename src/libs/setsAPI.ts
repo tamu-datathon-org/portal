@@ -24,7 +24,7 @@ export async function getSetByName(setName: string): Promise<ActivitySection> {
   const realSet = setName.replace(/\.yaml$/, "");
   const fullPath = join(setDirectory, `${realSet}.yaml`);
   const fileContents = await fs.promises.readFile(fullPath, "utf8");
-  const data = yaml.safeLoad(fileContents);
+  const data = yaml.load(fileContents);
 
   return { ...(data as ActivitySection), id: realSet } as ActivitySection;
 }
