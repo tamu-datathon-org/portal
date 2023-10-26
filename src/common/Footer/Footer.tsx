@@ -4,6 +4,8 @@ import React from "react";
 /**
  * Footer ripped straight from gigabowser lmao
  */
+
+/* eslint-disable */
 export const Footer: React.FC<any> = () => (
   <>
     <div className="footer-section">

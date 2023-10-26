@@ -175,9 +175,9 @@ export const ActivityInfo: React.FC<ActivityInfoProps> = (
         <Row>
           <Col className="min-vh-100 mb-5">
             <ReactMarkdown
+              className="activity-content"
               linkTarget="_blank"
               escapeHtml={false}
-              className="activity-content"
               source={props.content}
             />
           </Col>

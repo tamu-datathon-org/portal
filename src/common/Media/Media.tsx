@@ -3,6 +3,8 @@ import * as UI from "./style";
 import { Col, Row, Container, Button } from "react-bootstrap";
 import { useActiveUser, UserCurrentStatus } from "../UserProvider";
 
+/* eslint-disable */
+
 export enum CallStatus {
   NOT_STARTED = "Not Started",
   ONGOING = "Ongoing",

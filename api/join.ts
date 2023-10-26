@@ -1,12 +1,12 @@
-import { NowRequest, NowResponse } from "@vercel/node";
+import { VercelRequest, VercelResponse } from "@vercel/node";
 import { authenticatedRoute } from "../src/libs/middleware";
 import { User } from "../src/common/UserProvider";
 import { getBaseUrl, authenticatedFetch } from "../src/libs";
 import { getActivityByName } from "../src/libs/activitiesAPI";
 
 const joinEventHandler = async (
-  req: NowRequest,
-  res: NowResponse,
+  req: VercelRequest,
+  res: VercelResponse,
   user: User
 ): Promise<void> => {
   const { eventId, mediaLink } = await getActivityByName(
@@ -36,11 +36,13 @@ const joinEventHandler = async (
     },
   });
 
-  return res
+  res
     .writeHead(302, {
       Location: mediaLink,
     })
     .end();
+
+    return Promise.resolve();
 };
 
 export default authenticatedRoute(joinEventHandler);

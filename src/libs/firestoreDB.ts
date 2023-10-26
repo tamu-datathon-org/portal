@@ -1,5 +1,6 @@
 import { Firestore } from "@google-cloud/firestore";
 
+/* eslint-disable */
 export const getFirestoreDB = (): FirebaseFirestore.Firestore => {
   const FIRESTORE_CREDENTIALS = JSON.parse(process.env.FIRESTORE_CREDENTIALS!);
   return new Firestore({

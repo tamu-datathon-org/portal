@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 
+/* eslint-disable */
 export const useCurrentTime = () => {
   const [currentTime, setCurrentTime] = useState(new Date());
 

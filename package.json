@@ -6,7 +6,7 @@
     "dev": "next dev",
     "lint": "eslint src/",
     "fix": "eslint src/ --fix",
-    "build": "TZ=America/Chicago next build",
+    "build": "next build",
     "start": "next start",
     "forestry:preview": "next . -p 8080 -H 0.0.0.0"
   },
@@ -23,7 +23,7 @@
     "bootstrap": "^4.5.0",
     "file-saver": "^2.0.2",
     "gray-matter": "^4.0.2",
-    "ics": "^2.22.1",
+    "ics": "^3.5.0",
     "isomorphic-unfetch": "^3.0.0",
     "md5": "^2.3.0",
     "moment": "^2.26.0",
@@ -32,16 +32,16 @@
     "react": "^18.2.0",
     "react-bootstrap": "^1.0.1",
     "react-dom": "18.2.0",
-    "react-markdown": "^9.0.0",
+    "react-markdown": "^5.0.0",
     "styled-components": "^5.1.1",
     "swr": "^2.2.4"
   },
   "devDependencies": {
-    "@types/node": "^14.0.12",
+    "@types/node": "^18",
     "@types/react": "^18.2.0",
     "@types/styled-components": "^5.1.0",
-    "@typescript-eslint/eslint-plugin": "^3.2.0",
-    "@typescript-eslint/parser": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^6.9.0",
+    "@typescript-eslint/parser": "^6.9.0",
     "@vercel/node": "^1.7.3",
     "babel-plugin-styled-components": "^1.10.7",
     "eslint": "^7.2.0",
@@ -53,6 +53,6 @@
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.5",
     "sass": "^1.26.8",
-    "typescript": "^3.9.5"
+    "typescript": "^5.2.2"
   }
 }
