@@ -9,7 +9,7 @@ import { HeadProps } from "./interfaces";
  * Head component
  */
 
-/*eslint-disable*/
+/*eslint-disable */
 export const Head: React.FC<HeadProps> = ({ children, title }) => {
     const resTitle =
         title && title.length !== 0 ? title : "Events - TAMU Datathon";

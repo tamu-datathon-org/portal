@@ -14,7 +14,7 @@ export const BackBtn: React.FC<BackLinkProps> = (props: BackLinkProps) => {
       <Container>
         <Row>
           <Col>
-            <Link href={props.url}>
+            <Link href={props.url} legacyBehavior>
               <a style={{ margin: "1em 0em", display: "inline-block" }}>
                 <FontAwesomeIcon icon={faArrowLeft} /> Go Back
               </a>
