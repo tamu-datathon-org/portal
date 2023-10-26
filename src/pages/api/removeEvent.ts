@@ -1,7 +1,7 @@
-import { NowRequest, NowResponse } from "@vercel/node";
-import { authenticatedRoute } from "../src/libs/middleware";
-import { getFirestoreDB } from "../src/libs/firestoreDB";
-import { User } from "../src/common/UserProvider";
+import { VercelRequest, VercelResponse } from "@vercel/node";
+import { authenticatedRoute } from "../../libs/middleware";
+import { getFirestoreDB } from "../../libs/firestoreDB";
+import { User } from "../../common/UserProvider";
 import md5 from "md5";
 
 /**
@@ -9,8 +9,8 @@ import md5 from "md5";
  * userAuthId and the passed in eventId, using a hash for easy lookup.
  */
 const removeEventHandler = async (
-  req: NowRequest,
-  res: NowResponse,
+  req: VercelRequest,
+  res: VercelResponse,
   user: User
 ): Promise<void> => {
   const db = getFirestoreDB();

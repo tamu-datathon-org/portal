@@ -1,7 +1,7 @@
 // Need a package that can dynamically switch between the JS `fetch`
 // and the `node-fetch` based on usage.
 import fetch from "isomorphic-unfetch";
-import { NowRequest } from "@vercel/node";
+import { VercelRequest } from "@vercel/node";
 
 export async function fetcher<JSON = unknown>(
   input: RequestInfo,
@@ -19,7 +19,7 @@ export async function fetcher<JSON = unknown>(
 
 export const authenticatedFetch = <JSON = unknown>(
   input: RequestInfo,
-  req: NowRequest,
+  req: VercelRequest,
   init?: RequestInit
 ): Promise<JSON> => {
   const { accessToken } = req.cookies;
@@ -32,7 +32,7 @@ export const authenticatedFetch = <JSON = unknown>(
   });
 };
 
-export const getBaseUrl = (req: NowRequest): string => {
+export const getBaseUrl = (req: VercelRequest): string => {
   const httpProto = req.headers["x-forwarded-proto"] || "https";
   return `${httpProto}://${req.headers.host}`;
 };

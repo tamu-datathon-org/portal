@@ -1,7 +1,7 @@
-import { NowRequest, NowResponse } from "@vercel/node";
-import { authenticatedRoute } from "../src/libs/middleware";
-import { User } from "../src/common/UserProvider";
-import { getFirestoreDB } from "../src/libs/firestoreDB";
+import { VercelRequest, VercelResponse } from "@vercel/node";
+import { authenticatedRoute } from "../../libs/middleware";
+import { User } from "../../common/UserProvider";
+import { getFirestoreDB } from "../../libs/firestoreDB";
 import md5 from "md5";
 
 /**
@@ -15,8 +15,8 @@ import md5 from "md5";
  * ensuring uniqueness and allowing easy lookup. 
  */
 const addEventHandler = async (
-  req: NowRequest,
-  res: NowResponse,
+  req: VercelRequest,
+  res: VercelResponse,
   user: User
 ): Promise<void> => {
   const db = getFirestoreDB();
