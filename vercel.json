@@ -1,12 +1,3 @@
 {
-  "functions": {
-    "api/**": {
-      "includeFiles": "db/**"
-    }
-  },
-  "rewrites": [
-    { "source": "/events/api/json", "destination": "/api/json/" },
-    { "source": "/events/api/json/(.*)", "destination": "/api/json/$1" },
-    { "source": "/events/api/(.*)", "destination": "/api/$1" }
-  ]
+
 }

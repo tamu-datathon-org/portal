@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { authenticatedRoute } from "../../libs/middleware";
 import { getFirestoreDB } from "../../libs/firestoreDB";

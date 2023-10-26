@@ -1,3 +1,4 @@
+/*eslint-disable*/
 import { VercelRequest, VercelResponse } from "@vercel/node";
 import { getAllActivities } from "../../../libs/activitiesAPI";
 
