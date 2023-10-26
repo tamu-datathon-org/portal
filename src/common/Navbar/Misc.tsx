@@ -33,7 +33,7 @@ export const Navbar: React.FC = () => {
       <UI.NavbarSpan>
         <ReactNavbar.Toggle aria-controls="navbar-responsive-dropdown" />
         <UI.NavbarLogo
-          src="/events/static/img/logos/main.svg"
+          src="/static/img/logos/main-23.svg"
           className="d-none d-sm-block" // Hide icon below sm screens.
         ></UI.NavbarLogo>
       </UI.NavbarSpan>

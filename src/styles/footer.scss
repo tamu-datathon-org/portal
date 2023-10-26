@@ -1,50 +1,87 @@
-$splash-light-blue: #1b135e;
-$theme-light-green: #86eace;
-$theme-dark-purple: #351a75;
+// figure out coloring for transition between sections
+// change font to work-sans?
+// centering for logos 
+// 
+$transition-time: 0.5s;
 
-.footer-section {
-  background-color: $theme-dark-purple;
-  color: #fff;
+.social-logo {
+  width: 45px;
+  height: 30px;
+  margin: auto;
+  display: block;
+}
+.vercel-logo {
+  margin: auto;
+  display: block;
+}
 
-  .footer-logo {
+#social-link {
+  display: block;
+  margin: auto;
+}
+#footer.section {
+  background-color: #EAFBFF;
+  color: black;
+  font-family: 'Work Sans';
+  padding: 2% 3%;
+
+
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  display:flex;
+  float:left;
+  padding:20px;
+  justify-content: center;
+  align-items: center;
+}
+.td-logo-div {
+  width: 20%;
+}
+.social-links {
+  width: 40%;
+}
+.text-content {
+  text-align: center;
+  width: 40%;
+}
+@media screen and (max-width: 600px) {
+  .column {
     width: 100%;
-    max-width: 75px;
   }
+}
+#footer.fold-corner::after {
+  content:"";
+  display:table;
+  clear:both;
+}
 
-  a {
-    color: $theme-light-green !important;
+#footer.fold-corner {
+  &::after {
+    //   content: "";
+    //   position: absolute;
+    //   right: 0;
+    //   top: 0;
+    //   border-style: solid;
+    //   border-width: .5rem;
+    //   border-color: #ffffff #ffffff #c8d9dd #c8d9dd;
+    //   transition: all $transition-time;
   }
-
-  .footer-social-link-container {
-    flex: 0;
-    display: flex;
-    justify-content: flex-end;
-    min-width: 265px;
+  &:hover::after {
+      border-width: 3rem;
   }
-
-  .footer-social-link:hover {
-    text-decoration: none;
-  }
-
-  .footer-doc-links > a {
-    display: block;
-  }
-
-  .vercel-promo {
-    text-align: center;
-    a {
-      color: white !important;
-    }
-  }
-
-  @include media-breakpoint-up(md) {
-    .footer-doc-links > a {
-      display: inline;
-    }
-    .vercel-promo {
-      text-align: right;
-    }
-  }
+}
 
 
+
+
+.td-logo {
+  width:150px;
+  height: 120px;
+  margin: auto;
+  display: block;
 }
