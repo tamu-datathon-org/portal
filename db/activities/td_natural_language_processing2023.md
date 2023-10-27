@@ -1,0 +1,12 @@
+---
+name: 'TD: Natural Language Processing'
+eventId: 5efe2be0c7febf000306be94
+startTime: 2023-10-28 4:00 PM
+duration: 60
+thumbnail: https://firebasestorage.googleapis.com/v0/b/td2020-fb428.appspot.com/o/EXMinrxWAAcdJ0M.jpg?alt=media&token=619451d2-80db-4fdb-8016-a5ded44d42be
+presenter: Abby Xu
+priority: 7
+relatedActivities:
+---
+
+Here, the TAMU Datathon Team will have a workshop on Natural Language Processing.

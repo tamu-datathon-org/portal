@@ -100,7 +100,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
 
     return (
       <>
-        <UI.MeetingWrapper>
+        {/* <UI.MeetingWrapper>
           <Container>
             <Row>
               <Col>
@@ -115,7 +115,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
               {joinBtn}
             </Row>
           </Container>
-        </UI.MeetingWrapper>
+        </UI.MeetingWrapper> */}
       </>
     );
   }

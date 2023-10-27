@@ -1,0 +1,8 @@
+name: Informational Events
+description: Join the opening ceremony to learn about the event and the rules, join the closing ceremony to find out the winners.
+showMoreState: false
+orderBy: start_time
+priority: 4
+activityList:
+  - opening_ceremony2023
+  - closing_ceremony2023

@@ -1,0 +1,11 @@
+name: Workshops
+description: All the workshops in one!
+showMoreState: false
+orderedBy: start_time
+priority: 1
+activityList:
+  - td_hospital_exploration2023
+  - tamids_computer_vision2023
+  - tamids_ongoing_projects2023
+  - td_web_scraping2023
+  - roblox_workshop2023
