@@ -1,6 +1,6 @@
 import React from "react";
 import * as UI from "./style";
-import { Col, Row, Container, Button } from "react-bootstrap";
+import { Col, Button } from "react-bootstrap";
 import { useActiveUser, UserCurrentStatus } from "../UserProvider";
 
 /* eslint-disable */
@@ -100,7 +100,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
 
     return (
       <>
-        <UI.MeetingWrapper>
+        {/* <UI.MeetingWrapper>
           <Container>
             <Row>
               <Col>
@@ -115,7 +115,7 @@ export const Media: React.FC<MediaProps> = (props: MediaProps) => {
               {joinBtn}
             </Row>
           </Container>
-        </UI.MeetingWrapper>
+        </UI.MeetingWrapper> */}
       </>
     );
   }
