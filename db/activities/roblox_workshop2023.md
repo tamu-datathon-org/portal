@@ -15,7 +15,7 @@ Join Roblox's exclusive workshop, 'Ready for Roblox: Our Opportunities,' where y
 
 # Zoom Link & Info:
 
-[https://tamu.zoom.us/j/96735036415?pwd=S3N2eTIvMVl4SDFxSnBOdFIybTJjQT09](https://tamu.zoom.us/j/96735036415 pwd=S3N2eTIvMVl4SDFxSnBOdFIybTJjQT09)
+[https://tamu.zoom.us/j/96735036415?pwd=S3N2eTIvMVl4SDFxSnBOdFIybTJjQT09](https://tamu.zoom.us/j/96735036415?pwd=S3N2eTIvMVl4SDFxSnBOdFIybTJjQT09)
 
 Meeting ID: 967 3503 6415
 
