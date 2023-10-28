@@ -5,7 +5,7 @@ startTime: 2023-10-28 10:00 AM
 duration: 60
 mediaType: embed_url
 mediaLink: https://docs.google.com/presentation/d/1neFv2qku4q3fLUngIzQ4N7Lb9sWaMU4NTu4aIzV62_U/
-thumbnail: https://tamudatathon.com/static/img/backgrounds/logo.svg
+thumbnail: https://tamudatathon.com/static/img/backgrounds/logo23.svg
 presenter: TAMU Datathon Team
 priority: 5
 relatedActivities:
