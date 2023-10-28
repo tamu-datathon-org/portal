@@ -10,4 +10,4 @@ presenter: TAMU Datathon Team
 priority: 5
 relatedActivities:
 ---
-Welcome to TAMU Datathon 2023. Watch this to learn about the event and how it works.
+Welcome to TAMU Datathon 2023. Stay tuned to view the slideshow that contains event information!
