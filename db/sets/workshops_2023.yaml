@@ -1,6 +1,6 @@
 name: Workshops
 description: All the workshops in one!
-showMoreState: false
+showMoreState: true
 orderedBy: start_time
 priority: 1
 activityList:
